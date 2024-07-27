@@ -1,0 +1,92 @@
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Service.deps.json
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Service.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Service.pdb
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Models.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.RepositoryInterface.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.ServiceInterface.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Models.pdb
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.RepositoryInterface.pdb
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.ServiceInterface.pdb
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.csproj.AssemblyReference.cache
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.AssemblyInfoInputs.cache
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.AssemblyInfo.cs
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.csproj.CoreCompileInputs.cache
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.sourcelink.json
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAss.2B2071A6.Up2Date
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\refint\FinalAssessment_Backend.Service.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.pdb
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\ref\FinalAssessment_Backend.Service.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Repository.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Repository.pdb
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Service.deps.json
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Service.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Service.pdb
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Models.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Repository.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.RepositoryInterface.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.ServiceInterface.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Models.pdb
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.ServiceInterface.pdb
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Repository.pdb
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.RepositoryInterface.pdb
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.csproj.AssemblyReference.cache
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.AssemblyInfoInputs.cache
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.AssemblyInfo.cs
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.csproj.CoreCompileInputs.cache
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.sourcelink.json
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAss.2B2071A6.Up2Date
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\refint\FinalAssessment_Backend.Service.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.pdb
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\ref\FinalAssessment_Backend.Service.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Service.deps.json
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Service.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Service.pdb
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Models.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Repository.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.RepositoryInterface.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.ServiceInterface.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Models.pdb
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.ServiceInterface.pdb
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Repository.pdb
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.RepositoryInterface.pdb
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.csproj.AssemblyReference.cache
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.AssemblyInfoInputs.cache
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.AssemblyInfo.cs
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.csproj.CoreCompileInputs.cache
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.sourcelink.json
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAss.2B2071A6.Up2Date
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\refint\FinalAssessment_Backend.Service.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.pdb
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\ref\FinalAssessment_Backend.Service.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Shared.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Shared.pdb
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Service.deps.json
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Service.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Service.pdb
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Models.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Repository.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.RepositoryInterface.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.ServiceInterface.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Shared.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Models.pdb
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.ServiceInterface.pdb
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Shared.pdb
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Repository.pdb
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.RepositoryInterface.pdb
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.csproj.AssemblyReference.cache
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.AssemblyInfoInputs.cache
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.AssemblyInfo.cs
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.csproj.CoreCompileInputs.cache
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.sourcelink.json
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAss.2B2071A6.Up2Date
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\refint\FinalAssessment_Backend.Service.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.pdb
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\ref\FinalAssessment_Backend.Service.dll

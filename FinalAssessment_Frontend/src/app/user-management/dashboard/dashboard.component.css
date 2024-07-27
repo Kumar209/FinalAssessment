@@ -1,0 +1,175 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.sidebar-wrapper {
+  width: 20%;
+}
+
+.main-content {
+  width: 80%;
+  height: 100vh;
+  background-color: aliceblue;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-wrapper {
+  width: 100%;
+  padding: 20px 30px 50px;
+}
+
+.user-wrapper {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  column-gap: 25px;
+}
+
+.active-user {
+  width: 270px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  padding: 5px 0;
+  padding-left: 15px;
+  border-radius: 10px;
+}
+
+.active-bg {
+  background: rgba(66, 133, 244, 0.149);
+}
+
+.inactive-bg {
+  background: #ffdd6f33;
+}
+
+.active-user .active-img img {
+  width: 40px;
+}
+
+.active-user .active-content {
+  margin-top: 15px;
+}
+
+.active-user .active-content span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.active-user .active-content p {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.user-list-wrapper {
+  background-color: #fff;
+  margin-top: 25px;
+  border-radius: 10px;
+  padding: 25px 0 10px;
+}
+
+.user-heading-wrapper {
+  width: 100%;
+  padding-left: 20px;
+}
+
+.user-heading-wrapper p {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: hsla(217, 93%, 62%, 0.051);
+  font-size: 13px;
+
+}
+
+td,
+th {
+  padding: 13px 8px;
+  text-align: left;
+}
+
+.shift{
+    padding-left: 20px;
+}
+
+tr:nth-of-type(odd) {
+  background: #fff;
+
+}
+
+tbody tr:hover{
+    background-color: rgb(221, 223, 221);
+    cursor: pointer;
+}
+
+th {
+  background: rgba(67, 135, 244, 0.102);
+  font-weight: bold;
+}
+
+
+
+
+/* Pagination  */
+
+li {
+  list-style-type: none;
+}
+
+.pagination{
+  width: 100%;
+  /* border: 1px solid red; */
+  margin-top: 30px;
+  justify-content: end;
+  padding-right: 30px;
+}
+
+.pagination nav{
+  
+}
+
+.pagination nav ul{
+  display: flex;
+  column-gap: 10px;
+}
+
+
+ul .prev{
+  color: gray;
+}
+
+
+ul .control{
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+ul .page {
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  padding: 2px 12px 2px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.active-page{
+  background: #4285F4;
+  color: #fff;
+}
+
+
+
+

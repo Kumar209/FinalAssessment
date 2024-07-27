@@ -1,0 +1,35 @@
+
+<aside class="sidebar">
+    <div class="wrapperLogo">
+        <div class="sidebar-logo">
+            <a routerLink="">Integrity Solution</a>
+        </div>
+    </div>
+
+    <ul class="sidebar-nav">
+        <li routerLink="/user-management/dashboard" class="sidebar-item active  mb-4">
+            <span class="sidebar-link">
+                <img class="icon" src="../../../assets/dashboard_icon.png" alt="dashboard_icon">
+                <span>Dashboard</span>
+            </span>
+        </li>
+
+
+        <li class="sidebar-item inactive collapsed has-dropdown mb-2" data-bs-toggle="collapse" data-bs-target="#manageLinks" aria-controls="manageLinks">
+            <span class="sidebar-link " 
+                aria-expanded="false" >
+                <img class="icon" src="../../../assets/manageUser_icon.png" alt="manageUser_icon">
+                <span>Manage Users</span>
+                <img class="arrow" src="../../../assets//dropdown_arrow.png" alt="dropdown_arrow" style="margin-left: 40px;">
+            </span>
+        </li>
+
+        <ul id="manageLinks" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+            <li routerLink="/user-management/add-user" class="sidebar-item active mb-2" style="padding-left: 48px;">
+                <span class="sidebar-link">Add User</span>
+            </li>
+        </ul>
+
+    </ul>
+</aside>
+

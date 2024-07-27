@@ -1,0 +1,612 @@
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\appsettings.Development.json
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\appsettings.json
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.exe
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.deps.json
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.runtimeconfig.json
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.pdb
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Models.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.ServiceInterface.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Models.pdb
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.ServiceInterface.pdb
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.csproj.AssemblyReference.cache
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.AssemblyInfoInputs.cache
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.AssemblyInfo.cs
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.csproj.CoreCompileInputs.cache
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.MvcApplicationPartsAssemblyInfo.cs
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.sourcelink.json
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets.build.json
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets.development.json
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets\msbuild.FinalAssessment_Backend.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets\msbuild.build.FinalAssessment_Backend.props
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.FinalAssessment_Backend.props
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.FinalAssessment_Backend.props
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\scopedcss\bundle\FinalAssessment_Backend.styles.css
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAss.0E2B614A.Up2Date
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\refint\FinalAssessment_Backend.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.pdb
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.genruntimeconfig.cache
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\ref\FinalAssessment_Backend.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Azure.Core.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Azure.Identity.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Humanizer.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.CodeDom.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Text.Json.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Repository.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.RepositoryInterface.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Service.dll
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Repository.pdb
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Service.pdb
+C:\Prashant_Office_work\Final Assement\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.RepositoryInterface.pdb
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\appsettings.Development.json
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\appsettings.json
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.exe
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.deps.json
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.runtimeconfig.json
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.pdb
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Azure.Core.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Azure.Identity.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Humanizer.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.CodeDom.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Memory.Data.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Text.Json.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Models.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Repository.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.RepositoryInterface.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Service.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.ServiceInterface.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Models.pdb
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Service.pdb
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Repository.pdb
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.RepositoryInterface.pdb
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.ServiceInterface.pdb
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.csproj.AssemblyReference.cache
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.GeneratedMSBuildEditorConfig.editorconfig
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.AssemblyInfoInputs.cache
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.AssemblyInfo.cs
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.csproj.CoreCompileInputs.cache
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.MvcApplicationPartsAssemblyInfo.cs
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.MvcApplicationPartsAssemblyInfo.cache
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.sourcelink.json
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets.build.json
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets.development.json
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets\msbuild.FinalAssessment_Backend.Microsoft.AspNetCore.StaticWebAssets.props
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets\msbuild.build.FinalAssessment_Backend.props
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.FinalAssessment_Backend.props
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.FinalAssessment_Backend.props
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets.pack.json
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\scopedcss\bundle\FinalAssessment_Backend.styles.css
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAss.0E2B614A.Up2Date
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\refint\FinalAssessment_Backend.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.pdb
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.genruntimeconfig.cache
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\ref\FinalAssessment_Backend.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\MailKit.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\MimeKit.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\appsettings.Development.json
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\appsettings.json
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.exe
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.deps.json
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.runtimeconfig.json
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.pdb
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Azure.Core.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Azure.Identity.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Humanizer.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\MailKit.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\MimeKit.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.CodeDom.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Text.Json.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Models.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Repository.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.RepositoryInterface.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Service.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.ServiceInterface.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Models.pdb
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Service.pdb
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Repository.pdb
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.RepositoryInterface.pdb
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.ServiceInterface.pdb
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.csproj.AssemblyReference.cache
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.AssemblyInfoInputs.cache
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.AssemblyInfo.cs
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.csproj.CoreCompileInputs.cache
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.sourcelink.json
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets.build.json
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets.development.json
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets\msbuild.FinalAssessment_Backend.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets\msbuild.build.FinalAssessment_Backend.props
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.FinalAssessment_Backend.props
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.FinalAssessment_Backend.props
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\scopedcss\bundle\FinalAssessment_Backend.styles.css
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAss.0E2B614A.Up2Date
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\refint\FinalAssessment_Backend.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.pdb
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.genruntimeconfig.cache
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\ref\FinalAssessment_Backend.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Shared.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Shared.pdb
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.MvcApplicationPartsAssemblyInfo.cs
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.staticwebassets.runtime.json
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\appsettings.Development.json
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\appsettings.json
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.staticwebassets.runtime.json
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.exe
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.deps.json
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.runtimeconfig.json
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.pdb
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Azure.Core.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Azure.Identity.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Humanizer.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\MailKit.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\MimeKit.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.CodeDom.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Formats.Asn1.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Memory.Data.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Text.Json.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Models.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Repository.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.RepositoryInterface.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Service.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.ServiceInterface.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Shared.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Models.pdb
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Service.pdb
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Repository.pdb
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.RepositoryInterface.pdb
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.ServiceInterface.pdb
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Shared.pdb
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.csproj.AssemblyReference.cache
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.GeneratedMSBuildEditorConfig.editorconfig
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.AssemblyInfoInputs.cache
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.AssemblyInfo.cs
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.csproj.CoreCompileInputs.cache
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.MvcApplicationPartsAssemblyInfo.cs
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.MvcApplicationPartsAssemblyInfo.cache
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.sourcelink.json
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets.build.json
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets.development.json
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets\msbuild.FinalAssessment_Backend.Microsoft.AspNetCore.StaticWebAssets.props
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets\msbuild.build.FinalAssessment_Backend.props
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.FinalAssessment_Backend.props
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.FinalAssessment_Backend.props
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\staticwebassets.pack.json
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\scopedcss\bundle\FinalAssessment_Backend.styles.css
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAss.0E2B614A.Up2Date
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\refint\FinalAssessment_Backend.dll
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.pdb
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.genruntimeconfig.cache
+D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\ref\FinalAssessment_Backend.dll

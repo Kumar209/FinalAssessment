@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\smartdata\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview244323457.jpg",
+      "PackagePath": "staticwebassets\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview244323457.jpg"
+    },
+    {
+      "Id": "D:\\smartdata\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview244855031.jpg",
+      "PackagePath": "staticwebassets\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview244855031.jpg"
+    },
+    {
+      "Id": "D:\\smartdata\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview245503537.jpg",
+      "PackagePath": "staticwebassets\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview245503537.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FinalAssessment_Backend.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.FinalAssessment_Backend.props",
+      "PackagePath": "build\\FinalAssessment_Backend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.FinalAssessment_Backend.props",
+      "PackagePath": "buildMultiTargeting\\FinalAssessment_Backend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.FinalAssessment_Backend.props",
+      "PackagePath": "buildTransitive\\FinalAssessment_Backend.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
