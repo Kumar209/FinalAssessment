@@ -12,8 +12,6 @@ using System.Threading.Tasks;
 
 namespace FinalAssessment_Backend.Models.Dto
 {
-   
-
     public class PrashantDbUserDto
     {
         public int? Id { get; set; }
@@ -66,13 +64,23 @@ namespace FinalAssessment_Backend.Models.Dto
 
 
         [Required(ErrorMessage = "Email is required")]
-     /*   [StringLength(4000, ErrorMessage = "Image URL cannot be longer than 4000 characters.")]*/
         public IFormFile ImageFile { get; set; }
 
 
-
-        //Used when getting the values
         public string? ImageUrl { get; set; }
+
+        public bool? IsActive { get; set; }
+
+        public bool? IsDeleted { get; set; }
+
+        public DateOnly? CreatedDate { get; set; }
+
+        public DateOnly? ModifiedDate { get; set; }
+
+        public string? CreatedBy { get; set; }
+
+        public string? ModifiedBy { get; set; }
+
 
 
 

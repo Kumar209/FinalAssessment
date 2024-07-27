@@ -3,6 +3,7 @@ using FinalAssessment_Backend.ServiceInterface;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualBasic;
 
 namespace FinalAssessment_Backend.Controllers
 {
@@ -22,6 +23,11 @@ namespace FinalAssessment_Backend.Controllers
         [HttpPost("LoginUser")]
         public async Task<IActionResult> login(LoginCredentialsDto loginCredentials)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             var res = await _accountService.loginUser(loginCredentials);
 
 
@@ -50,6 +56,7 @@ namespace FinalAssessment_Backend.Controllers
         }
 
 
+
         [HttpPost("ForgotPassword")]
         public async Task<IActionResult> ForgotPassword(string email)
         {
@@ -64,10 +71,16 @@ namespace FinalAssessment_Backend.Controllers
         }
 
 
+
         [HttpPost("ResetPassword")]
         [Authorize]
         public async Task<IActionResult> ResetPassword(ResetPasswordDto dto)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             var authHeader = Request.Headers["Authorization"].FirstOrDefault();
 
             if (authHeader == null || !authHeader.StartsWith("Bearer "))
@@ -88,10 +101,34 @@ namespace FinalAssessment_Backend.Controllers
         }
 
 
+
         [HttpPost("ChangePassword")]
-        public async Task<IActionResult> ChangePassword(string pass)
+        [Authorize]
+        public async Task<IActionResult> ChangePassword(ChangePasswordDto dto)
         {
-            return Ok(pass);
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var authHeader = Request.Headers["Authorization"].FirstOrDefault();
+
+            if (authHeader == null || !authHeader.StartsWith("Bearer "))
+            {
+                return Unauthorized(new { success = false, message = "Unauthorized" });
+            }
+
+            var token = authHeader.Substring("Bearer ".Length).Trim();
+
+
+            var res = await _accountService.changePasswordService(dto, token);
+
+            if (res.success)
+            {
+                return Ok(new { success = res.success, message = res.msg });
+            }
+
+            return BadRequest(new { success = res.success, message = res.msg });
         }
     }
 }

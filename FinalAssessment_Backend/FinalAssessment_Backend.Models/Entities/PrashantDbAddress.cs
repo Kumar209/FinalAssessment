@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace FinalAssessment_Backend.Models.Entities;
 
@@ -19,7 +20,8 @@ public partial class PrashantDbAddress
 
     public int UserId { get; set; }
 
-    public virtual PrashantDbMasterAddressType AddressType { get; set; } = null!;
+    public virtual PrashantDbMasterAddressType AddressType { get; set; }
 
-    public virtual PrashantDbUser User { get; set; } = null!;
+    [JsonIgnore]
+    public virtual PrashantDbUser User { get; set; }
 }

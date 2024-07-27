@@ -18,5 +18,7 @@ namespace FinalAssessment_Backend.ServiceInterface
         public Task<(string msg, bool success)> forgotPasswordService(string email);
 
         public Task<(string msg, bool success)> resetPasswordService(ResetPasswordDto resetPasswordValue, string token);
+
+        public Task<(string msg, bool success)> changePasswordService(ChangePasswordDto changePasswordValue, string token);
     }
 }

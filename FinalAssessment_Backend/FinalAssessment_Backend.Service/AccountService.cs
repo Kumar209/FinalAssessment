@@ -124,7 +124,6 @@ namespace FinalAssessment_Backend.Service
 
         public async Task<(string msg, bool success)> resetPasswordService(ResetPasswordDto resetPasswordValue, string token)
         {
-            //Extract token
             var userId = await _jwtService.ValidateJwtToken(token);
 
             if(userId == -1)
@@ -136,6 +135,28 @@ namespace FinalAssessment_Backend.Service
 
             return ("Password reset completed", true);
 
+        }
+
+
+        public async Task<(string msg ,bool success)> changePasswordService(ChangePasswordDto changePasswordValue, string token)
+        {
+            var userId = await _jwtService.ValidateJwtToken(token);
+
+            if(userId == -1)
+            {
+                return ("Token expired", false);
+            }
+
+            var user = await _accountRepo.GetUserById(userId);
+
+            if(user.Password != changePasswordValue.OldPassword)
+            {
+                return ("Wrong old password", false);
+            }
+
+            var res = await _accountRepo.UpdatePassword(userId, changePasswordValue.NewPassword);
+
+            return ("Password changed", true);
         }
 
        

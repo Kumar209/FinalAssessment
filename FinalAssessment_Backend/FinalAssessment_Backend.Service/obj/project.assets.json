@@ -2878,11 +2878,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\smartdata\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\FinalAssessment_Backend.Service.csproj",
+      "projectUniqueName": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\FinalAssessment_Backend.Service.csproj",
       "projectName": "FinalAssessment_Backend.Service",
-      "projectPath": "D:\\smartdata\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\FinalAssessment_Backend.Service.csproj",
+      "projectPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\FinalAssessment_Backend.Service.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\smartdata\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\obj\\",
+      "outputPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\APPS\\VS\\data\\Component tools SDKs\\NuGetPackages"
@@ -2903,14 +2903,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\smartdata\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj": {
-              "projectPath": "D:\\smartdata\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj"
+            "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj": {
+              "projectPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj"
             },
-            "D:\\smartdata\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.ServiceInterface\\FinalAssessment_Backend.ServiceInterface.csproj": {
-              "projectPath": "D:\\smartdata\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.ServiceInterface\\FinalAssessment_Backend.ServiceInterface.csproj"
+            "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.ServiceInterface\\FinalAssessment_Backend.ServiceInterface.csproj": {
+              "projectPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.ServiceInterface\\FinalAssessment_Backend.ServiceInterface.csproj"
             },
-            "D:\\smartdata\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\FinalAssessment_Backend.Shared.csproj": {
-              "projectPath": "D:\\smartdata\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\FinalAssessment_Backend.Shared.csproj"
+            "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\FinalAssessment_Backend.Shared.csproj": {
+              "projectPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\FinalAssessment_Backend.Shared.csproj"
             }
           }
         }

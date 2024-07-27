@@ -1,4 +1,5 @@
-﻿using FinalAssessment_Backend.Models.Entities;
+﻿using FinalAssessment_Backend.Models.Dto;
+using FinalAssessment_Backend.Models.Entities;
 using FinalAssessment_Backend.RepositoryInterface;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
@@ -37,6 +38,25 @@ namespace FinalAssessment_Backend.Repository
 
             // Return true if one or more rows were affected (deleted)
             return affectedRows > 0;
+        }
+
+
+        public async Task<PageRecord> GetRecords(int currentPage, int itemsPerPage)
+        {
+            var totalRecords = await _dbcontext.PrashantDbUsers
+                              .CountAsync(u => u.IsDeleted == false);
+
+            var users = await _dbcontext.PrashantDbUsers
+                .Where(u => u.IsDeleted == false)
+                .Include(u => u.PrashantDbAddresses) 
+                .OrderBy(u => u.Id) 
+
+                .Skip((currentPage - 1) * itemsPerPage)
+                .Take(itemsPerPage)
+
+                .ToListAsync();
+
+            return new PageRecord { Records = users, TotalRecords = totalRecords};
         }
     }
 }

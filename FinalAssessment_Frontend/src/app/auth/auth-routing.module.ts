@@ -14,7 +14,7 @@ const routes: Routes = [
     path: 'login', component : LoginComponent
   },
   {
-    path : 'forgot_password', component : ForgotPasswordComponent
+    path : 'forgot-password', component : ForgotPasswordComponent
   },
   {
     path : 'emailSend' , component: EmailSendPageComponent

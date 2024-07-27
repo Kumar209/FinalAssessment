@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n1lFqh+9ZkZrGmd1EQrv7Vvz2W6tWf+h+IqbrANYJ7cfyjoZBKjwCFS60spqrZ23BXIC8yKfZlSqMknOKFXEGQ==",
+  "dgSpecHash": "NunwkMamHbnPVIaMYc9gfXN8AxhGDUnaohzVDDTf8n/ZDQmColnRADp5YUY20RDPb0v+eW0hN9w1DiMIjZwOFQ==",
   "success": true,
-  "projectFilePath": "D:\\smartdata\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\FinalAssessment_Backend.Service.csproj",
+  "projectFilePath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\FinalAssessment_Backend.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

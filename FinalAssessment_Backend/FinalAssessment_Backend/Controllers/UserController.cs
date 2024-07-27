@@ -30,12 +30,21 @@ namespace FinalAssessment_Backend.Controllers
         }
 
 
-        [HttpPost("RemoveUser{id}")]
+        [HttpPost("RemoveUser/{id}")]
         public async Task<IActionResult> RemoveUser(int id)
         {
             var res = await _userService.RemoveUserById(id);
 
             return Ok(new {success=res});
+        }
+
+
+        [HttpGet("GetRecords")]
+        public async Task<IActionResult> GetRecords(int currentPage, int itemsPerPage)
+        {
+            var res = await _userService.GetPagedRecords(currentPage, itemsPerPage);
+
+            return Ok(new {success = true, record=res.Records, totalRecords=res.TotalRecords});
         }
     }
 }

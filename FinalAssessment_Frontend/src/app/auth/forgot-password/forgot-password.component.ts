@@ -25,7 +25,7 @@ export class ForgotPasswordComponent {
   onSubmitForgotPasswordForm() {
     if(this.forgotPasswordForm.valid){
 
-      this.service.forgotPassword(this.forgotPasswordForm.value).subscribe({
+      this.service.forgotPassword(this.forgotPasswordForm.value.email).subscribe({
         next : (res) => {
           if(res.success){
             this.toastr.success(res.message, 'Successfull!');

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { AbstractControl, FormControl, FormControlDirective, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../service/auth.service';
 import { ToastrService } from 'ngx-toastr';
@@ -18,8 +18,25 @@ export class ChangePasswordComponent {
   ngOnInit(): void {
     this.changePasswordForm = new FormGroup({
       oldPassword : new FormControl('', [Validators.required]),
-      newPassword : new FormControl('', [Validators.required])
-    });
+      newPassword : new FormControl('', [Validators.required]),
+      confirmNewPassword : new FormControl('', [Validators.required])
+    },
+    {
+      validators: this.passwordMatchValidator,
+    }
+  );
+  }
+
+
+  passwordMatchValidator(control: AbstractControl) {
+
+    const password = control.get('newPassword');
+    const confirmPassword = control.get('confirmNewPassword');
+
+    const mismatch = password?.value !== confirmPassword?.value;
+
+    confirmPassword?.setErrors(mismatch ? { mismatch: true } : null);
+    return mismatch ? { mismatch: true } : null;
   }
 
 
@@ -27,25 +44,25 @@ export class ChangePasswordComponent {
     if(this.changePasswordForm.valid){
       
 
-      // this.service.login(this.resetForm.value).subscribe({
-      //   next : (res) => {
-      //     if(res.success){
-      //       this.toastr.success(res.message, 'Successfull!');
-      //     }
-      //     else {
-      //       this.toastr.error(res.message, 'Error!');
-      //     }
-      //   },
+      this.service.changePassword(this.changePasswordForm.value).subscribe({
+        next : (res) => {
+          if(res.success){
+            this.toastr.success(res.message, 'Successfull!');
+          }
+          else {
+            this.toastr.error(res.message, 'Error!');
+          }
+        },
 
-      //   error : (err) => {
-      //     if(err.error && err.error.message){
-      //       this.toastr.error(err.error.message, 'Error!');
-      //     }
-      //     else {
-      //       this.toastr.error('Something went wrong!', 'Error!');
-      //     }
-      //   }
-      // })
+        error : (err) => {
+          if(err.error && err.error.message){
+            this.toastr.error(err.error.message, 'Error!');
+          }
+          else {
+            this.toastr.error('Something went wrong!', 'Error!');
+          }
+        }
+      })
     }
     else {
       this.toastr.error('Validation Failed', 'Error!')

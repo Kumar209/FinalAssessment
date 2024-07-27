@@ -12,5 +12,7 @@ namespace FinalAssessment_Backend.ServiceInterface
         public Task<bool> CreateUser(PrashantDbUserDto userDetails);
 
         public Task<bool> RemoveUserById(int id);
+
+        public Task<PageRecord> GetPagedRecords(int currentPage, int itemsPerPage);
     }
 }

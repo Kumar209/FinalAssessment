@@ -610,3 +610,7 @@ D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj
 D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.pdb
 D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\FinalAssessment_Backend.genruntimeconfig.cache
 D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\obj\Debug\net8.0\ref\FinalAssessment_Backend.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.staticwebassets.runtime.json
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Shared.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Shared.pdb

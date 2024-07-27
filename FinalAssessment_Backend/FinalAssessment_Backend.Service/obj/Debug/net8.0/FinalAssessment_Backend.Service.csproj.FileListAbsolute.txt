@@ -90,3 +90,5 @@ D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Ser
 D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\refint\FinalAssessment_Backend.Service.dll
 D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\FinalAssessment_Backend.Service.pdb
 D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\obj\Debug\net8.0\ref\FinalAssessment_Backend.Service.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Shared.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Service\bin\Debug\net8.0\FinalAssessment_Backend.Shared.pdb

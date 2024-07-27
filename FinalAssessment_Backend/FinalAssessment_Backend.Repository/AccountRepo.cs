@@ -60,7 +60,7 @@ namespace FinalAssessment_Backend.Repository
         {
             var affectedRows = await _dbContext.Database
                               .ExecuteSqlRawAsync(
-                               "SpUpdatePasswordUsersPrashantDb @Id, @Password",
+                               "SpUpdatePasswordPrashantDbUser @Id, @Password",
                                new SqlParameter("@Id", Id),
                                new SqlParameter("@Password", password)
                               );

@@ -76,5 +76,11 @@ namespace FinalAssessment_Backend.Service
         {
             return await _userRepo.DeleteUser(id);
         }
+
+
+        public async Task<PageRecord> GetPagedRecords(int currentPage, int itemsPerPage)
+        {
+            return await _userRepo.GetRecords(currentPage, itemsPerPage);
+        }
     }
 }

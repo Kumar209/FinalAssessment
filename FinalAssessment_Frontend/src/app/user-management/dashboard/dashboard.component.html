@@ -59,41 +59,19 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td class="shift">Prashant</td>
-                  <td>Kumar</td>
-                  <td>Verma</td>
-                  <td>13-03-2002</td>
-                  <td>prashantkumar@gmail.com</td>
-                  <td>8527419632</td>
-                  <td>Lakhimpur</td>
-                  <td>Uttar Pradesh</td>
+                <tr *ngFor="let user of userData">
+                  <td class="shift">{{user.firstName}}</td>
+                  <td>{{user.middleName}}</td>
+                  <td>{{user.lastName}}</td>
+                  <td>{{user.dateOfBirth}}</td>
+                  <td>{{user.email}}</td>
+                  <td>{{user.phone}}</td>
                   <td>
-                    <img src="../../../assets/eye-icon.png" alt="eye-icon">
+                    {{getAddressType1(user)?.city}}
                   </td>
-                </tr>
-                <tr>
-                  <td class="shift">Prashant</td>
-                  <td>Kumar</td>
-                  <td>Verma</td>
-                  <td>13-03-2002</td>
-                  <td>prashantkumar@gmail.com</td>
-                  <td>8527419632</td>
-                  <td>Lakhimpur</td>
-                  <td>Uttar Pradesh</td>
                   <td>
-                    <img src="../../../assets/eye-icon.png" alt="eye-icon">
+                    {{getAddressType1(user)?.state}}
                   </td>
-                </tr>
-                <tr>
-                  <td class="shift">Prashant</td>
-                  <td>Kumar</td>
-                  <td>Verma</td>
-                  <td>13-03-2002</td>
-                  <td>prashantkumar@gmail.com</td>
-                  <td>8527419632</td>
-                  <td>Lakhimpur</td>
-                  <td>Uttar Pradesh</td>
                   <td>
                     <img src="../../../assets/eye-icon.png" alt="eye-icon">
                   </td>
