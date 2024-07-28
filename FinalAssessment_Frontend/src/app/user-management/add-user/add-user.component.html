@@ -1,5 +1,5 @@
 <section class="main">
-    <div class="sidebar-wrapper" >
+    <div class="sidebar-wrapper">
         <app-sidebar />
     </div>
 
@@ -13,10 +13,10 @@
                     Add User
                 </span>
             </div>
-            
+
 
             <div class="add-user-form-wrapper">
-                <form class="add-user-form">
+                <form class="add-user-form" [formGroup]="addUserForm" (submit)="onAddUserFormSubmit()">
                     <div class="form-heading-wrapper">
                         <p>User Detail</p>
                     </div>
@@ -25,13 +25,13 @@
                     <div class="imageUpload-wrapper">
                         <div class="imgWrapper">
                             <img *ngIf="!imgSrc" src="../../../assets/ImageUpload_icon.png" alt="imageUpload-wrapper">
-                             <img *ngIf="imgSrc" [src]="imgSrc" class="userdp" src="../../../assets/user_dp.png" alt="">
+                            <img *ngIf="imgSrc" [src]="imgSrc" class="userdp" src="../../../assets/user_dp.png" alt="">
                         </div>
 
                         <div class="imgInput-wrapper">
-                            <span class="file-name">Upload User image here</span>    
+                            <span class="file-name">Upload User image here</span>
                             <label for="file-input" class="file-label">Choose a file</label>
-                            <input type="file" id="file-input" class="file-input" (change)="onFileChange($event)" />         
+                            <input type="file" id="file-input" class="file-input" (change)="onFileChange($event)" />
                         </div>
                     </div>
 
@@ -40,94 +40,89 @@
                         <div class="row form-input-row">
                             <div class="form-input col-md-4 col-12">
                                 <label for="first-name">First Name</label>
-                                <input type="text" id="first-name" name="firstname" placeholder="First Name">
+                                <input type="text" id="first-name" name="firstname" placeholder="First Name" formControlName="firstName">
                             </div>
 
                             <div class="form-input col-md-4 col-12">
                                 <label for="middle-name">Middle Name</label>
-                                <input type="text" id="middle-name" name="middlename" placeholder="Middle Name">
+                                <input type="text" id="middle-name" name="middlename" placeholder="Middle Name" formControlName="middleName">
                             </div>
 
                             <div class="form-input col-md-4 col-12">
                                 <label for="last-name">First Name</label>
-                                <input type="text" id="last-name" name="lastname" placeholder="Last Name">
+                                <input type="text" id="last-name" name="lastname" placeholder="Last Name" formControlName="lastName">
                             </div>
                         </div>
 
                         <div class="row form-input-row">
                             <div class="form-input col-md-4 col-12">
                                 <label for="gender">Gender</label>
-                                <input type="text" id="gender" name="gender" >
+                                <select id="gender" name="gender" formControlName="gender">
+                                    <option class="selectedDefault" value="" disabled selected>Select</option>
+                                    <option value=1>Male</option>
+                                    <option value=2>Female</option>
+                                    <option value=3>Other</option>
+                                </select>
                             </div>
 
                             <div class="form-input col-md-4 col-12">
                                 <label for="dob">Date of Birth</label>
-                                <input type="date" id="dob" name="DateOfBirth" placeholder="MM/DD/YY">
+                                <input type="date" id="dob" name="DateOfBirth" placeholder="MM/DD/YY" formControlName="dateOfBirth">
                             </div>
 
                             <div class="form-input col-md-4 col-12">
                                 <label for="email">Email</label>
-                                <input type="text" id="email" name="email" placeholder="Email">
+                                <input type="text" id="email" name="email" placeholder="Email" formControlName="email">
                             </div>
                         </div>
 
                         <div class="row form-input-row">
                             <div class="form-input col-md-4 col-12">
                                 <label for="dateOfJoining">Date of Joining</label>
-                                <input type="date" id="dateOfJoining" name="dateOfJoining" placeholder="Date of Joining">
+                                <input type="date" id="dateOfJoining" name="dateOfJoining"
+                                    placeholder="Date of Joining" formControlName="dateOfJoining">
                             </div>
 
                             <div class="form-input col-md-4 col-12">
                                 <label for="phone">Phone</label>
-                                <input type="text" id="phone" name="phone" placeholder="Phone">
+                                <input type="text" id="phone" name="phone" placeholder="Phone" formControlName="phone">
                             </div>
 
                             <div class="form-input col-md-4 col-12">
                                 <label for="alternatePhone">Alternate Phone</label>
-                                <input type="text" id="alternatePhone" name="alternatePhone" placeholder="Alternate Phone">
+                                <input type="text" id="alternatePhone" name="alternatePhone"
+                                    placeholder="Alternate Phone" formControlName="alternatePhone">
                             </div>
                         </div>
 
-                        <div class="row form-input-row">
-                            <div class="form-input col-md-4 col-12">
-                                <label for="country">Country</label>
-                                <input type="text" id="first-name" name="country" placeholder="Country">
+                        <div formArrayName="addresses">
+                            <div class="row form-input-row" *ngFor="let address of addresses.controls; let i=index" [formGroupName]="i">
+                                <div class="form-input col-md-4 col-12">
+                                    <label for="country">Country</label>
+                                    <input type="text" id="first-name" name="country" placeholder="Country" formControlName="country">
+                                </div>
+
+                                <div class="form-input col-md-4 col-12">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" name="state" placeholder="State" formControlName="state">
+                                </div>
+
+                                <div class="form-input col-md-4 col-12">
+                                    <label for="middle-name">City</label>
+                                    <input type="text" id="middle-name" name="middlename" placeholder="City" formControlName="city">
+                                </div>
                             </div>
 
-                            <div class="form-input col-md-4 col-12">
-                                <label for="state">State</label>
-                                <input type="text" id="state" name="state" placeholder="State">
+                            <div class="address-buttons-wrapper">
+                                <button type="button" class="btn1" (click)="addSecondaryAddress()" *ngIf="addresses.length < 2">Add Secondary Address</button>
+                                <button type="button" class="btn2" (click)="removeSecondaryAddress()" *ngIf="addresses.length === 2">Remove Secondary Address</button>
                             </div>
-
-                            <div class="form-input col-md-4 col-12">
-                                <label for="middle-name">City</label>
-                                <input type="text" id="middle-name" name="middlename" placeholder="City">
-                            </div>
-
-                            
                         </div>
-
-                        <!-- <div class="row form-input-row">
-                            <div class="form-input col-md-4 col-12">
-                                <label for="first-name">First Name</label>
-                                <input type="text" id="first-name" name="firstname" placeholder="First Name">
-                            </div>
-
-                            <div class="form-input col-md-4 col-12">
-                                <label for="middle-name">Middle Name</label>
-                                <input type="text" id="middle-name" name="middlename" placeholder="Middle Name">
-                            </div>
-
-                            <div class="form-input col-md-4 col-12">
-                                <label for="last-name">First Name</label>
-                                <input type="text" id="last-name" name="lastname" placeholder="Last Name">
-                            </div>
-                        </div> -->
                     </div>
 
                     <div class="inactive-checkbox-wrapper">
-                        <input type="checkbox" name="inactive" id="inactive">
-                        <label for="inactive">Inactive</label>
+                        <input type="checkbox" name="isActive" id="inactive">
+                        <label for="inactive" formControlName="isActive">Inactive</label>
                     </div>
 
 

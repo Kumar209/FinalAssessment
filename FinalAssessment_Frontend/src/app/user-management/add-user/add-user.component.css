@@ -143,6 +143,45 @@
 }
 
 
+.form-input select {
+  border: 1px solid rgb(173, 171, 171);
+  border-radius: 7px;
+  font-size: 14px;
+  padding: 12px 10px;
+}
+
+.form-input select:focus {
+  outline: none;
+  border: 2px solid #0dc5dd;
+}
+
+.form-control select .selectedDefault {
+  /* background-color: #007bff; */
+  color: red;
+}
+
+
+.address-buttons-wrapper{
+  width: 100%;
+  text-align: end;
+  margin: 30px 0;
+}
+
+.address-buttons-wrapper button{
+  padding: 7px 20px;
+  font-size: 14px;
+  border: transparent;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.address-buttons-wrapper .btn1{
+  background-color: #0dc5dd;
+}
+
+.address-buttons-wrapper .btn2{
+  background-color: #ff0000;
+}
 
 .inactive-checkbox-wrapper{
     display: flex;

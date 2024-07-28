@@ -1,12 +1,36 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{08868479-6400-4AE6-A611-15368320504D}|..\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj|d:\\smartdata\\evaluation\\finalassessment\\finalassessment_backend\\finalassessment_backend.models\\dto\\prashantdbuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PrashantDbUserDto.cs",
+              "DocumentMoniker": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\Dto\\PrashantDbUserDto.cs",
+              "RelativeDocumentMoniker": "..\\FinalAssessment_Backend.Models\\Dto\\PrashantDbUserDto.cs",
+              "ToolTip": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\Dto\\PrashantDbUserDto.cs",
+              "RelativeToolTip": "..\\FinalAssessment_Backend.Models\\Dto\\PrashantDbUserDto.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAADwv0UAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T19:09:40.676Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
