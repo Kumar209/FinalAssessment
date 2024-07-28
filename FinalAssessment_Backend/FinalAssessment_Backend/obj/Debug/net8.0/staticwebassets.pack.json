@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\Sign245601526.jpg",
+      "PackagePath": "staticwebassets\\user\\images\\Sign245601526.jpg"
+    },
+    {
       "Id": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview244323457.jpg",
       "PackagePath": "staticwebassets\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview244323457.jpg"
     },
@@ -11,6 +15,10 @@
     {
       "Id": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview245503537.jpg",
       "PackagePath": "staticwebassets\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview245503537.jpg"
+    },
+    {
+      "Id": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\wallpaperflare.com_wallpaper241552497.jpg",
+      "PackagePath": "staticwebassets\\user\\images\\wallpaperflare.com_wallpaper241552497.jpg"
     },
     {
       "Id": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\wallpaperflare.com_wallpaper242455362.jpg",

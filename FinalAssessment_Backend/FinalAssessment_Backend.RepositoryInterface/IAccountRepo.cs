@@ -9,7 +9,6 @@ namespace FinalAssessment_Backend.RepositoryInterface
 {
     public interface IAccountRepo
     {
-        public Task<PrashantDbUser> AuthenticateUser(string email, string password);
 
         public Task<PrashantDbUser> GetUserById(int id);
 

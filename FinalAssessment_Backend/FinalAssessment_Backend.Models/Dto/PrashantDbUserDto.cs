@@ -71,18 +71,6 @@ namespace FinalAssessment_Backend.Models.Dto
 
         public bool? IsActive { get; set; }
 
-        public bool? IsDeleted { get; set; }
-
-        public DateOnly? CreatedDate { get; set; }
-
-        public DateOnly? ModifiedDate { get; set; }
-
-        public string? CreatedBy { get; set; }
-
-        public string? ModifiedBy { get; set; }
-
-
-
 
         [Required(ErrorMessage = "Address is required")]
         public virtual ICollection<PrashantDbAddressDto> PrashantDbAddresses { get; set; } = new List<PrashantDbAddressDto>();

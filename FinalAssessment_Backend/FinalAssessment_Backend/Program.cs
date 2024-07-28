@@ -5,6 +5,7 @@ using FinalAssessment_Backend.Repository;
 using FinalAssessment_Backend.RepositoryInterface;
 using FinalAssessment_Backend.Service;
 using FinalAssessment_Backend.ServiceInterface;
+using FinalAssessment_Backend.Shared.EncryptDecrypt;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -38,6 +39,10 @@ namespace FinalAssessment_Backend
              })
             );
 
+            //For Encrypt and Decrypt
+            builder.Services.AddDataProtection();
+
+
             builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
             builder.Services.AddTransient<IUserService, UserService>();
             builder.Services.AddTransient<IUserRepo, UserRepo>();
@@ -54,6 +59,10 @@ namespace FinalAssessment_Backend
             builder.Services.AddTransient<IImageUploadService, ImageUploadService>();
 
             builder.Services.AddTransient<IJwtService, JwtService>();
+
+            builder.Services.AddTransient<IHashing, Hashing>();
+
+            builder.Services.AddSingleton<EncryptDecrypt>();
 
 
 
@@ -88,6 +97,10 @@ namespace FinalAssessment_Backend
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
                 };
             });
+
+
+
+            
 
 
 

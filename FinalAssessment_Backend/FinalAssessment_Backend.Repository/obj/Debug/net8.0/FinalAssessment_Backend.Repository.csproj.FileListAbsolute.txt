@@ -78,3 +78,5 @@ D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Rep
 D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Repository\obj\Debug\net8.0\FinalAssessment_Backend.Repository.pdb
 D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Repository\obj\Debug\net8.0\FinalAssessment_Backend.Repository.genruntimeconfig.cache
 D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Repository\obj\Debug\net8.0\ref\FinalAssessment_Backend.Repository.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Repository\bin\Debug\net8.0\FinalAssessment_Backend.Shared.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Repository\bin\Debug\net8.0\FinalAssessment_Backend.Shared.pdb

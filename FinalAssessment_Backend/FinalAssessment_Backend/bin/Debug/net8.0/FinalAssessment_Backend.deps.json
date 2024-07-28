@@ -10,6 +10,7 @@
         "dependencies": {
           "FinalAssessment_Backend.Models": "1.0.0",
           "FinalAssessment_Backend.Service": "1.0.0",
+          "FinalAssessment_Backend.Shared": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "8.0.7",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
@@ -51,6 +52,14 @@
           }
         }
       },
+      "BCrypt.Net-Next/4.0.3": {
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.0.3.0"
+          }
+        }
+      },
       "BouncyCastle.Cryptography/2.4.0": {
         "runtime": {
           "lib/net6.0/BouncyCastle.Cryptography.dll": {
@@ -86,6 +95,14 @@
         "runtime": {
           "lib/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
             "assemblyVersion": "8.0.7.0",
+            "fileVersion": "8.0.724.31402"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.DataProtection.Abstractions/8.0.7": {
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.DataProtection.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.724.31402"
           }
         }
@@ -961,6 +978,7 @@
         "dependencies": {
           "FinalAssessment_Backend.Models": "1.0.0",
           "FinalAssessment_Backend.RepositoryInterface": "1.0.0",
+          "FinalAssessment_Backend.Shared": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.7"
         },
@@ -978,6 +996,7 @@
       },
       "FinalAssessment_Backend.Service/1.0.0": {
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "FinalAssessment_Backend.Models": "1.0.0",
           "FinalAssessment_Backend.ServiceInterface": "1.0.0",
           "FinalAssessment_Backend.Shared": "1.0.0",
@@ -1001,7 +1020,8 @@
       },
       "FinalAssessment_Backend.Shared/1.0.0": {
         "dependencies": {
-          "FinalAssessment_Backend.Models": "1.0.0"
+          "FinalAssessment_Backend.Models": "1.0.0",
+          "Microsoft.AspNetCore.DataProtection.Abstractions": "8.0.7"
         },
         "runtime": {
           "FinalAssessment_Backend.Shared.dll": {}
@@ -1028,6 +1048,13 @@
       "sha512": "sha512-l1Xm2MWOF2Mzcwuarlw8kWQXLZk3UeB55aQXVyjj23aBfDwOZ3gu5GP2kJ6KlmZeZv2TCzw7x4L3V36iNr3gww==",
       "path": "azure.identity/1.10.3",
       "hashPath": "azure.identity.1.10.3.nupkg.sha512"
+    },
+    "BCrypt.Net-Next/4.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W+U9WvmZQgi5cX6FS5GDtDoPzUCV4LkBLkywq/kRZhuDwcbavOzcDAr3LXJFqHUi952Yj3LEYoWW0jbEUQChsA==",
+      "path": "bcrypt.net-next/4.0.3",
+      "hashPath": "bcrypt.net-next.4.0.3.nupkg.sha512"
     },
     "BouncyCastle.Cryptography/2.4.0": {
       "type": "package",
@@ -1056,6 +1083,13 @@
       "sha512": "sha512-HXcmJizLBx9mP2XtHZZgvi3GZCrGg98PMQ9AozrF1/RqSffp9CqCiTdrz7TaFLqOUph/S4hqx/IJD18Al+zE+w==",
       "path": "microsoft.aspnetcore.authentication.jwtbearer/8.0.7",
       "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.8.0.7.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.DataProtection.Abstractions/8.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jjN/JjxsVASAevkTOEXNA4/7pieAJFsUF+/SMpIi+JG25eTOXxpUhs/rXrBas+/nuaZuHIth0TZiqon/dKqmNA==",
+      "path": "microsoft.aspnetcore.dataprotection.abstractions/8.0.7",
+      "hashPath": "microsoft.aspnetcore.dataprotection.abstractions.8.0.7.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Http.Features/5.0.17": {
       "type": "package",

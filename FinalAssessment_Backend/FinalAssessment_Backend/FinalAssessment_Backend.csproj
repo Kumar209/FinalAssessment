@@ -18,6 +18,8 @@
     <ProjectReference Include="..\FinalAssessment_Backend.Models\FinalAssessment_Backend.Models.csproj" />
  
     <ProjectReference Include="..\FinalAssessment_Backend.Service\FinalAssessment_Backend.Service.csproj" />
+ 
+    <ProjectReference Include="..\FinalAssessment_Backend.Shared\FinalAssessment_Backend.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>

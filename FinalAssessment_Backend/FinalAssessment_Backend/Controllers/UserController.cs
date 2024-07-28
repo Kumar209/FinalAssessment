@@ -26,7 +26,7 @@ namespace FinalAssessment_Backend.Controllers
 
             var res = await _userService.CreateUser(userDetails);
 
-            return Ok(res);
+            return Ok(new {success=res, message="Successfully created user and credential send to email"});
         }
 
 
@@ -35,7 +35,7 @@ namespace FinalAssessment_Backend.Controllers
         {
             var res = await _userService.RemoveUserById(id);
 
-            return Ok(new {success=res});
+            return Ok(new {success=res, message="User is deleted"});
         }
 
 
@@ -44,7 +44,7 @@ namespace FinalAssessment_Backend.Controllers
         {
             var res = await _userService.GetPagedRecords(currentPage, itemsPerPage);
 
-            return Ok(new {success = true, record=res.Records, totalRecords=res.TotalRecords});
+            return Ok(new {success = true, record=res.records, totalRecords=res.totalRecords});
         }
     }
 }

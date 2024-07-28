@@ -614,3 +614,5 @@ D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_
 D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Shared.dll
 D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\FinalAssessment_Backend.Shared.pdb
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.AspNetCore.DataProtection.Abstractions.dll

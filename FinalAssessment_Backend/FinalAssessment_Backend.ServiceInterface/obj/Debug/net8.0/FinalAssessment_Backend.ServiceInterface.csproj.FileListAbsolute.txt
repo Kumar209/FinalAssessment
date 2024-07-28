@@ -78,3 +78,5 @@ D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.Ser
 D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.ServiceInterface\obj\Debug\net8.0\refint\FinalAssessment_Backend.ServiceInterface.dll
 D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.ServiceInterface\obj\Debug\net8.0\FinalAssessment_Backend.ServiceInterface.pdb
 D:\smartdata\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.ServiceInterface\obj\Debug\net8.0\ref\FinalAssessment_Backend.ServiceInterface.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.ServiceInterface\bin\Debug\net8.0\FinalAssessment_Backend.Shared.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend.ServiceInterface\bin\Debug\net8.0\FinalAssessment_Backend.Shared.pdb

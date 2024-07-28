@@ -22,6 +22,7 @@
   <ItemGroup>
     <ProjectReference Include="..\FinalAssessment_Backend.Models\FinalAssessment_Backend.Models.csproj" />
     <ProjectReference Include="..\FinalAssessment_Backend.RepositoryInterface\FinalAssessment_Backend.RepositoryInterface.csproj" />
+    <ProjectReference Include="..\FinalAssessment_Backend.Shared\FinalAssessment_Backend.Shared.csproj" />
   </ItemGroup>
 
 </Project>

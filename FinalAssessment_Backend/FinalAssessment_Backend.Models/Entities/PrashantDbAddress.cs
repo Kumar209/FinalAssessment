@@ -20,8 +20,8 @@ public partial class PrashantDbAddress
 
     public int UserId { get; set; }
 
-    public virtual PrashantDbMasterAddressType AddressType { get; set; }
+    public virtual PrashantDbMasterAddressType AddressType { get; set; } = null!;
 
     [JsonIgnore]
-    public virtual PrashantDbUser User { get; set; }
+    public virtual PrashantDbUser User { get; set; } = null!;
 }

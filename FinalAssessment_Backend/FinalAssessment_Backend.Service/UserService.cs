@@ -2,6 +2,8 @@
 using FinalAssessment_Backend.Models.Entities;
 using FinalAssessment_Backend.RepositoryInterface;
 using FinalAssessment_Backend.ServiceInterface;
+using FinalAssessment_Backend.Shared.EmailTemplates;
+using FinalAssessment_Backend.Shared.EncryptDecrypt;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Metrics;
@@ -17,11 +19,18 @@ namespace FinalAssessment_Backend.Service
     {
         private readonly IUserRepo _userRepo;
         private readonly IImageUploadService _imageUploadService;
-        public UserService(IUserRepo userRepo , IImageUploadService imageUploadService)
+        private readonly IHashing _hashing;
+        private readonly EncryptDecrypt _encryptDecrypt;
+        private readonly IEmailService _emailService;
+        public UserService(IUserRepo userRepo , IImageUploadService imageUploadService, IEmailService emailService , IHashing hashing, EncryptDecrypt encryptDecrypt)
         {
             _userRepo = userRepo;
             _imageUploadService = imageUploadService;
+            _hashing = hashing;
+            _encryptDecrypt = encryptDecrypt;
+            _emailService = emailService;
         }
+
 
         public async Task<string> GenerateCustomPassword(int len)
         {
@@ -42,6 +51,7 @@ namespace FinalAssessment_Backend.Service
 
         public async Task<bool> CreateUser(PrashantDbUserDto userDetails)
         {
+            var customPassword = "Pass@123";
 
 
             var userDetailsEntity = new PrashantDbUser
@@ -49,14 +59,20 @@ namespace FinalAssessment_Backend.Service
                 FirstName = userDetails.FirstName,
                 MiddleName = userDetails.MiddleName,
                 LastName = userDetails.LastName,
-                Email = userDetails.Email,
+
+                Email =  _encryptDecrypt.EncryptPlainText(userDetails.Email),
+
                 Gender = userDetails.Gender,
                 DateOfJoining = userDetails.DateOfJoining,
                 DateOfBirth = userDetails.DateOfBirth,
-                Phone = userDetails.Phone,
-                AlternatePhone = userDetails.AlternatePhone,
+
+                Phone = _encryptDecrypt.EncryptPlainText(userDetails.Phone),
+                AlternatePhone = _encryptDecrypt.EncryptPlainText(userDetails.AlternatePhone),
+
                 ImageUrl = await _imageUploadService.GetImageUrl(userDetails.ImageFile),
-                Password = "Pass@123",
+
+                Password = _hashing.GenerateHash(customPassword),
+
                 CreatedBy = userDetails.FirstName + userDetails.MiddleName,
                 PrashantDbAddresses = userDetails.PrashantDbAddresses.Select(a => new PrashantDbAddress
                 {
@@ -68,7 +84,24 @@ namespace FinalAssessment_Backend.Service
                 }).ToList()
             };
 
-            return await _userRepo.InsertUser(userDetailsEntity);
+            var res = await _userRepo.InsertUser(userDetailsEntity);
+
+
+            //Email sending for credential
+            if(res == true)
+            {
+                MailRequest mailRequest = new MailRequest();
+                mailRequest.ToEmail = _encryptDecrypt.DecryptCipherText(userDetailsEntity.Email);
+                mailRequest.Subject = "User Credentail by Kumar Enterprise";
+                mailRequest.Body = UserEmailTemplate.GetTemplateUserCredential(userDetails, customPassword);
+
+
+
+                await _emailService.SendEmailAsync(mailRequest);
+
+            }
+
+            return res;
         }
 
 
@@ -78,9 +111,45 @@ namespace FinalAssessment_Backend.Service
         }
 
 
-        public async Task<PageRecord> GetPagedRecords(int currentPage, int itemsPerPage)
+        public async Task<(List<PrashantDbUserDto> records, int totalRecords)> GetPagedRecords(int currentPage, int itemsPerPage)
         {
-            return await _userRepo.GetRecords(currentPage, itemsPerPage);
+            var res =  await _userRepo.GetRecords(currentPage, itemsPerPage);
+
+            var mappedData = res.Records.Select(user => new PrashantDbUserDto
+            {
+                Id = user.Id,
+                FirstName = user.FirstName,
+                MiddleName = user.MiddleName,
+                LastName = user.LastName,
+
+                Email = _encryptDecrypt.DecryptCipherText(user.Email),
+
+                Gender = user.Gender,
+                DateOfJoining = user.DateOfJoining,
+                DateOfBirth = user.DateOfBirth,
+
+                Phone = _encryptDecrypt.DecryptCipherText(user.Phone),
+                AlternatePhone = _encryptDecrypt.DecryptCipherText(user.AlternatePhone),
+
+                ImageUrl = user.ImageUrl,
+                IsActive = user.IsActive,
+                PrashantDbAddresses = user.PrashantDbAddresses.Select(address => new PrashantDbAddressDto
+                {
+                    Id = address.Id,
+                    City = address.City,
+                    State = address.State,
+                    Country = address.Country,
+                    ZipCode = address.ZipCode,
+                    AddressTypeId = address.AddressTypeId,
+                    UserId = address.UserId
+                }).ToList()
+            }).ToList();
+
+
+            return (mappedData, res.TotalRecords);
         }
+
+
+
     }
 }

@@ -7,7 +7,7 @@ public partial class PrashantDbMasterAddressType
 {
     public int Id { get; set; }
 
-    public string AddressType { get; set; } 
+    public string AddressType { get; set; } = null!;
 
     public virtual ICollection<PrashantDbAddress> PrashantDbAddresses { get; set; }
 }

@@ -10,6 +10,7 @@
         "dependencies": {
           "FinalAssessment_Backend.Models": "1.0.0",
           "FinalAssessment_Backend.RepositoryInterface": "1.0.0",
+          "FinalAssessment_Backend.Shared": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.7",
           "Microsoft.EntityFrameworkCore.Design": "8.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.7",
@@ -58,6 +59,14 @@
           "lib/net6.0/Humanizer.dll": {
             "assemblyVersion": "2.14.0.0",
             "fileVersion": "2.14.1.48190"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.DataProtection.Abstractions/8.0.7": {
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.DataProtection.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.724.31402"
           }
         }
       },
@@ -958,6 +967,15 @@
         "runtime": {
           "FinalAssessment_Backend.RepositoryInterface.dll": {}
         }
+      },
+      "FinalAssessment_Backend.Shared/1.0.0": {
+        "dependencies": {
+          "FinalAssessment_Backend.Models": "1.0.0",
+          "Microsoft.AspNetCore.DataProtection.Abstractions": "8.0.7"
+        },
+        "runtime": {
+          "FinalAssessment_Backend.Shared.dll": {}
+        }
       }
     }
   },
@@ -987,6 +1005,13 @@
       "sha512": "sha512-lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.DataProtection.Abstractions/8.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jjN/JjxsVASAevkTOEXNA4/7pieAJFsUF+/SMpIi+JG25eTOXxpUhs/rXrBas+/nuaZuHIth0TZiqon/dKqmNA==",
+      "path": "microsoft.aspnetcore.dataprotection.abstractions/8.0.7",
+      "hashPath": "microsoft.aspnetcore.dataprotection.abstractions.8.0.7.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Http.Features/5.0.17": {
       "type": "package",
@@ -1512,6 +1537,11 @@
       "sha512": ""
     },
     "FinalAssessment_Backend.RepositoryInterface/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FinalAssessment_Backend.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

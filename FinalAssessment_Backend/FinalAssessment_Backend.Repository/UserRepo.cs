@@ -31,7 +31,7 @@ namespace FinalAssessment_Backend.Repository
         public async Task<bool> DeleteUser(int id)
         {
             var affectedRows = await _dbcontext.Database.ExecuteSqlRawAsync(
-            "EXEC SpDeleteUserUsersPrashantDb @Id",
+            "EXEC SpDeleteUserPrashantDbUser @Id",
             new SqlParameter("@Id", id));
 
             await _dbcontext.SaveChangesAsync();
@@ -41,7 +41,7 @@ namespace FinalAssessment_Backend.Repository
         }
 
 
-        public async Task<PageRecord> GetRecords(int currentPage, int itemsPerPage)
+        public async Task<(List<PrashantDbUser> Records, int TotalRecords)> GetRecords(int currentPage, int itemsPerPage)
         {
             var totalRecords = await _dbcontext.PrashantDbUsers
                               .CountAsync(u => u.IsDeleted == false);
@@ -56,7 +56,7 @@ namespace FinalAssessment_Backend.Repository
 
                 .ToListAsync();
 
-            return new PageRecord { Records = users, TotalRecords = totalRecords};
+            return (users, totalRecords);
         }
     }
 }

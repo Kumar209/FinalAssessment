@@ -1,69 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{99909952-1B07-45AC-AA8C-68A5A222F1A5}|FinalAssessment_Backend.csproj|d:\\smartdata\\evaluation\\finalassessment\\finalassessment_backend\\finalassessment_backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99909952-1B07-45AC-AA8C-68A5A222F1A5}|FinalAssessment_Backend.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90C82CCF-EBF1-4E42-AB25-8CCBCC297EF1}|..\\FinalAssessment_Backend.Service\\FinalAssessment_Backend.Service.csproj|d:\\smartdata\\evaluation\\finalassessment\\finalassessment_backend\\finalassessment_backend.service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C4A8964-7A6A-4D07-B551-F764DB45785C}|..\\FinalAssessment_Backend.Repository\\FinalAssessment_Backend.Repository.csproj|d:\\smartdata\\evaluation\\finalassessment\\finalassessment_backend\\finalassessment_backend.repository\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwCYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T11:35:19.568Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\UserService.cs",
-              "RelativeDocumentMoniker": "..\\FinalAssessment_Backend.Service\\UserService.cs",
-              "ToolTip": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\UserService.cs",
-              "RelativeToolTip": "..\\FinalAssessment_Backend.Service\\UserService.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAgwFEAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T11:33:46.064Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserRepo.cs",
-              "DocumentMoniker": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Repository\\UserRepo.cs",
-              "RelativeDocumentMoniker": "..\\FinalAssessment_Backend.Repository\\UserRepo.cs",
-              "ToolTip": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Repository\\UserRepo.cs",
-              "RelativeToolTip": "..\\FinalAssessment_Backend.Repository\\UserRepo.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAuwCwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T11:00:45.67Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

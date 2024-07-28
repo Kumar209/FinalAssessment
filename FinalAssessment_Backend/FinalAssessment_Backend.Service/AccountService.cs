@@ -1,24 +1,9 @@
 ﻿using FinalAssessment_Backend.Models.Dto;
-using FinalAssessment_Backend.Models.Entities;
 using FinalAssessment_Backend.RepositoryInterface;
 using FinalAssessment_Backend.ServiceInterface;
 using FinalAssessment_Backend.Shared.EmailTemplates;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Drawing;
-using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Security.Claims;
-using System.Text;
-using System.Text.Unicode;
-using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+using FinalAssessment_Backend.Shared.EncryptDecrypt;
+
 
 namespace FinalAssessment_Backend.Service
 {
@@ -27,15 +12,18 @@ namespace FinalAssessment_Backend.Service
         private readonly IAccountRepo _accountRepo;
         private readonly IEmailService _emailService;
         private readonly IJwtService _jwtService;
+        private readonly EncryptDecrypt _encyptDecrypt;
+        private readonly IHashing _hashing;
        
 
 
-        public AccountService(IAccountRepo accountRepo, IEmailService emailService, IJwtService jwtService) 
+        public AccountService(IAccountRepo accountRepo, IEmailService emailService, IJwtService jwtService, EncryptDecrypt encryptDecrypt, IHashing hashing) 
         {
             _accountRepo = accountRepo;
             _emailService = emailService;
             _jwtService = jwtService;
-  
+            _encyptDecrypt = encryptDecrypt;
+            _hashing = hashing;
         }
 
 
@@ -43,13 +31,19 @@ namespace FinalAssessment_Backend.Service
 
         public async Task<(string msg, bool success, string? token)> loginUser(LoginCredentialsDto loginCredential)
         {
-            var user = await _accountRepo.AuthenticateUser(loginCredential.Email, loginCredential.Password);
-
-          
+            var user = await _accountRepo.GetUserByEmail(loginCredential.Email);
 
             if (user == null)
             {
-                return ("wrong credential", false, null);
+                return ("Wrong email", false, null);
+            }
+
+            //Verifying the password due to it is hashed in db
+            var validatePassword = _hashing.VerifyHash(loginCredential.Password, user.Password);
+
+            if (validatePassword == false)
+            {
+                return ("Wrong password", false, null);
             }
 
             var tokenValue = await _jwtService.GenerateToken(user);
@@ -59,7 +53,7 @@ namespace FinalAssessment_Backend.Service
             {
 
                 MailRequest mailRequest = new MailRequest();
-                mailRequest.ToEmail = user.Email;
+                mailRequest.ToEmail = _encyptDecrypt.DecryptCipherText(user.Email);
                 mailRequest.Subject = "Activate your account";
                 mailRequest.Body = AccountEmailTemplate.GetTemplateActivateAccount(user, tokenValue);
 
@@ -109,7 +103,7 @@ namespace FinalAssessment_Backend.Service
 
             //Email Send to user
             MailRequest mailRequest = new MailRequest();
-            mailRequest.ToEmail = user.Email;
+            mailRequest.ToEmail = _encyptDecrypt.DecryptCipherText(user.Email);
             mailRequest.Subject = "Reset your password";
             mailRequest.Body = AccountEmailTemplate.GetTemplateResetPasswordAccount(user, resetLink);
 
@@ -149,7 +143,9 @@ namespace FinalAssessment_Backend.Service
 
             var user = await _accountRepo.GetUserById(userId);
 
-            if(user.Password != changePasswordValue.OldPassword)
+            var validateOldPassword = _hashing.VerifyHash(changePasswordValue.OldPassword, user.Password);
+
+            if(validateOldPassword == false)
             {
                 return ("Wrong old password", false);
             }

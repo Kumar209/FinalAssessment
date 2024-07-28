@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "tzfIhEAYoZFFfZan0C1MfswwOyPtzc2Ja0MjLDtlY7QcCS7Z2wldDtEudQgAylwpaqWgUrMFsJPeX7j2j2gWFA==",
+  "dgSpecHash": "9s+ew0Xv/u6Dox7fCTLqkfpM1Ck+nL/E8cvgN7v4+1+muWYtko2zoV+jMXIDcdM2QiTBLRopcoqDi9MTJ2wiyQ==",
   "success": true,
   "projectFilePath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\FinalAssessment_Backend.Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnetcore.dataprotection.abstractions\\8.0.7\\microsoft.aspnetcore.dataprotection.abstractions.8.0.7.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

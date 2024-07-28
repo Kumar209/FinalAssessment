@@ -28,7 +28,7 @@ public partial class ApplicationDbContext : DbContext
     {
         modelBuilder.Entity<PrashantDbAddress>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Prashant__3214EC0746E5440F");
+            entity.HasKey(e => e.Id).HasName("PK__Prashant__3214EC07C18403A9");
 
             entity.ToTable("PrashantDbAddress");
 
@@ -48,17 +48,17 @@ public partial class ApplicationDbContext : DbContext
             entity.HasOne(d => d.AddressType).WithMany(p => p.PrashantDbAddresses)
                 .HasForeignKey(d => d.AddressTypeId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__PrashantD__Addre__7E22B05D");
+                .HasConstraintName("FK__PrashantD__Addre__113584D1");
 
             entity.HasOne(d => d.User).WithMany(p => p.PrashantDbAddresses)
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__PrashantD__UserI__7F16D496");
+                .HasConstraintName("FK__PrashantD__UserI__1229A90A");
         });
 
         modelBuilder.Entity<PrashantDbMasterAddressType>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Prashant__3214EC07D6546769");
+            entity.HasKey(e => e.Id).HasName("PK__Prashant__3214EC0704EE6951");
 
             entity.ToTable("PrashantDbMasterAddressType");
 
@@ -69,25 +69,19 @@ public partial class ApplicationDbContext : DbContext
 
         modelBuilder.Entity<PrashantDbUser>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Prashant__3214EC07CB897E01");
+            entity.HasKey(e => e.Id).HasName("PK__Prashant__3214EC07ECC1B546");
 
             entity.ToTable("PrashantDbUser");
 
-            entity.Property(e => e.AlternatePhone)
-                .HasMaxLength(10)
-                .IsUnicode(false);
             entity.Property(e => e.CreatedBy)
                 .HasMaxLength(90)
                 .IsUnicode(false);
             entity.Property(e => e.CreatedDate).HasDefaultValueSql("(getdate())");
-            entity.Property(e => e.Email)
-                .HasMaxLength(255)
-                .IsUnicode(false);
             entity.Property(e => e.FirstName)
                 .HasMaxLength(30)
                 .IsUnicode(false);
             entity.Property(e => e.ImageUrl)
-                .HasMaxLength(4000)
+                .HasMaxLength(200)
                 .IsUnicode(false);
             entity.Property(e => e.IsActive).HasDefaultValue(false);
             entity.Property(e => e.IsDeleted).HasDefaultValue(false);
@@ -101,10 +95,7 @@ public partial class ApplicationDbContext : DbContext
                 .HasMaxLength(90)
                 .IsUnicode(false);
             entity.Property(e => e.Password)
-                .HasMaxLength(255)
-                .IsUnicode(false);
-            entity.Property(e => e.Phone)
-                .HasMaxLength(10)
+                .HasMaxLength(60)
                 .IsUnicode(false);
         });
 

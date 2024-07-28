@@ -1,5 +1,6 @@
 ﻿using FinalAssessment_Backend.Models.Entities;
 using FinalAssessment_Backend.RepositoryInterface;
+using FinalAssessment_Backend.Shared.EncryptDecrypt;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -14,29 +15,24 @@ namespace FinalAssessment_Backend.Repository
     public class AccountRepo : IAccountRepo
     {
         ApplicationDbContext _dbContext;
+        private readonly EncryptDecrypt _encryptDecrypt;
 
-        public AccountRepo(ApplicationDbContext dbContext)
+        public AccountRepo(ApplicationDbContext dbContext, EncryptDecrypt encryptDecrypt)
         {
             _dbContext = dbContext;
-        }
-
-
-        public async Task<PrashantDbUser> AuthenticateUser(string email, string password)
-        {
-            var user = await _dbContext.PrashantDbUsers.FirstOrDefaultAsync(u => u.Email == email && u.Password == password );
-
-            return user;
+            _encryptDecrypt = encryptDecrypt;
         }
 
 
         public async Task<PrashantDbUser> GetUserById(int id)
         {
-            return await _dbContext.PrashantDbUsers.FirstOrDefaultAsync(u => u.Id == id);
+            return await _dbContext.PrashantDbUsers.FirstOrDefaultAsync(u => u.Id == id && u.IsDeleted == false);
         }
 
 
         public async Task<bool> UpdateActivateAccount(PrashantDbUser user)
         {
+
             _dbContext.PrashantDbUsers.Update(user);
             await _dbContext.SaveChangesAsync();
 
@@ -49,7 +45,7 @@ namespace FinalAssessment_Backend.Repository
 
             var user = await _dbContext.PrashantDbUsers
                        .Include(o => o.PrashantDbAddresses)
-                       .FirstOrDefaultAsync(o => o.Email == email );
+                       .FirstOrDefaultAsync(o => _encryptDecrypt.DecryptCipherText(o.Email) == email && o.IsDeleted == false );
 
 
             return user;
@@ -65,7 +61,6 @@ namespace FinalAssessment_Backend.Repository
                                new SqlParameter("@Password", password)
                               );
 
-            await _dbContext.SaveChangesAsync();
 
             return affectedRows > 0;
         }
