@@ -46,5 +46,13 @@ namespace FinalAssessment_Backend.Controllers
 
             return Ok(new {success = true, record=res.records, totalRecords=res.totalRecords});
         }
+
+        [HttpGet("ActiveRecords")]
+        public async Task<IActionResult> GetActiveRecords()
+        {
+            var res = await _userService.totalActiveRecords();
+
+            return Ok(new { success = true, count = res });
+        }
     }
 }

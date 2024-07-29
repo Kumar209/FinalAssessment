@@ -618,3 +618,8 @@ D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_
 D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.AspNetCore.DataProtection.Abstractions.dll
 C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

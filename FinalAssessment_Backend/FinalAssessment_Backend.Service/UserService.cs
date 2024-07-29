@@ -23,6 +23,7 @@ namespace FinalAssessment_Backend.Service
         private readonly IHashing _hashing;
         private readonly EncryptDecrypt _encryptDecrypt;
         private readonly IEmailService _emailService;
+
         public UserService(IUserRepo userRepo , IImageUploadService imageUploadService, IEmailService emailService , IHashing hashing, EncryptDecrypt encryptDecrypt)
         {
             _userRepo = userRepo;
@@ -152,6 +153,13 @@ namespace FinalAssessment_Backend.Service
             return (mappedData, res.TotalRecords);
         }
 
+
+        public async Task<int> totalActiveRecords()
+        {
+            var record = await _userRepo.GetActiverUserCount();
+
+            return record;
+        }
 
 
     }

@@ -1,6 +1,7 @@
 ﻿using FinalAssessment_Backend.Models.Dto;
 using FinalAssessment_Backend.Models.Entities;
 using FinalAssessment_Backend.RepositoryInterface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -21,6 +22,7 @@ namespace FinalAssessment_Backend.Repository
         }
 
 
+        [Authorize]
         public async Task<bool> InsertUser(PrashantDbUser user)
         {
             _dbcontext.PrashantDbUsers.Add(user);
@@ -60,11 +62,14 @@ namespace FinalAssessment_Backend.Repository
         }
 
 
+
         public async Task<int> GetActiverUserCount()
         {
-            
+            var result = await _dbcontext.PrashantDbUsers.FromSqlRaw("Exec SpGetTotalActiveAccountPrashantDbUser")
+                         .ToListAsync();
 
-            return 1;
+
+            return result.Count();
         }
     }
 }

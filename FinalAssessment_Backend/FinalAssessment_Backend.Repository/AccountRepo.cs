@@ -19,10 +19,11 @@ namespace FinalAssessment_Backend.Repository
         private readonly EncryptDecrypt _encryptDecrypt;
         private readonly IHashing _hashing;
 
-        public AccountRepo(ApplicationDbContext dbContext, EncryptDecrypt encryptDecrypt)
+        public AccountRepo(ApplicationDbContext dbContext, EncryptDecrypt encryptDecrypt , IHashing hashing)
         {
             _dbContext = dbContext;
             _encryptDecrypt = encryptDecrypt;
+            _hashing = hashing;
         }
 
 
@@ -63,12 +64,13 @@ namespace FinalAssessment_Backend.Repository
 
         public async Task<bool> UpdatePassword(int Id, string password)
         {
-            /*var hashedPassword = */
+            var hashedPassword = _hashing.GenerateHash(password);
+
             var affectedRows = await _dbContext.Database
                               .ExecuteSqlRawAsync(
                                "SpUpdatePasswordPrashantDbUser @Id, @Password",
                                new SqlParameter("@Id", Id),
-                               new SqlParameter("@Password", password)
+                               new SqlParameter("@Password", hashedPassword)
                               );
 
 
