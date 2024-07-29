@@ -7,6 +7,7 @@ import { AuthModule } from './auth/auth.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { SharedModule } from "./shared/shared.module";
+import { NgxUiLoaderHttpModule, NgxUiLoaderModule } from 'ngx-ui-loader';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { SharedModule } from "./shared/shared.module";
     AuthModule,
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(),
-    SharedModule
+    SharedModule,
+    NgxUiLoaderModule,
+    NgxUiLoaderHttpModule.forRoot({ showForeground: true })
 ],
   providers: [],
   bootstrap: [AppComponent]

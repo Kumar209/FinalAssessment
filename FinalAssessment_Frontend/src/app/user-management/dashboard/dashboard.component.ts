@@ -16,6 +16,8 @@ export class DashboardComponent implements OnInit {
   ) {}
 
   userData: any[] = [];
+  activeUserCount : number = 0;
+  inActiveUserCount : number = this.userData.length - this.activeUserCount;
 
   //Used to track current page number
   currentPage: number = 1;
@@ -25,6 +27,25 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.getRecordsPerPage(1, this.itemsPerPage);
+    this.getActiveUserCount();
+  }
+
+
+  getActiveUserCount() {
+    this.serivce.getActiveUserCount().subscribe({
+      next : (res) => {
+        if(res.success){
+          this.activeUserCount = res.count;
+        }
+        else{
+          this.toastr.error('Error getting active users');
+        }
+      },
+
+      error : (err) => {
+        this.toastr.error(err.error.message , 'Error!');
+      }
+    })
   }
 
   getRecordsPerPage(activePage : number, totalRecords : number) {

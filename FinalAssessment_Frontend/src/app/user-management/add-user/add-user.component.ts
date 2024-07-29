@@ -35,7 +35,8 @@ export class AddUserComponent {
       dateOfJoining: new FormControl('', Validators.required),
       phone: new FormControl('', Validators.required),
       alternatePhone: new FormControl(''),
-      PrashantDbAddresses: new FormArray([
+      PrashantDbAddresses: new FormArray(
+        [
         this.createAddressGroup(1) 
       ]),
       isActive: new FormControl(false)
