@@ -17,13 +17,18 @@ export class DashboardComponent implements OnInit {
 
   userData: any[] = [];
   activeUserCount : number = 0;
+  totalUser : number = this.userData.length;
   inActiveUserCount : number = this.userData.length - this.activeUserCount;
+
 
   //Used to track current page number
   currentPage: number = 1;
 
   //used to set how many organizaton should be shown on a single page of table
   itemsPerPage: number = 3;
+
+
+  pagedNumber : number = this.totalUser / this.itemsPerPage;
 
   ngOnInit(): void {
     this.getRecordsPerPage(1, this.itemsPerPage);
