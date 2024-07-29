@@ -1,11 +1,11 @@
-﻿using FinalAssessment_Backend.ServiceInterface;
+﻿using BCrypt.Net;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FinalAssessment_Backend.Service
+namespace FinalAssessment_Backend.Shared.Hashing
 {
     public class Hashing : IHashing
     {

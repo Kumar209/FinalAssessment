@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
+import { UserManagementService } from '../service/user-management.service';
+import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
+import { Country, State, City }  from 'country-state-city';
 
 @Component({
   selector: 'app-add-user',
@@ -7,10 +11,18 @@ import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./add-user.component.css']
 })
 export class AddUserComponent {
+  countryData = Country.getAllCountries();
+
+
   imgSrc : string = '';
   selectedImg : File | null = null; 
 
   addUserForm: any;
+
+
+  constructor(private service : UserManagementService, private router: Router, private toastr: ToastrService) {
+    console.log(this.countryData)
+  }
 
   ngOnInit() {
     this.addUserForm = new FormGroup({
@@ -23,10 +35,10 @@ export class AddUserComponent {
       dateOfJoining: new FormControl('', Validators.required),
       phone: new FormControl('', Validators.required),
       alternatePhone: new FormControl(''),
-      addresses: new FormArray([
+      PrashantDbAddresses: new FormArray([
         this.createAddressGroup(1) 
       ]),
-      isActive: new FormControl(true)
+      isActive: new FormControl(false)
     });
   }
 
@@ -36,27 +48,26 @@ export class AddUserComponent {
       country: new FormControl('', Validators.required),
       state: new FormControl('', Validators.required),
       city: new FormControl('', Validators.required),
-      // zipCode: new FormControl('', Validators.required)
-      zipCode : new FormControl('262701')
+      zipCode: new FormControl('', Validators.required)
     });
   }
 
 
   //This function used to loop through in html for dynamic array of address UI
-  get addresses(): FormArray {
-    return this.addUserForm.get('addresses') as FormArray;
+  get PrashantDbAddresses(): FormArray {
+    return this.addUserForm.get('PrashantDbAddresses') as FormArray;
   }
 
 
   addSecondaryAddress() {
-    if (this.addresses.length < 2) {
-      this.addresses.push(this.createAddressGroup(2));
+    if (this.PrashantDbAddresses.length < 2) {
+      this.PrashantDbAddresses.push(this.createAddressGroup(2));
     }
   }
 
   removeSecondaryAddress() {
-    if (this.addresses.length === 2) {
-      this.addresses.removeAt(1);
+    if (this.PrashantDbAddresses.length === 2) {
+      this.PrashantDbAddresses.removeAt(1);
     }
   }
 
@@ -71,10 +82,65 @@ export class AddUserComponent {
     }
   }
 
+
+
+   //Giving bug of formarray indexing
+  // onCountryChange(index: number) {
+  //   const selectedCountry = this.PrashantDbAddresses.at(index).get('country')?.value;
+  //   this.stateData = State.getStatesOfCountry(selectedCountry);
+
+  //   this.PrashantDbAddresses.at(index).get('state')?.setValue(''); // Reset state and city on country change
+  //   this.PrashantDbAddresses.at(index).get('city')?.setValue('');
+  //   this.cityData = []; // Reset city data
+  // }
+
+  // onStateChange(index: number) {
+  //   const selectedState = this.PrashantDbAddresses.at(index).get('state')?.value;
+  //   this.cityData = City.getCitiesOfState(this.PrashantDbAddresses.at(index).get('country')?.value, selectedState);
+
+  //   this.PrashantDbAddresses.at(index).get('city')?.setValue(''); // Reset city on state change
+  // }
+
+
+  onCountryChange(index: number, event : any) {
+    const selectedCountry = this.PrashantDbAddresses.at(index).get('country')?.value;
+    const states = State.getStatesOfCountry(selectedCountry);
+    this.PrashantDbAddresses.at(index).get('state')?.enable(); // Enable state dropdown
+    this.PrashantDbAddresses.at(index).get('state')?.setValue(''); // Reset state
+    this.PrashantDbAddresses.at(index).get('city')?.setValue(''); // Reset city
+    this.PrashantDbAddresses.at(index).get('city')?.disable(); // Disable city dropdown
+    
+    // Store the states in a local variable to use in the template
+    this.PrashantDbAddresses.at(index).get('state')?.setValidators([Validators.required]);
+    this.PrashantDbAddresses.at(index).get('state')?.updateValueAndValidity();
+  }
+
+
+  onStateChange(index: number) {
+    const selectedState = this.PrashantDbAddresses.at(index).get('state')?.value;
+    const selectedCountry = this.PrashantDbAddresses.at(index).get('country')?.value;
+    const cities = City.getCitiesOfState(selectedCountry, selectedState);
+
+    this.PrashantDbAddresses.at(index).get('city')?.enable(); // Enable city dropdown
+    this.PrashantDbAddresses.at(index).get('city')?.setValue(''); // Reset city
+  }
+
+
+
+
+
+
+
+
+
+
+
+
   onAddUserFormSubmit(){
+    const formData = new FormData();
+
     console.log(this.addUserForm.value);
 
-    const formData = new FormData();
     formData.append('firstName', this.addUserForm.get('firstName').value);
     formData.append('middleName', this.addUserForm.get('middleName').value);
     formData.append('lastName', this.addUserForm.get('lastName').value);
@@ -86,20 +152,44 @@ export class AddUserComponent {
     formData.append('alternatePhone', this.addUserForm.get('alternatePhone').value);
     formData.append('isActive', this.addUserForm.get('isActive').value);
 
-    this.addresses.controls.forEach((control, index) => {
+    this.PrashantDbAddresses.controls.forEach((control, index) => {
       const addressGroup = control as FormGroup;
-      const addressPrefix = `addresses[${index}]`;
+      const addressPrefix = `PrashantDbAddresses[${index}]`;
       formData.append(`${addressPrefix}.addressTypeId`, addressGroup.get('addressTypeId')?.value);
       formData.append(`${addressPrefix}.country`, addressGroup.get('country')?.value);
       formData.append(`${addressPrefix}.state`, addressGroup.get('state')?.value);
       formData.append(`${addressPrefix}.city`, addressGroup.get('city')?.value);
-      formData.append(`${addressPrefix}.street`, addressGroup.get('street')?.value);
       formData.append(`${addressPrefix}.zipCode`, addressGroup.get('zipCode')?.value);
     });
+
 
 
     if (this.selectedImg) {
       formData.append('ImageFile', this.selectedImg, this.selectedImg.name);
     }
+
+  
+
+
+    this.service.addUser(formData).subscribe({
+      next : (response) => {
+        if(response.success){
+          this.toastr.success(response.message, 'Successfully!');
+        }
+        else{
+          this.toastr.error(response.message, 'Error!');
+        }
+      },
+
+      error : (err) => {
+        if(err.error && err.error.message){
+          this.toastr.error(err.error.message, 'Error!');
+        }
+        else{
+          this.toastr.error('Something went wrong', 'Error!');
+        }
+      }
+    })
+    
   }
 }

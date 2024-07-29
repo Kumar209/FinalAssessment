@@ -21,15 +21,15 @@ export class DashboardComponent implements OnInit {
   currentPage: number = 1;
 
   //used to set how many organizaton should be shown on a single page of table
-  itemsPerPage: number = 5;
+  itemsPerPage: number = 3;
 
   ngOnInit(): void {
-    this.getRecordsPerPage();
+    this.getRecordsPerPage(1, this.itemsPerPage);
   }
 
-  getRecordsPerPage() {
+  getRecordsPerPage(activePage : number, totalRecords : number) {
     this.serivce
-      .getRecordPerPage(this.currentPage, this.itemsPerPage)
+      .getRecordPerPage(activePage, totalRecords)
       .subscribe({
         next: (response) => {
           if (response.success) {

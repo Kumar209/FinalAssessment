@@ -1020,6 +1020,7 @@
       },
       "FinalAssessment_Backend.Shared/1.0.0": {
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "FinalAssessment_Backend.Models": "1.0.0",
           "Microsoft.AspNetCore.DataProtection.Abstractions": "8.0.7"
         },

@@ -1,6 +1,7 @@
 ﻿using FinalAssessment_Backend.Models.Entities;
 using FinalAssessment_Backend.RepositoryInterface;
 using FinalAssessment_Backend.Shared.EncryptDecrypt;
+using FinalAssessment_Backend.Shared.Hashing;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -16,6 +17,7 @@ namespace FinalAssessment_Backend.Repository
     {
         ApplicationDbContext _dbContext;
         private readonly EncryptDecrypt _encryptDecrypt;
+        private readonly IHashing _hashing;
 
         public AccountRepo(ApplicationDbContext dbContext, EncryptDecrypt encryptDecrypt)
         {
@@ -42,10 +44,17 @@ namespace FinalAssessment_Backend.Repository
 
         public async Task<PrashantDbUser> GetUserByEmail(string email)
         {
+            /*
+                        var user = await _dbContext.PrashantDbUsers
+                                   .Include(o => o.PrashantDbAddresses)
+                                   .FirstOrDefaultAsync(o => _encryptDecrypt.DecryptCipherText(o.Email) == email && o.IsDeleted == false);*/
 
-            var user = await _dbContext.PrashantDbUsers
-                       .Include(o => o.PrashantDbAddresses)
-                       .FirstOrDefaultAsync(o => _encryptDecrypt.DecryptCipherText(o.Email) == email && o.IsDeleted == false );
+
+            var allUsers = await _dbContext.PrashantDbUsers
+                           .Include(u => u.PrashantDbAddresses)
+                           .ToListAsync();
+
+            var user = allUsers.FirstOrDefault(o => _encryptDecrypt.DecryptCipherText(o.Email) == email && o.IsDeleted == false);
 
 
             return user;
@@ -54,6 +63,7 @@ namespace FinalAssessment_Backend.Repository
 
         public async Task<bool> UpdatePassword(int Id, string password)
         {
+            /*var hashedPassword = */
             var affectedRows = await _dbContext.Database
                               .ExecuteSqlRawAsync(
                                "SpUpdatePasswordPrashantDbUser @Id, @Password",

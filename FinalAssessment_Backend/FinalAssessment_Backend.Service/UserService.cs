@@ -4,6 +4,7 @@ using FinalAssessment_Backend.RepositoryInterface;
 using FinalAssessment_Backend.ServiceInterface;
 using FinalAssessment_Backend.Shared.EmailTemplates;
 using FinalAssessment_Backend.Shared.EncryptDecrypt;
+using FinalAssessment_Backend.Shared.Hashing;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Metrics;
@@ -67,7 +68,7 @@ namespace FinalAssessment_Backend.Service
                 DateOfBirth = userDetails.DateOfBirth,
 
                 Phone = _encryptDecrypt.EncryptPlainText(userDetails.Phone),
-                AlternatePhone = _encryptDecrypt.EncryptPlainText(userDetails.AlternatePhone),
+                AlternatePhone = !string.IsNullOrEmpty(userDetails.AlternatePhone) ? _encryptDecrypt.EncryptPlainText(userDetails.AlternatePhone) : null,
 
                 ImageUrl = await _imageUploadService.GetImageUrl(userDetails.ImageFile),
 
@@ -129,7 +130,9 @@ namespace FinalAssessment_Backend.Service
                 DateOfBirth = user.DateOfBirth,
 
                 Phone = _encryptDecrypt.DecryptCipherText(user.Phone),
-                AlternatePhone = _encryptDecrypt.DecryptCipherText(user.AlternatePhone),
+                AlternatePhone = (user.AlternatePhone != null && user.AlternatePhone.Length > 0)
+                                 ? _encryptDecrypt.DecryptCipherText(user.AlternatePhone)
+                                 : null,
 
                 ImageUrl = user.ImageUrl,
                 IsActive = user.IsActive,

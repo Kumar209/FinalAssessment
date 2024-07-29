@@ -7,12 +7,14 @@ import { SharedModule } from '../shared/shared.module';
 import { AddUserComponent } from './add-user/add-user.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UserModalComponent } from './user-modal/user-modal.component';
 
 
 @NgModule({
   declarations: [
     DashboardComponent,
-    AddUserComponent
+    AddUserComponent,
+    UserModalComponent
   ],
   imports: [
     CommonModule,

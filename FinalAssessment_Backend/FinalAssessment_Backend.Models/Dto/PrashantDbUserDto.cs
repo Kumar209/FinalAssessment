@@ -63,7 +63,7 @@ namespace FinalAssessment_Backend.Models.Dto
         public string? AlternatePhone { get; set; }
 
 
-        [Required(ErrorMessage = "Email is required")]
+        [Required(ErrorMessage = "Image is required")]
         public IFormFile ImageFile { get; set; }
 
 
@@ -73,6 +73,6 @@ namespace FinalAssessment_Backend.Models.Dto
 
 
         [Required(ErrorMessage = "Address is required")]
-        public virtual ICollection<PrashantDbAddressDto> PrashantDbAddresses { get; set; } = new List<PrashantDbAddressDto>();
+        public virtual ICollection<PrashantDbAddressDto> PrashantDbAddresses { get; set; }
     }
 }

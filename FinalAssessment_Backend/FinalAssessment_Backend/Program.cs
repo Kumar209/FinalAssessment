@@ -6,6 +6,7 @@ using FinalAssessment_Backend.RepositoryInterface;
 using FinalAssessment_Backend.Service;
 using FinalAssessment_Backend.ServiceInterface;
 using FinalAssessment_Backend.Shared.EncryptDecrypt;
+using FinalAssessment_Backend.Shared.Hashing;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -60,7 +61,10 @@ namespace FinalAssessment_Backend
 
             builder.Services.AddTransient<IJwtService, JwtService>();
 
+
             builder.Services.AddTransient<IHashing, Hashing>();
+
+            
 
             builder.Services.AddSingleton<EncryptDecrypt>();
 

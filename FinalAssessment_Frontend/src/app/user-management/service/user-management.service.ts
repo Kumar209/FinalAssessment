@@ -12,6 +12,17 @@ export class UserManagementService {
 
 
   getRecordPerPage(currentPage : number, itemsPerPage : number) : Observable<any>{
-    return this.http.get(`${this.apiUrl}/GetRecords?currentPage=${currentPage}&itemsPerPage=${itemsPerPage}`);
+    return this.http.get<any[]>(`${this.apiUrl}/GetRecords?currentPage=${currentPage}&itemsPerPage=${itemsPerPage}`);
   }
+
+
+  addUser(userDetails : any) : Observable<any>{
+    return this.http.post<any>(`${this.apiUrl}/AddUser`, userDetails);
+  }
+
+
+  deleteUser(id : number) : Observable<any>{
+    return this.http.delete<any>('');
+  }
+
 }

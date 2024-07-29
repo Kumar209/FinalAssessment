@@ -48,7 +48,7 @@ namespace FinalAssessment_Backend.Service
 
             );
 
-            //Write token used for serialize a JwtSecurityToken into a JWT using the compact serialization format
+            //Writetoken used for serialize a JwtSecurityToken into a JWT using the compact serialization format
             string tokenValue = new JwtSecurityTokenHandler().WriteToken(token);
 
             return tokenValue;

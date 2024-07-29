@@ -44,8 +44,10 @@ namespace FinalAssessment_Backend.Service
                 string fileName = Path.GetFileNameWithoutExtension(file.FileName);
                 string extension = Path.GetExtension(file.FileName);
                 string uniqueFileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+
                 folder = "user/images/" + uniqueFileName;
                 string serverFolder = Path.Combine(wwwRootPath, folder);
+
 
                 using (var fileStream = new FileStream(serverFolder, FileMode.Create))
                 {

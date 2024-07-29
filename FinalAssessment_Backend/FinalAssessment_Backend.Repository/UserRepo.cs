@@ -58,5 +58,13 @@ namespace FinalAssessment_Backend.Repository
 
             return (users, totalRecords);
         }
+
+
+        public async Task<int> GetActiverUserCount()
+        {
+            
+
+            return 1;
+        }
     }
 }

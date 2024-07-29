@@ -3,6 +3,7 @@ using FinalAssessment_Backend.RepositoryInterface;
 using FinalAssessment_Backend.ServiceInterface;
 using FinalAssessment_Backend.Shared.EmailTemplates;
 using FinalAssessment_Backend.Shared.EncryptDecrypt;
+using FinalAssessment_Backend.Shared.Hashing;
 
 
 namespace FinalAssessment_Backend.Service

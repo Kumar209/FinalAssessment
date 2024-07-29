@@ -49,7 +49,7 @@
                             </div>
 
                             <div class="form-input col-md-4 col-12">
-                                <label for="last-name">First Name</label>
+                                <label for="last-name">Last Name</label>
                                 <input type="text" id="last-name" name="lastname" placeholder="Last Name" formControlName="lastName">
                             </div>
                         </div>
@@ -95,34 +95,48 @@
                             </div>
                         </div>
 
-                        <div formArrayName="addresses">
-                            <div class="row form-input-row" *ngFor="let address of addresses.controls; let i=index" [formGroupName]="i">
+                        <div formArrayName="PrashantDbAddresses">
+                            <div class="row form-input-row" *ngFor="let address of PrashantDbAddresses.controls; let i=index" [formGroupName]="i">
                                 <div class="form-input col-md-4 col-12">
                                     <label for="country">Country</label>
-                                    <input type="text" id="first-name" name="country" placeholder="Country" formControlName="country">
+                                    <select id="country" formControlName="country" (change)="onCountryChange(i, $event)">
+                                        <option value="" disabled selected>Select Country</option>
+                                        <!-- <option *ngFor="let country of countryData" [value]="country.">{{ country.name }}</option> -->
+                                    </select>
                                 </div>
 
                                 <div class="form-input col-md-4 col-12">
                                     <label for="state">State</label>
-                                    <input type="text" id="state" name="state" placeholder="State" formControlName="state">
+                                    <select id="state" formControlName="state" (change)="onStateChange(i)">
+                                        <option value="" disabled selected>Select State</option>
+                                        <!-- <option *ngFor="let state of State.getStatesOfCountry(address.get('country').value)" [value]="state.isoCode">{{ state.name }}</option> -->
+                                    </select>
                                 </div>
 
                                 <div class="form-input col-md-4 col-12">
                                     <label for="middle-name">City</label>
-                                    <input type="text" id="middle-name" name="middlename" placeholder="City" formControlName="city">
+                                    <select id="city" formControlName="city">
+                                        <option value="" disabled selected>Select City</option>
+                                        <!-- <option *ngFor="let city of cityData" [value]="city.name">{{ city.name }}</option> -->
+                                    </select>
+                                </div>
+
+                                <div class="form-input col-md-4 col-12 mt-3">
+                                    <label for="zipCode">Zip Code</label>
+                                    <input type="text" id="zipCode" name="zipCode" placeholder="zipCode" formControlName="zipCode">
                                 </div>
                             </div>
 
                             <div class="address-buttons-wrapper">
-                                <button type="button" class="btn1" (click)="addSecondaryAddress()" *ngIf="addresses.length < 2">Add Secondary Address</button>
-                                <button type="button" class="btn2" (click)="removeSecondaryAddress()" *ngIf="addresses.length === 2">Remove Secondary Address</button>
+                                <button type="button" class="btn1" (click)="addSecondaryAddress()" *ngIf="PrashantDbAddresses.length < 2">Add Secondary Address</button>
+                                <button type="button" class="btn2" (click)="removeSecondaryAddress()" *ngIf="PrashantDbAddresses.length === 2">Remove Secondary Address</button>
                             </div>
                         </div>
                     </div>
 
                     <div class="inactive-checkbox-wrapper">
-                        <input type="checkbox" name="isActive" id="inactive">
-                        <label for="inactive" formControlName="isActive">Inactive</label>
+                        <input type="checkbox" formControlName="isActive" name="isActive" id="inactive">
+                        <label for="inactive">Inactive</label>
                     </div>
 
 

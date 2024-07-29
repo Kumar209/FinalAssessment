@@ -33,6 +33,7 @@ export class AuthService {
 
   resetPassword(resetCredential : IResetCredential) : Observable<any> {
     let head_obj = new HttpHeaders().set("Authorization", "Bearer "+this.routeToken);
+    
     return this.http.post<any>(`${this.baseUrl}/ResetPassword`, resetCredential, {headers : head_obj});
   }
 

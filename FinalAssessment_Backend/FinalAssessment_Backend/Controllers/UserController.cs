@@ -30,7 +30,7 @@ namespace FinalAssessment_Backend.Controllers
         }
 
 
-        [HttpPost("RemoveUser/{id}")]
+        [HttpDelete("RemoveUser/{id}")]
         public async Task<IActionResult> RemoveUser(int id)
         {
             var res = await _userService.RemoveUserById(id);
