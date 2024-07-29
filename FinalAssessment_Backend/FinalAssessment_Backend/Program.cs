@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.Filters;
 using System.Text;
 
 namespace FinalAssessment_Backend
@@ -38,7 +39,21 @@ namespace FinalAssessment_Backend
                  Format = "date",
                  Example = new OpenApiString(DateTime.Today.ToString("yyyy-MM-dd"))
              })
-            );
+            ) ;
+
+
+            //Add authentication to Swagger UI
+            builder.Services.AddSwaggerGen(options =>
+            {
+                options.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
+                {
+                    In = ParameterLocation.Header,
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey
+                });
+
+                options.OperationFilter<SecurityRequirementsOperationFilter>();
+            });
 
             //For Encrypt and Decrypt
             builder.Services.AddDataProtection();
@@ -103,6 +118,8 @@ namespace FinalAssessment_Backend
             });
 
 
+            
+            
 
             
 
