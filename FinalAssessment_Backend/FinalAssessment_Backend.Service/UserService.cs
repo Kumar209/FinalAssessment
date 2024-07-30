@@ -113,9 +113,11 @@ namespace FinalAssessment_Backend.Service
         }
 
 
-        public async Task<(List<PrashantDbUserDto> records, int totalRecords)> GetPagedRecords(int currentPage, int itemsPerPage)
+
+
+        public async Task<PageRecordDto> GetPagedRecords(int currentPage, int itemsPerPage, string status)
         {
-            var res =  await _userRepo.GetRecords(currentPage, itemsPerPage);
+            var res =  await _userRepo.GetRecords(currentPage, itemsPerPage, status);
 
             var mappedData = res.Records.Select(user => new PrashantDbUserDto
             {
@@ -150,16 +152,15 @@ namespace FinalAssessment_Backend.Service
             }).ToList();
 
 
-            return (mappedData, res.TotalRecords);
+            return new PageRecordDto
+            {
+                TotalUsersCount = res.TotalUsersCount,
+                TotalActiveCount = res.TotalActiveCount,
+                TotalInactiveCount = res.TotalInactiveCount,
+                Records = mappedData
+            };
         }
 
-
-        public async Task<int> totalActiveRecords()
-        {
-            var record = await _userRepo.GetActiverUserCount();
-
-            return record;
-        }
 
 
     }

@@ -1,7 +1,7 @@
 <header>
     <div class="container">
         <div *ngIf="activeHeader == 'dashboard'" class="text-wrapper">
-            <p  >Hi, Lima Taylor 👋</p>
+            <p  >Hi, {{userName}} 👋</p>
         </div>
 
         <div *ngIf="activeHeader == 'addUser'" class="toggle-sidebar-wrapper" >
@@ -35,12 +35,13 @@
 
         <div class="profile-wrapper">
             <div class="img">
-                <img src="../../../assets/user_dp.png" alt="user_dp">
-                
+                <img [src]="getImageUrl(imageUrl)" alt="user_dp">
             </div>
 
             <div class="name">
-                <p>Lima Taylor</p>
+                <p >{{userName}}</p>
+
+                <span class="logout">Logout</span>
             </div>
         </div>
     </div>

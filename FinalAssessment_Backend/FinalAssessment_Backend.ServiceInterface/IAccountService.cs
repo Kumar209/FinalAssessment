@@ -11,9 +11,9 @@ namespace FinalAssessment_Backend.ServiceInterface
     public interface IAccountService
     {
 
-        public Task<(string msg, bool success, string? token)> loginUser(LoginCredentialsDto loginCredential);
+        public Task<(string msg, bool success, string? token, RequiredDataFrontend? requiredDataForFrontend)> loginUser(LoginCredentialsDto loginCredential);
 
-        public  Task<bool> ActivateAccount(int userId);
+        public  Task<(string msg, bool success)> ActivateAccount(string token);
 
         public Task<(string msg, bool success)> forgotPasswordService(string email);
 

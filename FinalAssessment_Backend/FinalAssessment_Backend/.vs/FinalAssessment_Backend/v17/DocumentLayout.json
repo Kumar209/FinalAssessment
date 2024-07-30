@@ -1,19 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\",
+  "WorkspaceRootPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{90C82CCF-EBF1-4E42-AB25-8CCBCC297EF1}|..\\FinalAssessment_Backend.Service\\FinalAssessment_Backend.Service.csproj|d:\\smartdata\\evaluation\\finalassessment\\finalassessment_backend\\finalassessment_backend.service\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{99909952-1B07-45AC-AA8C-68A5A222F1A5}|FinalAssessment_Backend.csproj|c:\\prashant_office_work\\finalassessment\\finalassessment_backend\\finalassessment_backend\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99909952-1B07-45AC-AA8C-68A5A222F1A5}|FinalAssessment_Backend.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90C82CCF-EBF1-4E42-AB25-8CCBCC297EF1}|..\\FinalAssessment_Backend.Service\\FinalAssessment_Backend.Service.csproj|d:\\smartdata\\evaluation\\finalassessment\\finalassessment_backend\\finalassessment_backend.service\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99909952-1B07-45AC-AA8C-68A5A222F1A5}|FinalAssessment_Backend.csproj|d:\\smartdata\\evaluation\\finalassessment\\finalassessment_backend\\finalassessment_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99909952-1B07-45AC-AA8C-68A5A222F1A5}|FinalAssessment_Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Repository\\UserRepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90C82CCF-EBF1-4E42-AB25-8CCBCC297EF1}|..\\FinalAssessment_Backend.Service\\FinalAssessment_Backend.Service.csproj|c:\\prashant_office_work\\finalassessment\\finalassessment_backend\\finalassessment_backend.service\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,56 +17,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AccountService.cs",
-              "DocumentMoniker": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\AccountService.cs",
-              "RelativeDocumentMoniker": "..\\FinalAssessment_Backend.Service\\AccountService.cs",
-              "ToolTip": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\AccountService.cs",
-              "RelativeToolTip": "..\\FinalAssessment_Backend.Service\\AccountService.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAYwEAAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T15:53:14.709Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "JwtService.cs",
-              "DocumentMoniker": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\JwtService.cs",
-              "RelativeDocumentMoniker": "..\\FinalAssessment_Backend.Service\\JwtService.cs",
-              "ToolTip": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\JwtService.cs",
-              "RelativeToolTip": "..\\FinalAssessment_Backend.Service\\JwtService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\AccountService.cs",
+              "RelativeDocumentMoniker": "..\\FinalAssessment_Backend.Service\\AccountService.cs",
+              "ToolTip": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\AccountService.cs",
+              "RelativeToolTip": "..\\FinalAssessment_Backend.Service\\AccountService.cs",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAmwKQAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T15:53:00.537Z",
+              "WhenOpened": "2024-07-30T11:30:14.431Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAQwDUAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAowHcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T11:51:46.753Z",
+              "WhenOpened": "2024-07-30T10:22:31.639Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserRepo.cs",
-              "DocumentMoniker": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Repository\\UserRepo.cs",
-              "ToolTip": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Repository\\UserRepo.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAADwv0IAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T08:40:02.928Z"
             }
           ]
         }

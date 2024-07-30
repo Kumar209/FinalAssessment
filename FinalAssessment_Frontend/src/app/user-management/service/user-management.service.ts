@@ -11,8 +11,8 @@ export class UserManagementService {
   private apiUrl = 'https://localhost:44320/api/User';
 
 
-  getRecordPerPage(currentPage : number, itemsPerPage : number) : Observable<any>{
-    return this.http.get<any[]>(`${this.apiUrl}/GetRecords?currentPage=${currentPage}&itemsPerPage=${itemsPerPage}`);
+  getRecordPerPage(currentPage : number, itemsPerPage : number, status : string | null) : Observable<any>{
+    return this.http.get<any>(`${this.apiUrl}/GetRecords?currentPage=${currentPage}&itemsPerPage=${itemsPerPage}&status=${status}`);
   }
 
 

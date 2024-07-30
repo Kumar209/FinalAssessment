@@ -71,6 +71,8 @@ namespace FinalAssessment_Backend.Models.Dto
 
         public bool? IsActive { get; set; }
 
+        public string? CreatedBy { get; set; }
+
 
         [Required(ErrorMessage = "Address is required")]
         public virtual ICollection<PrashantDbAddressDto> PrashantDbAddresses { get; set; }

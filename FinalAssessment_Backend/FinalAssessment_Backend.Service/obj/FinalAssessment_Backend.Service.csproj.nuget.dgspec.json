@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\FinalAssessment_Backend.Service.csproj": {}
+    "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\FinalAssessment_Backend.Service.csproj": {}
   },
   "projects": {
-    "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj": {
+    "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj",
+        "projectUniqueName": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj",
         "projectName": "FinalAssessment_Backend.Models",
-        "projectPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\obj\\",
+        "projectPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj",
+        "packagesPath": "C:\\Users\\prashant.verma\\.nuget\\packages\\",
+        "outputPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\APPS\\VS\\data\\Component tools SDKs\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\prashant.verma\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -94,20 +95,20 @@
         }
       }
     },
-    "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.RepositoryInterface\\FinalAssessment_Backend.RepositoryInterface.csproj": {
+    "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.RepositoryInterface\\FinalAssessment_Backend.RepositoryInterface.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.RepositoryInterface\\FinalAssessment_Backend.RepositoryInterface.csproj",
+        "projectUniqueName": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.RepositoryInterface\\FinalAssessment_Backend.RepositoryInterface.csproj",
         "projectName": "FinalAssessment_Backend.RepositoryInterface",
-        "projectPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.RepositoryInterface\\FinalAssessment_Backend.RepositoryInterface.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.RepositoryInterface\\obj\\",
+        "projectPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.RepositoryInterface\\FinalAssessment_Backend.RepositoryInterface.csproj",
+        "packagesPath": "C:\\Users\\prashant.verma\\.nuget\\packages\\",
+        "outputPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.RepositoryInterface\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\APPS\\VS\\data\\Component tools SDKs\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\prashant.verma\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -116,14 +117,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj": {
-                "projectPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj"
+              "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj": {
+                "projectPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj"
               }
             }
           }
@@ -162,20 +164,20 @@
         }
       }
     },
-    "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Repository\\FinalAssessment_Backend.Repository.csproj": {
+    "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Repository\\FinalAssessment_Backend.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Repository\\FinalAssessment_Backend.Repository.csproj",
+        "projectUniqueName": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Repository\\FinalAssessment_Backend.Repository.csproj",
         "projectName": "FinalAssessment_Backend.Repository",
-        "projectPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Repository\\FinalAssessment_Backend.Repository.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Repository\\obj\\",
+        "projectPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Repository\\FinalAssessment_Backend.Repository.csproj",
+        "packagesPath": "C:\\Users\\prashant.verma\\.nuget\\packages\\",
+        "outputPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\APPS\\VS\\data\\Component tools SDKs\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\prashant.verma\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -184,20 +186,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj": {
-                "projectPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj"
+              "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj": {
+                "projectPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj"
               },
-              "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.RepositoryInterface\\FinalAssessment_Backend.RepositoryInterface.csproj": {
-                "projectPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.RepositoryInterface\\FinalAssessment_Backend.RepositoryInterface.csproj"
+              "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.RepositoryInterface\\FinalAssessment_Backend.RepositoryInterface.csproj": {
+                "projectPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.RepositoryInterface\\FinalAssessment_Backend.RepositoryInterface.csproj"
               },
-              "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\FinalAssessment_Backend.Shared.csproj": {
-                "projectPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\FinalAssessment_Backend.Shared.csproj"
+              "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\FinalAssessment_Backend.Shared.csproj": {
+                "projectPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\FinalAssessment_Backend.Shared.csproj"
               }
             }
           }
@@ -262,20 +265,20 @@
         }
       }
     },
-    "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.ServiceInterface\\FinalAssessment_Backend.ServiceInterface.csproj": {
+    "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.ServiceInterface\\FinalAssessment_Backend.ServiceInterface.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.ServiceInterface\\FinalAssessment_Backend.ServiceInterface.csproj",
+        "projectUniqueName": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.ServiceInterface\\FinalAssessment_Backend.ServiceInterface.csproj",
         "projectName": "FinalAssessment_Backend.ServiceInterface",
-        "projectPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.ServiceInterface\\FinalAssessment_Backend.ServiceInterface.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.ServiceInterface\\obj\\",
+        "projectPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.ServiceInterface\\FinalAssessment_Backend.ServiceInterface.csproj",
+        "packagesPath": "C:\\Users\\prashant.verma\\.nuget\\packages\\",
+        "outputPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.ServiceInterface\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\APPS\\VS\\data\\Component tools SDKs\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\prashant.verma\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -284,17 +287,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj": {
-                "projectPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj"
+              "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj": {
+                "projectPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj"
               },
-              "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Repository\\FinalAssessment_Backend.Repository.csproj": {
-                "projectPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Repository\\FinalAssessment_Backend.Repository.csproj"
+              "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Repository\\FinalAssessment_Backend.Repository.csproj": {
+                "projectPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Repository\\FinalAssessment_Backend.Repository.csproj"
               }
             }
           }
@@ -333,20 +337,20 @@
         }
       }
     },
-    "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\FinalAssessment_Backend.Service.csproj": {
+    "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\FinalAssessment_Backend.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\FinalAssessment_Backend.Service.csproj",
+        "projectUniqueName": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\FinalAssessment_Backend.Service.csproj",
         "projectName": "FinalAssessment_Backend.Service",
-        "projectPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\FinalAssessment_Backend.Service.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\obj\\",
+        "projectPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\FinalAssessment_Backend.Service.csproj",
+        "packagesPath": "C:\\Users\\prashant.verma\\.nuget\\packages\\",
+        "outputPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\APPS\\VS\\data\\Component tools SDKs\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\prashant.verma\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -355,20 +359,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj": {
-                "projectPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj"
+              "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj": {
+                "projectPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj"
               },
-              "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.ServiceInterface\\FinalAssessment_Backend.ServiceInterface.csproj": {
-                "projectPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.ServiceInterface\\FinalAssessment_Backend.ServiceInterface.csproj"
+              "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.ServiceInterface\\FinalAssessment_Backend.ServiceInterface.csproj": {
+                "projectPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.ServiceInterface\\FinalAssessment_Backend.ServiceInterface.csproj"
               },
-              "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\FinalAssessment_Backend.Shared.csproj": {
-                "projectPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\FinalAssessment_Backend.Shared.csproj"
+              "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\FinalAssessment_Backend.Shared.csproj": {
+                "projectPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\FinalAssessment_Backend.Shared.csproj"
               }
             }
           }
@@ -429,20 +434,20 @@
         }
       }
     },
-    "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\FinalAssessment_Backend.Shared.csproj": {
+    "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\FinalAssessment_Backend.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\FinalAssessment_Backend.Shared.csproj",
+        "projectUniqueName": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\FinalAssessment_Backend.Shared.csproj",
         "projectName": "FinalAssessment_Backend.Shared",
-        "projectPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\FinalAssessment_Backend.Shared.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\obj\\",
+        "projectPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\FinalAssessment_Backend.Shared.csproj",
+        "packagesPath": "C:\\Users\\prashant.verma\\.nuget\\packages\\",
+        "outputPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\APPS\\VS\\data\\Component tools SDKs\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\prashant.verma\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -451,14 +456,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj": {
-                "projectPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj"
+              "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj": {
+                "projectPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Models\\FinalAssessment_Backend.Models.csproj"
               }
             }
           }

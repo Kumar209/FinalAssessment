@@ -13,8 +13,7 @@ namespace FinalAssessment_Backend.ServiceInterface
 
         public Task<bool> RemoveUserById(int id);
 
-        public Task<(List<PrashantDbUserDto> records, int totalRecords)> GetPagedRecords(int currentPage, int itemsPerPage);
+        public Task<PageRecordDto> GetPagedRecords(int currentPage, int itemsPerPage, string status);
 
-        public Task<int> totalActiveRecords();
     }
 }

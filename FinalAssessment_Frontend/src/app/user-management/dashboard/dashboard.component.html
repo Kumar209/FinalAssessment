@@ -7,8 +7,9 @@
     <app-header [active]="0" />
 
     <div class="main-wrapper">
+
       <div class="user-wrapper">
-        <div class="active-user active-bg">
+        <div class="active-user active-bg"  (click)="onFilterActive()">
           <div class="active-img">
             <img
               src="../../../assets/active-user-icon.png"
@@ -22,7 +23,7 @@
           </div>
         </div>
 
-        <div class="active-user inactive-bg">
+        <div class="active-user inactive-bg" (click)="onFilterInActive()">
           <div class="active-img">
             <img
               src="../../../assets/inactive-user-icon.png"
@@ -84,9 +85,9 @@
         <div class="pagination">
           <nav>
             <ul>
-                <li class="prev control" >Prev</li>
-                <li class="page active-page">1</li>
-                <li class="next control">Next</li>
+                <li class="prev control" (click)="onPageChange(currentPage - 1)" [class.disabled]="currentPage === 1">Prev</li>
+                <li class="page" *ngFor="let page of totalPages()" (click)="onPageChange(page)" [class.active-page]="currentPage === page">{{page}}</li>
+                <li class="next control"  (click)="onPageChange(currentPage + 1)" [class.disabled]="currentPage === pagedNumber">Next</li>
             </ul>
           </nav>
         </div>

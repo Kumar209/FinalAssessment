@@ -9,74 +9,52 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./dashboard.component.css'],
 })
 export class DashboardComponent implements OnInit {
-  constructor(
-    private serivce: UserManagementService,
-    private router: Router,
-    private toastr: ToastrService
-  ) {}
-
+  
+  //Array to hold user records
   userData: any[] = [];
-  activeUserCount : number = 0;
-  totalUser : number = this.userData.length;
-  inActiveUserCount : number = this.userData.length - this.activeUserCount;
 
+  //Total number of record which are active that isActive = 1 --Fetched from APi
+  activeUserCount: number = 0;
+
+  //Total number of inactive record present --Calculated from totalUser - activeUserCount
+  inActiveUserCount: number = 0;
+
+  //Tatal number of record present 
+  totalUser: number = 0;
 
   //Used to track current page number
   currentPage: number = 1;
 
-  //used to set how many organizaton should be shown on a single page of table
-  itemsPerPage: number = 3;
+   //used to set how many organizaton should be shown on a single page of table
+  itemsPerPage: number = 2;
 
 
-  pagedNumber : number = this.totalUser / this.itemsPerPage;
+  //Total number of pages according to itemsPerPage and records present in db
+  pagedNumber: number = 0;
+
+
+   // Status for filtering
+   filterStatus: string | null = null;
+
+
+
+
+
+  constructor(
+    private service: UserManagementService,
+    private router: Router,
+    private toastr: ToastrService
+  ) {
+  }
+
+  // pagedNumber : number = this.totalUser / this.itemsPerPage;
 
   ngOnInit(): void {
-    this.getRecordsPerPage(1, this.itemsPerPage);
-    this.getActiveUserCount();
+    this.getRecordsPerPage(this.currentPage, this.itemsPerPage, null);
   }
 
 
-  getActiveUserCount() {
-    this.serivce.getActiveUserCount().subscribe({
-      next : (res) => {
-        if(res.success){
-          this.activeUserCount = res.count;
-        }
-        else{
-          this.toastr.error('Error getting active users');
-        }
-      },
-
-      error : (err) => {
-        this.toastr.error(err.error.message , 'Error!');
-      }
-    })
-  }
-
-  getRecordsPerPage(activePage : number, totalRecords : number) {
-    this.serivce
-      .getRecordPerPage(activePage, totalRecords)
-      .subscribe({
-        next: (response) => {
-          if (response.success) {
-            this.userData = response.record;
-          } else {
-            this.toastr.error('Error fetching records');
-          }
-        },
-
-        error: (err) => {
-          if (err.error && err.error.message) {
-            this.toastr.error(err.error.message, 'Error!');
-          } else {
-            this.toastr.error('Something went wrong', 'Error!');
-          }
-        },
-      });
-  }
-
-
-  //These two function are filtering address type
+ 
   getAddressType1(user: any): any {
     return user.prashantDbAddresses.find(
       (address : any) => address.addressTypeId === 1
@@ -90,22 +68,77 @@ export class DashboardComponent implements OnInit {
     );
   }
 
-  //Method used to give only 10 patient details as an array to populate table
-  //Method slice the organizationInfoData our json patient data based on startIndex
-  //  paginatedPatientInfo(): any[] {
-  //    const startIndex = (this.currentPage - 1) * this.itemsPerPage;
-  //    return this.organizationInfoData.slice(startIndex, startIndex + this.itemsPerPage);
-  //  }
+
+
+  onFilterActive() : void {
+    this.filterStatus = "active";
+    this.getRecordsPerPage(1, this.itemsPerPage , this.filterStatus);
+  }
+
+  onFilterInActive() : void {
+    this.filterStatus = "inactive";
+    this.getRecordsPerPage(1, this.itemsPerPage , this.filterStatus);
+  }
+
+
 
   //Method used to update the current page when clicked
   onPageChange(pageNumber: number): void {
+    if (pageNumber < 1 || pageNumber > this.pagedNumber) return; // Prevent invalid page numbers
+
     this.currentPage = pageNumber;
+
+    //Here fetching record for the new page when clicked
+    this.getRecordsPerPage(this.currentPage, this.itemsPerPage, this.filterStatus); 
   }
 
-  //Method used to calculate total number of pages
+
+  // Basically generating array so through that we can loop through our li tag in pagination
   totalPages(): number[] {
-    return Array(Math.ceil(this.userData.length / this.itemsPerPage))
-      .fill(0)
-      .map((x, i) => i + 1);
+    const pages: number[] = [];
+
+    for (let i = 1; i <= this.pagedNumber; i++) {
+        pages.push(i);
+    }
+    
+    return pages;
   }
+
+
+  //Fetch records and totalNumber of records present in DB but it is fetching based on current page and
+  //items required per page + status of active , inactive or by default null
+  getRecordsPerPage(activePage: number, totalRecords: number, status: string | null) {
+    this.service.getRecordPerPage(activePage, totalRecords, status).subscribe({
+      next: (response) => {
+        if (response.success) {
+            this.userData = response.record; 
+            this.activeUserCount = response.totalActiveCount;
+            this.inActiveUserCount = response.totalInactiveCount;
+
+            //Done to calculate total number of pages to be showed on pagination UI on basis of totalUser
+            if(this.filterStatus == 'active'){
+              this.totalUser = response.totalActiveCount; 
+            }
+            else if(this.filterStatus == 'inactive'){
+              this.totalUser = response.totalInactiveCount; 
+            }
+            else{
+              this.totalUser = response.totalUsersCount;
+            }
+
+            // Calculate total pages
+            this.pagedNumber = Math.ceil(this.totalUser / this.itemsPerPage);
+        
+          } 
+          else {
+            this.toastr.error('Error fetching records');
+          }
+        },
+        error: (err) => {
+            this.toastr.error(err.error?.message || 'Something went wrong', 'Error!');
+        },
+    });
+  }  
+
 }
+

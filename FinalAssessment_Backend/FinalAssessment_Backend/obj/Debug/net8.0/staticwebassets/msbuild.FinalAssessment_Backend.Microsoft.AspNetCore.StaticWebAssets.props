@@ -1,5 +1,21 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\images\9858745cd157f2797065e639c5b3bf23244612781.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalAssessment_Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalAssessment_Backend</BasePath>
+      <RelativePath>user/images/9858745cd157f2797065e639c5b3bf23244612781.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\images\9858745cd157f2797065e639c5b3bf23244612781.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\images\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview240535059.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>FinalAssessment_Backend</SourceId>
@@ -15,6 +31,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\images\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview240535059.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\images\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview241419007.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalAssessment_Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalAssessment_Backend</BasePath>
+      <RelativePath>user/images/anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview241419007.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\images\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview241419007.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\images\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview241655439.jpg))">
       <SourceType>Package</SourceType>
@@ -47,6 +79,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\images\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview241938802.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\images\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview242138546.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalAssessment_Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalAssessment_Backend</BasePath>
+      <RelativePath>user/images/anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview242138546.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\images\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview242138546.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\images\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview243155881.jpg))">
       <SourceType>Package</SourceType>

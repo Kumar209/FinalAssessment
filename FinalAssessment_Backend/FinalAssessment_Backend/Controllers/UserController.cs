@@ -1,6 +1,7 @@
 ﻿
 using FinalAssessment_Backend.Models.Dto;
 using FinalAssessment_Backend.ServiceInterface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FinalAssessment_Backend.Controllers
@@ -31,6 +32,7 @@ namespace FinalAssessment_Backend.Controllers
 
 
         [HttpDelete("RemoveUser/{id}")]
+
         public async Task<IActionResult> RemoveUser(int id)
         {
             var res = await _userService.RemoveUserById(id);
@@ -40,19 +42,13 @@ namespace FinalAssessment_Backend.Controllers
 
 
         [HttpGet("GetRecords")]
-        public async Task<IActionResult> GetRecords(int currentPage, int itemsPerPage)
-        {
-            var res = await _userService.GetPagedRecords(currentPage, itemsPerPage);
 
-            return Ok(new {success = true, record=res.records, totalRecords=res.totalRecords});
+        public async Task<IActionResult> GetRecords([FromQuery] int currentPage, [FromQuery] int itemsPerPage, [FromQuery] string? status = null)
+        {
+            var res = await _userService.GetPagedRecords(currentPage, itemsPerPage, status);
+
+            return Ok(new {success = true, record=res.Records, TotalUsersCount = res.TotalUsersCount , TotalActiveCount = res.TotalActiveCount , TotalInactiveCount = res.TotalInactiveCount });
         }
 
-        [HttpGet("ActiveRecords")]
-        public async Task<IActionResult> GetActiveRecords()
-        {
-            var res = await _userService.totalActiveRecords();
-
-            return Ok(new { success = true, count = res });
-        }
     }
 }

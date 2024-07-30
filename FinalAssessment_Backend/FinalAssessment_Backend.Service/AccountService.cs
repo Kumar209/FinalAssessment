@@ -4,6 +4,7 @@ using FinalAssessment_Backend.ServiceInterface;
 using FinalAssessment_Backend.Shared.EmailTemplates;
 using FinalAssessment_Backend.Shared.EncryptDecrypt;
 using FinalAssessment_Backend.Shared.Hashing;
+using Org.BouncyCastle.Asn1.Cms;
 
 
 namespace FinalAssessment_Backend.Service
@@ -30,61 +31,80 @@ namespace FinalAssessment_Backend.Service
 
 
 
-        public async Task<(string msg, bool success, string? token)> loginUser(LoginCredentialsDto loginCredential)
+        public async Task<(string msg, bool success, string? token, RequiredDataFrontend? requiredDataForFrontend)> loginUser(LoginCredentialsDto loginCredential)
         {
             var user = await _accountRepo.GetUserByEmail(loginCredential.Email);
 
             if (user == null)
             {
-                return ("Wrong email", false, null);
+                return ("Wrong email", false, null, null);
             }
 
             //Verifying the password due to it is hashed in db
             var validatePassword = _hashing.VerifyHash(loginCredential.Password, user.Password);
 
+
+
             if (validatePassword == false)
             {
-                return ("Wrong password", false, null);
+                return ("Wrong password", false, null, null);
             }
 
+            //For localStorage in frontend
+            var requiredDataForFrontend = new RequiredDataFrontend
+            {
+                UserName = user.FirstName + " " + user.MiddleName + (string.IsNullOrEmpty(user.LastName) ? "" : " " + user.LastName),
+                ImageUrl = user.ImageUrl
+            };
+
             var tokenValue = await _jwtService.GenerateToken(user);
+
+            var activationLink = $"http://localhost:4200/auth/activate-account/?token={tokenValue}";
 
 
             if (user.IsActive == false)
             {
-
                 MailRequest mailRequest = new MailRequest();
                 mailRequest.ToEmail = _encyptDecrypt.DecryptCipherText(user.Email);
                 mailRequest.Subject = "Activate your account";
-                mailRequest.Body = AccountEmailTemplate.GetTemplateActivateAccount(user, tokenValue);
-
+                mailRequest.Body = AccountEmailTemplate.GetTemplateActivateAccount(user, activationLink);
 
 
                 await _emailService.SendEmailAsync(mailRequest);
-                return ("Not activated account, link send to your mail to activate account", false , null);
+                return ("InActive", false, null, null); 
             }
 
             
 
-            return ("User Logged In", true , tokenValue);
+            return ("User Logged In", true , tokenValue, requiredDataForFrontend);
 
         }
 
 
 
-        public async Task<bool> ActivateAccount(int userId)
+        public async Task<(string msg, bool success)> ActivateAccount(string token)
         {
-            var userToActivate = await _accountRepo.GetUserById(userId);
+            var userId = await _jwtService.ValidateJwtToken(token);
 
-            if(userToActivate == null)
+            if (userId == -1)
             {
-                return false;
+                return ("Token expired", false);
             }
 
+            var userToActivate = await _accountRepo.GetUserById(userId);
 
             userToActivate.IsActive = true;
 
-            return await _accountRepo.UpdateActivateAccount(userToActivate);
+            var response = await _accountRepo.UpdateActivateAccount(userToActivate);
+
+            if (response)
+            {
+                return ("Activated Account", true);
+            }
+
+            return ("Error Activating Account", false);
+
+            
         }
 
 

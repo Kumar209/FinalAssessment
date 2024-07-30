@@ -32,7 +32,14 @@ export class LoginComponent implements OnInit {
         next : (res) => {
           if(res.success){
             this.toastr.success(res.message, 'Successfull!');
+            this.router.navigate(['user-management/dashboard'])
           }
+
+          else if(res.success == false && res.message == "InActive"){
+            this.toastr.error("Account is not active", 'Error!');
+            this.router.navigate(['auth/email-send']);   
+          }
+          
           else {
             this.toastr.error(res.message, 'Error!');
           }

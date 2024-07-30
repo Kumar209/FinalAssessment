@@ -33,7 +33,7 @@ namespace FinalAssessment_Backend.Controllers
 
             if(res.success)
             {
-                return Ok(new {success=res.success, message = res.msg, token=res.token});
+                return Ok(new {success=res.success, message = res.msg, token=res.token, requiredDataForFrontend = res.requiredDataForFrontend });
             }
 
             return BadRequest(new { success = res.success, message = res.msg });
@@ -42,17 +42,29 @@ namespace FinalAssessment_Backend.Controllers
 
 
 
-        [HttpPost("ActivateUser/{userId}")]
-        public async Task<IActionResult> ActivateUser(int userId)
+        [HttpPatch("ActivateUser")]
+        [Authorize]
+        public async Task<IActionResult> ActivateUser()
         {
-            var res = await _accountService.ActivateAccount(userId);
+            var authHeader = Request.Headers["Authorization"].FirstOrDefault();
 
-            if(res == true)
+            if (authHeader == null || !authHeader.StartsWith("Bearer "))
             {
-                return Ok(new { success = true, message = "Account is activated" });
+                return Unauthorized(new { success = false, message = "Unauthorized" });
             }
 
-            return StatusCode(StatusCodes.Status500InternalServerError, new { success = false, message = "Error activating account" }); ;
+            var token = authHeader.Substring("Bearer ".Length).Trim();
+
+            var res = await _accountService.ActivateAccount(token);
+
+
+
+            if (res.success)
+            {
+                return Ok(new { success = res.success, message = res.msg });
+            }
+
+            return StatusCode(StatusCodes.Status500InternalServerError, new { success = res.success, message = res.msg }); ;
         }
 
 

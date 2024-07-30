@@ -3,7 +3,7 @@ import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 import { UserManagementService } from '../service/user-management.service';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-import { Country, State, City }  from 'country-state-city';
+
 
 @Component({
   selector: 'app-add-user',
@@ -11,7 +11,7 @@ import { Country, State, City }  from 'country-state-city';
   styleUrls: ['./add-user.component.css']
 })
 export class AddUserComponent {
-  countryData = Country.getAllCountries();
+
 
 
   imgSrc : string = '';
@@ -21,7 +21,7 @@ export class AddUserComponent {
 
 
   constructor(private service : UserManagementService, private router: Router, private toastr: ToastrService) {
-    console.log(this.countryData)
+
   }
 
   ngOnInit() {
@@ -41,6 +41,7 @@ export class AddUserComponent {
       ]),
       isActive: new FormControl(false)
     });
+
   }
 
   createAddressGroup(addressTypeId: number): FormGroup {
@@ -79,52 +80,11 @@ export class AddUserComponent {
     if (event.target.files && event.target.files[0]) {
       const file = event.target.files[0];
       this.selectedImg = file;
+      
       this.imgSrc = URL.createObjectURL(file);
     }
   }
 
-
-
-   //Giving bug of formarray indexing
-  // onCountryChange(index: number) {
-  //   const selectedCountry = this.PrashantDbAddresses.at(index).get('country')?.value;
-  //   this.stateData = State.getStatesOfCountry(selectedCountry);
-
-  //   this.PrashantDbAddresses.at(index).get('state')?.setValue(''); // Reset state and city on country change
-  //   this.PrashantDbAddresses.at(index).get('city')?.setValue('');
-  //   this.cityData = []; // Reset city data
-  // }
-
-  // onStateChange(index: number) {
-  //   const selectedState = this.PrashantDbAddresses.at(index).get('state')?.value;
-  //   this.cityData = City.getCitiesOfState(this.PrashantDbAddresses.at(index).get('country')?.value, selectedState);
-
-  //   this.PrashantDbAddresses.at(index).get('city')?.setValue(''); // Reset city on state change
-  // }
-
-
-  onCountryChange(index: number, event : any) {
-    const selectedCountry = this.PrashantDbAddresses.at(index).get('country')?.value;
-    const states = State.getStatesOfCountry(selectedCountry);
-    this.PrashantDbAddresses.at(index).get('state')?.enable(); // Enable state dropdown
-    this.PrashantDbAddresses.at(index).get('state')?.setValue(''); // Reset state
-    this.PrashantDbAddresses.at(index).get('city')?.setValue(''); // Reset city
-    this.PrashantDbAddresses.at(index).get('city')?.disable(); // Disable city dropdown
-    
-    // Store the states in a local variable to use in the template
-    this.PrashantDbAddresses.at(index).get('state')?.setValidators([Validators.required]);
-    this.PrashantDbAddresses.at(index).get('state')?.updateValueAndValidity();
-  }
-
-
-  onStateChange(index: number) {
-    const selectedState = this.PrashantDbAddresses.at(index).get('state')?.value;
-    const selectedCountry = this.PrashantDbAddresses.at(index).get('country')?.value;
-    const cities = City.getCitiesOfState(selectedCountry, selectedState);
-
-    this.PrashantDbAddresses.at(index).get('city')?.enable(); // Enable city dropdown
-    this.PrashantDbAddresses.at(index).get('city')?.setValue(''); // Reset city
-  }
 
 
 
@@ -156,6 +116,7 @@ export class AddUserComponent {
     this.PrashantDbAddresses.controls.forEach((control, index) => {
       const addressGroup = control as FormGroup;
       const addressPrefix = `PrashantDbAddresses[${index}]`;
+      
       formData.append(`${addressPrefix}.addressTypeId`, addressGroup.get('addressTypeId')?.value);
       formData.append(`${addressPrefix}.country`, addressGroup.get('country')?.value);
       formData.append(`${addressPrefix}.state`, addressGroup.get('state')?.value);

@@ -1,0 +1,154 @@
+<section class="main">
+    <div class="sidebar-wrapper">
+        <app-sidebar />
+    </div>
+
+    <div class="main-content">
+        <app-header [active]="1" />
+
+        <div class="main-wrapper">
+            <div class="heading-wrapper">
+                <img routerLink="" src="../../../assets/Arrow - Left Circle.png" alt="arrow-left">
+                <span routerLink="">
+                    Update User
+                </span>
+            </div>
+
+
+            <div class="add-user-form-wrapper">
+                <form class="add-user-form" [formGroup]="updateUserForm" (submit)="onUpdateUserFormSubmit()">
+                    <div class="form-heading-wrapper">
+                        <p>User Detail</p>
+                    </div>
+
+
+                    <div class="imageUpload-wrapper">
+                        <div class="imgWrapper">
+                            <img *ngIf="!imgSrc" src="../../../assets/ImageUpload_icon.png" alt="imageUpload-wrapper">
+                            <img *ngIf="imgSrc" [src]="imgSrc" class="userdp" src="../../../assets/user_dp.png" alt="">
+                        </div>
+
+                        <div class="imgInput-wrapper">
+                            <span class="file-name">Upload User image here</span>
+                            <label for="file-input" class="file-label">Choose a file</label>
+                            <input type="file" id="file-input" class="file-input" (change)="onFileChange($event)" />
+                        </div>
+                    </div>
+
+
+                    <div class="form-input-wrapper">
+                        <div class="row form-input-row">
+                            <div class="form-input col-md-4 col-12">
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" name="firstname" placeholder="First Name" formControlName="firstName">
+                            </div>
+
+                            <div class="form-input col-md-4 col-12">
+                                <label for="middle-name">Middle Name</label>
+                                <input type="text" id="middle-name" name="middlename" placeholder="Middle Name" formControlName="middleName">
+                            </div>
+
+                            <div class="form-input col-md-4 col-12">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" name="lastname" placeholder="Last Name" formControlName="lastName">
+                            </div>
+                        </div>
+
+                        <div class="row form-input-row">
+                            <div class="form-input col-md-4 col-12">
+                                <label for="gender">Gender</label>
+                                <select id="gender" name="gender" formControlName="gender">
+                                    <option class="selectedDefault" value="" disabled selected>Select</option>
+                                    <option value=1>Male</option>
+                                    <option value=2>Female</option>
+                                    <option value=3>Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-input col-md-4 col-12">
+                                <label for="dob">Date of Birth</label>
+                                <input type="date" id="dob" name="DateOfBirth" placeholder="MM/DD/YY" formControlName="dateOfBirth">
+                            </div>
+
+                            <div class="form-input col-md-4 col-12">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" name="email" placeholder="Email" formControlName="email">
+                            </div>
+                        </div>
+
+                        <div class="row form-input-row">
+                            <div class="form-input col-md-4 col-12">
+                                <label for="dateOfJoining">Date of Joining</label>
+                                <input type="date" id="dateOfJoining" name="dateOfJoining"
+                                    placeholder="Date of Joining" formControlName="dateOfJoining">
+                            </div>
+
+                            <div class="form-input col-md-4 col-12">
+                                <label for="phone">Phone</label>
+                                <input type="text" id="phone" name="phone" placeholder="Phone" formControlName="phone">
+                            </div>
+
+                            <div class="form-input col-md-4 col-12">
+                                <label for="alternatePhone">Alternate Phone</label>
+                                <input type="text" id="alternatePhone" name="alternatePhone"
+                                    placeholder="Alternate Phone" formControlName="alternatePhone">
+                            </div>
+                        </div>
+
+                        <div formArrayName="PrashantDbAddresses">
+                            <div class="row form-input-row" *ngFor="let address of PrashantDbAddresses.controls; let i=index" [formGroupName]="i">
+                                <div class="form-input col-md-4 col-12">
+                                    <label for="country">Country</label>
+                                    <input type="text" id="country" name="country"
+                                    placeholder="Country" formControlName="country">
+                                    <!-- <select id="country" formControlName="country" (change)="onCountryChange(i, $event)">
+                                        <option value="" disabled selected>Select Country</option>
+                                    </select> -->
+                                </div>
+
+                                <div class="form-input col-md-4 col-12">
+                                    <label for="state">State</label>
+                                    <!-- <select id="state" formControlName="state" (change)="onStateChange(i)">
+                                        <option value="" disabled selected>Select State</option>
+                                    </select> -->
+                                    <input type="text" id="state" name="state"
+                                    placeholder="state" formControlName="state">
+                                </div>
+
+                                <div class="form-input col-md-4 col-12">
+                                    <label for="middle-name">City</label>
+                                    <!-- <select id="city" formControlName="city">
+                                        <option value="" disabled selected>Select City</option>
+                                    </select> -->
+                                    <input type="text" id="city" name="city"
+                                    placeholder="city" formControlName="city">
+                                </div>
+
+                                <div class="form-input col-md-4 col-12 mt-3">
+                                    <label for="zipCode">Zip Code</label>
+                                    <input type="text" id="zipCode" name="zipCode" placeholder="zipCode" formControlName="zipCode">
+                                </div>
+                            </div>
+
+                            <div class="address-buttons-wrapper">
+                                <button type="button" class="btn1" (click)="addSecondaryAddress()" *ngIf="PrashantDbAddresses.length < 2">Add Secondary Address</button>
+                                <button type="button" class="btn2" (click)="removeSecondaryAddress()" *ngIf="PrashantDbAddresses.length === 2">Remove Secondary Address</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inactive-checkbox-wrapper">
+                        <input type="checkbox" formControlName="isActive" name="isActive" id="inactive">
+                        <label for="inactive">Inactive</label>
+                    </div>
+
+
+                    <div class="submit-btn-wrapper">
+                        <button>Save</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

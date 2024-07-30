@@ -1,0 +1,86 @@
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+  }
+  
+  .leftSideWrapper {
+    width: 45%;
+    background-image: url("../../../assets//Login_SideBanner.png");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rightSideWrapper {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .leftSideWrapper img {
+    width: 90%;
+  }
+  
+  
+  .rightSideWrapper .logoWrapper{
+      margin-bottom: 25px;
+  }
+  
+  .rightSideWrapper .logoWrapper img {
+      width: 90px;
+    }
+    
+  
+  .activateWrapper {
+    width: 500px;
+    margin-top: 20px;
+    padding: 35px 32px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  
+  
+  .rightSideWrapper .heading p {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 35px;
+  }
+  
+ 
+  
+  .submitbtnWrapper{
+      margin-top: 40px;
+  }
+  
+  .submitbtnWrapper button {
+      width: 100%;
+  }
+  
+  
+  @media (max-width : 1000px){
+    .loginForm_Wrapper{
+      width: 450px;
+    }
+  }
+  
+  
+  @media (max-width : 786px){
+    .leftSideWrapper{
+      display: none;
+    }
+  
+    .rightSideWrapper{
+      width: 100%;
+    }
+  
+    .loginForm_Wrapper{
+      width: 450px;
+    }
+  }

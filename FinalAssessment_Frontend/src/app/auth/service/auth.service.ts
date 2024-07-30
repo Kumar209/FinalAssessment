@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { IUserCrendentail } from '../Interface/IUserCredential';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { IResetCredential } from '../Interface/IResetCredential';
 import { ActivatedRoute } from '@angular/router';
 import { IChangeCredential } from '../Interface/IChangeCredential';
@@ -12,17 +12,47 @@ import { IChangeCredential } from '../Interface/IChangeCredential';
 export class AuthService {
   routeToken : string;
 
-  token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTdWJqZWN0IiwianRpIjoiZDVmNWQ5MmUtNWQ1Ni00NDM5LTg5NzItM2NlNTlmN2FhZDAzIiwiSWQiOiIxIiwiRW1haWwiOiJwcmFzaGFudGt1bWFybG1wNjY2QGdtYWlsLmNvbSIsImV4cCI6MTcyMjA3NjAxNCwiaXNzIjoiSnd0SXNzdWVyIiwiYXVkIjoiSnd0QXVkaWVuY2UifQ.hz0_fM3Mnyjy79abFoesofIDUK3jRP45NhLd4hVZ97o";
+  private isAuthenticated = false;
+  public authSecretKey = 'BearerToken';
 
-  constructor(private http : HttpClient, private activatedRoute: ActivatedRoute) { 
-    this.routeToken = this.activatedRoute.snapshot.queryParams['token']
-  }
+  public token;
 
   baseUrl : string = "https://localhost:44320/api/Account";
 
 
+  constructor(private http : HttpClient, private activatedRoute: ActivatedRoute) { 
+    //Setting this value to true and false if token key is present or not in local storage
+    this.isAuthenticated = !!localStorage.getItem(this.authSecretKey);
+
+    this.token = localStorage.getItem(this.authSecretKey);
+
+    //Getting the token from query params
+    this.routeToken = this.activatedRoute.snapshot.queryParams['token']
+  }
+
+
+  isAuthenticatedUser(): boolean {
+    return this.isAuthenticated;
+  }
+
+
+
   login(userCredential : IUserCrendentail) : Observable<any>{
-    return this.http.post<any>(`${this.baseUrl}/LoginUser` , userCredential);
+    return this.http.post<any>(`${this.baseUrl}/LoginUser` , userCredential)
+    .pipe(
+      map(response => {
+        localStorage.setItem(this.authSecretKey, response.token);
+        localStorage.setItem("UserDetails", JSON.stringify(response.requiredDataForFrontend));
+        return response;
+      })
+    );
+  }
+
+  
+  logout(): void {
+    localStorage.removeItem(this.authSecretKey);
+    localStorage.removeItem("UserDetails");
+    this.isAuthenticated = false;
   }
 
 
@@ -40,6 +70,14 @@ export class AuthService {
 
   changePassword(changePasswordCredential : IChangeCredential) : Observable<any> {
     let head_obj = new HttpHeaders().set("Authorization", "Bearer "+this.token);
+    
     return this.http.post<any>(`${this.baseUrl}/ChangePassword`, changePasswordCredential, {headers : head_obj});
+  }
+
+
+  activateAccount() : Observable<any>{
+    let head_obj = new HttpHeaders().set("Authorization", "Bearer "+this.routeToken);
+
+    return this.http.patch<any>(`${this.baseUrl}/ActivateUser`, {}, {headers : head_obj});
   }
 }

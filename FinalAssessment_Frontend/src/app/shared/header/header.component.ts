@@ -14,9 +14,21 @@ export class HeaderComponent implements OnInit {
 
   activeHeader : string = this.activeHeaderList[this.active];
 
+  userName : string = '';
+  imageUrl : string = '';
+
 
   ngOnInit(): void {
     this.activeHeader = this.activeHeaderList[this.active]
+    var userdetails = JSON.parse(localStorage.getItem('UserDetails') || '');
+    this.userName = userdetails.userName;
+    this.imageUrl = userdetails.imageUrl;
+  }
+
+  getImageUrl(relativePath: string): string {
+    var url = `http://localhost:44320/${relativePath}`;
+    console.log(url);
+    return url
   }
 
 }

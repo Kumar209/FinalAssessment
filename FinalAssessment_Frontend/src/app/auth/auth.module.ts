@@ -10,6 +10,7 @@ import { EmailSendPageComponent } from './email-send-page/email-send-page.compon
 import { HttpClientModule } from "@angular/common/http";
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
+import { ActivatingAccountPageComponent } from './activating-account-page/activating-account-page.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
     ForgotPasswordComponent,
     EmailSendPageComponent,
     ResetPasswordComponent,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+    ActivatingAccountPageComponent
   ],
   imports: [
     CommonModule,

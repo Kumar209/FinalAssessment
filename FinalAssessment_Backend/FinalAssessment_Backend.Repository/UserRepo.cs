@@ -43,33 +43,56 @@ namespace FinalAssessment_Backend.Repository
         }
 
 
-        public async Task<(List<PrashantDbUser> Records, int TotalRecords)> GetRecords(int currentPage, int itemsPerPage)
+        public async Task<PagedRecord> GetRecords(int currentPage, int itemsPerPage, string? status)
         {
-            var totalRecords = await _dbcontext.PrashantDbUsers
-                              .CountAsync(u => u.IsDeleted == false);
 
-            var users = await _dbcontext.PrashantDbUsers
-                .Where(u => u.IsDeleted == false)
-                .Include(u => u.PrashantDbAddresses) 
-                .OrderBy(u => u.Id) 
+            var query = _dbcontext.PrashantDbUsers
+                        .Where(u => u.IsDeleted == false);
 
+            // Giving total counts of users which are present in db means including active + inactive
+            var totalUsersCount = await _dbcontext.PrashantDbUsers.CountAsync(u => u.IsDeleted == false);
+
+
+            //Giving total Active user Counts
+            var totalActiveCount = await _dbcontext.PrashantDbUsers.CountAsync(u => u.IsDeleted == false && u.IsActive == true);
+
+
+            // Giving total inactive user counts
+            var totalInactiveCount = await _dbcontext.PrashantDbUsers.CountAsync(u => u.IsDeleted == false && u.IsActive == false);
+
+
+            // Applying filteration like deciding query to apply if status is not null : for active and inactive filtration
+            if (!string.IsNullOrEmpty(status))
+            {
+                if (status.Equals("active", StringComparison.OrdinalIgnoreCase))
+                {
+                    query = query.Where(u => u.IsActive == true);
+                }
+                else if (status.Equals("inactive", StringComparison.OrdinalIgnoreCase))
+                {
+                    query = query.Where(u => u.IsActive == false);
+                }
+            }
+
+
+            var users = await query
+                .Include(u => u.PrashantDbAddresses)
+                .OrderBy(u => u.Id)
                 .Skip((currentPage - 1) * itemsPerPage)
                 .Take(itemsPerPage)
-
                 .ToListAsync();
 
-            return (users, totalRecords);
+
+
+            return new PagedRecord
+            {
+                TotalUsersCount = totalUsersCount,
+                TotalActiveCount = totalActiveCount,
+                TotalInactiveCount = totalInactiveCount,
+                Records = users
+            };
         }
 
 
-
-        public async Task<int> GetActiverUserCount()
-        {
-            var result = await _dbcontext.PrashantDbUsers.FromSqlRaw("Exec SpGetTotalActiveAccountPrashantDbUser")
-                         .ToListAsync();
-
-
-            return result.Count();
-        }
     }
 }

@@ -8,13 +8,15 @@ import { AddUserComponent } from './add-user/add-user.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserModalComponent } from './user-modal/user-modal.component';
+import { UpdateUserComponent } from './update-user/update-user.component';
 
 
 @NgModule({
   declarations: [
     DashboardComponent,
     AddUserComponent,
-    UserModalComponent
+    UserModalComponent,
+    UpdateUserComponent
   ],
   imports: [
     CommonModule,

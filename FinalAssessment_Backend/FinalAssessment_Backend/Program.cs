@@ -33,12 +33,15 @@ namespace FinalAssessment_Backend
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(opt =>
+
              opt.MapType<DateOnly>(() => new OpenApiSchema
              {
                  Type = "string",
                  Format = "date",
                  Example = new OpenApiString(DateTime.Today.ToString("yyyy-MM-dd"))
              })
+
+
             ) ;
 
 

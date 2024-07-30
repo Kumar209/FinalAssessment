@@ -5,6 +5,8 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { EmailSendPageComponent } from './email-send-page/email-send-page.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
+import { ActivatingAccountPageComponent } from './activating-account-page/activating-account-page.component';
+import { authGuard } from '../guards/auth.guard';
 
 const routes: Routes = [
   {
@@ -17,13 +19,16 @@ const routes: Routes = [
     path : 'forgot-password', component : ForgotPasswordComponent
   },
   {
-    path : 'emailSend' , component: EmailSendPageComponent
+    path : 'email-send' , component: EmailSendPageComponent , canActivate : [authGuard]
   },
   {
-    path: 'reset-password', component : ResetPasswordComponent
+    path: 'reset-password', component : ResetPasswordComponent 
   },
   {
-    path: 'change-password' , component : ChangePasswordComponent
+    path: 'change-password' , component : ChangePasswordComponent , canActivate : [authGuard]
+  },
+  {
+    path : 'activate-account', component : ActivatingAccountPageComponent
   }
 ];
 
