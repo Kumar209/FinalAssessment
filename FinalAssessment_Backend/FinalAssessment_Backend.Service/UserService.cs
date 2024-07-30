@@ -5,6 +5,7 @@ using FinalAssessment_Backend.ServiceInterface;
 using FinalAssessment_Backend.Shared.EmailTemplates;
 using FinalAssessment_Backend.Shared.EncryptDecrypt;
 using FinalAssessment_Backend.Shared.Hashing;
+using OfficeOpenXml;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Metrics;
@@ -115,9 +116,9 @@ namespace FinalAssessment_Backend.Service
 
 
 
-        public async Task<PageRecordDto> GetPagedRecords(int currentPage, int itemsPerPage, string status)
+        public async Task<PageRecordDto> GetPagedRecords(UserQueryParams userQuery)
         {
-            var res =  await _userRepo.GetRecords(currentPage, itemsPerPage, status);
+            var res =  await _userRepo.GetRecords(userQuery);
 
             var mappedData = res.Records.Select(user => new PrashantDbUserDto
             {
@@ -159,6 +160,69 @@ namespace FinalAssessment_Backend.Service
                 TotalInactiveCount = res.TotalInactiveCount,
                 Records = mappedData
             };
+        }
+
+
+
+
+        public async Task<byte[]> GenerateExcelAsync()
+        {
+            var users = await _userRepo.GetNonDeletedUsersAsync();
+
+            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+
+            using (var package = new ExcelPackage())
+            {
+                var worksheet = package.Workbook.Worksheets.Add("User Details");
+
+                //Adding headers to excel
+                worksheet.Cells[1, 1].Value = "First Name";
+                worksheet.Cells[1, 2].Value = "Middle Name";
+                worksheet.Cells[1, 3].Value = "Last Name";
+                worksheet.Cells[1, 4].Value = "DOB";
+                worksheet.Cells[1, 5].Value = "Date Of Joining";
+                worksheet.Cells[1, 6].Value = "Email";
+                worksheet.Cells[1, 7].Value = "Phone";
+                worksheet.Cells[1, 8].Value = "Alternate Phone";
+                worksheet.Cells[1, 9].Value = "Primary Address City";
+                worksheet.Cells[1, 10].Value = "Primary Address State";
+                worksheet.Cells[1, 11].Value = "Primary Address Country";
+                worksheet.Cells[1, 12].Value = "Secondary Address City";
+                worksheet.Cells[1, 13].Value = "Secondary Address State";
+                worksheet.Cells[1, 14].Value = "Secondary Address Country";
+
+
+
+                int row = 2;
+
+                foreach(var user in users)
+                {
+                    var primaryAddress = user.PrashantDbAddresses.FirstOrDefault(a => a.AddressTypeId == 1); 
+                    var secondaryAddress = user.PrashantDbAddresses.FirstOrDefault(a => a.AddressTypeId == 2);
+
+
+                    worksheet.Cells[row, 1].Value = user.FirstName;
+                    worksheet.Cells[row, 2].Value = user.MiddleName;
+                    worksheet.Cells[row, 3].Value = user.LastName;
+                    worksheet.Cells[row, 4].Value = user.DateOfBirth;
+                    worksheet.Cells[row, 5].Value = user.DateOfJoining;
+                    worksheet.Cells[row, 6].Value = _encryptDecrypt.DecryptCipherText(user.Email);
+                    worksheet.Cells[row, 7].Value = _encryptDecrypt.DecryptCipherText(user.Phone);
+                    worksheet.Cells[row, 8].Value = _encryptDecrypt.DecryptCipherText(user.AlternatePhone);
+                    worksheet.Cells[row, 9].Value = primaryAddress.City;
+                    worksheet.Cells[row, 10].Value = primaryAddress.State;
+                    worksheet.Cells[row, 11].Value = primaryAddress.Country;
+                    worksheet.Cells[row, 12].Value = secondaryAddress?.City;
+                    worksheet.Cells[row, 13].Value = secondaryAddress?.State;
+                    worksheet.Cells[row, 14].Value = secondaryAddress?.Country;
+
+
+                    row++;
+                }
+
+
+                return package.GetAsByteArray();
+            }
         }
 
 

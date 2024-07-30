@@ -25,7 +25,7 @@ export class DashboardComponent implements OnInit {
   //Used to track current page number
   currentPage: number = 1;
 
-   //used to set how many organizaton should be shown on a single page of table
+  //used to set how many organizaton should be shown on a single page of table
   itemsPerPage: number = 2;
 
 
@@ -33,10 +33,15 @@ export class DashboardComponent implements OnInit {
   pagedNumber: number = 0;
 
 
-   // Status for filtering
-   filterStatus: string | null = null;
+  // Status for filtering
+  filterStatus: string | null = null;
 
 
+  //Which coloumn according to which it will be sorted on click
+  sortBy: string | null = null;
+  
+  
+  isAscending: boolean = true;
 
 
 
@@ -47,10 +52,9 @@ export class DashboardComponent implements OnInit {
   ) {
   }
 
-  // pagedNumber : number = this.totalUser / this.itemsPerPage;
 
   ngOnInit(): void {
-    this.getRecordsPerPage(this.currentPage, this.itemsPerPage, null);
+    this.getRecordsPerPage(this.currentPage, this.itemsPerPage, this.filterStatus, this.sortBy, this.isAscending);
   }
 
 
@@ -72,12 +76,12 @@ export class DashboardComponent implements OnInit {
 
   onFilterActive() : void {
     this.filterStatus = "active";
-    this.getRecordsPerPage(1, this.itemsPerPage , this.filterStatus);
+    this.getRecordsPerPage(1, this.itemsPerPage , this.filterStatus, this.sortBy, this.isAscending);
   }
 
   onFilterInActive() : void {
     this.filterStatus = "inactive";
-    this.getRecordsPerPage(1, this.itemsPerPage , this.filterStatus);
+    this.getRecordsPerPage(1, this.itemsPerPage , this.filterStatus, this.sortBy, this.isAscending);
   }
 
 
@@ -89,7 +93,7 @@ export class DashboardComponent implements OnInit {
     this.currentPage = pageNumber;
 
     //Here fetching record for the new page when clicked
-    this.getRecordsPerPage(this.currentPage, this.itemsPerPage, this.filterStatus); 
+    this.getRecordsPerPage(this.currentPage, this.itemsPerPage, this.filterStatus, this.sortBy, this.isAscending); 
   }
 
 
@@ -107,8 +111,8 @@ export class DashboardComponent implements OnInit {
 
   //Fetch records and totalNumber of records present in DB but it is fetching based on current page and
   //items required per page + status of active , inactive or by default null
-  getRecordsPerPage(activePage: number, totalRecords: number, status: string | null) {
-    this.service.getRecordPerPage(activePage, totalRecords, status).subscribe({
+  getRecordsPerPage(activePage: number, totalRecords: number, status: string | null , sortColumnBy : string | null, order : boolean) {
+    this.service.getRecordPerPage(activePage, totalRecords, status, sortColumnBy , order ).subscribe({
       next: (response) => {
         if (response.success) {
             this.userData = response.record; 
@@ -139,6 +143,18 @@ export class DashboardComponent implements OnInit {
         },
     });
   }  
+
+
+
+  onSortColumn(column: string): void {
+    if (this.sortBy === column) {
+      this.isAscending = !this.isAscending;
+    } else {
+      this.sortBy = column;
+      this.isAscending = true;
+    }
+    this.getRecordsPerPage(this.currentPage, this.itemsPerPage, this.filterStatus, this.sortBy, this.isAscending);
+  }
 
 }
 

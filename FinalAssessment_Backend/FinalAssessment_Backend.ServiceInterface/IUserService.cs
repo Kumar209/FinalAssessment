@@ -13,7 +13,9 @@ namespace FinalAssessment_Backend.ServiceInterface
 
         public Task<bool> RemoveUserById(int id);
 
-        public Task<PageRecordDto> GetPagedRecords(int currentPage, int itemsPerPage, string status);
+        public Task<PageRecordDto> GetPagedRecords(UserQueryParams userQuery);
+
+        public Task<byte[]> GenerateExcelAsync();
 
     }
 }

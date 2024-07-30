@@ -6,6 +6,7 @@ using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,7 +23,7 @@ namespace FinalAssessment_Backend.Repository
         }
 
 
-        [Authorize]
+
         public async Task<bool> InsertUser(PrashantDbUser user)
         {
             _dbcontext.PrashantDbUsers.Add(user);
@@ -43,7 +44,7 @@ namespace FinalAssessment_Backend.Repository
         }
 
 
-        public async Task<PagedRecord> GetRecords(int currentPage, int itemsPerPage, string? status)
+        public async Task<PagedRecord> GetRecords(UserQueryParams userQuery)
         {
 
             var query = _dbcontext.PrashantDbUsers
@@ -62,24 +63,35 @@ namespace FinalAssessment_Backend.Repository
 
 
             // Applying filteration like deciding query to apply if status is not null : for active and inactive filtration
-            if (!string.IsNullOrEmpty(status))
+            if (!string.IsNullOrEmpty(userQuery.Status))
             {
-                if (status.Equals("active", StringComparison.OrdinalIgnoreCase))
+                if (userQuery.Status.Equals("active", StringComparison.OrdinalIgnoreCase))
                 {
                     query = query.Where(u => u.IsActive == true);
                 }
-                else if (status.Equals("inactive", StringComparison.OrdinalIgnoreCase))
+                else if (userQuery.Status.Equals("inactive", StringComparison.OrdinalIgnoreCase))
                 {
                     query = query.Where(u => u.IsActive == false);
                 }
             }
 
 
+            //Here SortBy is a column name
+            if (!string.IsNullOrEmpty(userQuery.SortBy))
+            {
+                //Handles the dynamic column name on that basis to be sort used :EF.Property<object> other wise we have to use switch case
+                query = userQuery.IsAscending ? query.OrderBy(e => EF.Property<object>(e, userQuery.SortBy)) : query.OrderByDescending(e => EF.Property<object>(e, userQuery.SortBy));
+            }
+            else
+            {
+                query = query.OrderBy(u => u.Id);
+            }
+
+
             var users = await query
                 .Include(u => u.PrashantDbAddresses)
-                .OrderBy(u => u.Id)
-                .Skip((currentPage - 1) * itemsPerPage)
-                .Take(itemsPerPage)
+                .Skip((userQuery.CurrentPage - 1) * userQuery.ItemsPerPage)
+                .Take(userQuery.CurrentPage)
                 .ToListAsync();
 
 
@@ -91,6 +103,18 @@ namespace FinalAssessment_Backend.Repository
                 TotalInactiveCount = totalInactiveCount,
                 Records = users
             };
+        }
+
+
+
+
+        //API for excel file
+        public async Task<List<PrashantDbUser>> GetNonDeletedUsersAsync()
+        {
+            return await _dbcontext.PrashantDbUsers
+                                 .Where(u => u.IsDeleted == false)
+                                 .Include(u => u.PrashantDbAddresses)
+                                 .ToListAsync();
         }
 
 

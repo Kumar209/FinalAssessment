@@ -43,12 +43,25 @@ namespace FinalAssessment_Backend.Controllers
 
         [HttpGet("GetRecords")]
 
-        public async Task<IActionResult> GetRecords([FromQuery] int currentPage, [FromQuery] int itemsPerPage, [FromQuery] string? status = null)
+        public async Task<IActionResult> GetRecords([FromQuery] UserQueryParams userQuery)
         {
-            var res = await _userService.GetPagedRecords(currentPage, itemsPerPage, status);
+            var res = await _userService.GetPagedRecords(userQuery);
 
             return Ok(new {success = true, record=res.Records, TotalUsersCount = res.TotalUsersCount , TotalActiveCount = res.TotalActiveCount , TotalInactiveCount = res.TotalInactiveCount });
         }
+
+
+        [HttpGet("DownloadExcel")]
+        public async Task<IActionResult> DownloadExcel()
+        {
+            var excelData = await _userService.GenerateExcelAsync();
+
+            var contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+            var fileName = "Users.xlsx";
+
+            return File(excelData, contentType, fileName);
+        }
+
 
     }
 }

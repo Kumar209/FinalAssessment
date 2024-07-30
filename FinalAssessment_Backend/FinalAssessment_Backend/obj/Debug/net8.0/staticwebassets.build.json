@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5Ab3yOlkmwVr2p+/krr/nd2BdehI6ay0ZxBzs5kwYn8=",
+  "Hash": "YN+84mpSCOM6u6ETnFVS+8q6jNsLIv/yDpHtpC/pUms=",
   "Source": "FinalAssessment_Backend",
   "BasePath": "_content/FinalAssessment_Backend",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "FinalAssessment_Backend\\wwwroot",
       "Source": "FinalAssessment_Backend",
-      "ContentRoot": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
+      "ContentRoot": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
       "BasePath": "_content/FinalAssessment_Backend",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\9858745cd157f2797065e639c5b3bf23244612781.jpg",
+      "Identity": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\9858745cd157f2797065e639c5b3bf23244612781.jpg",
       "SourceId": "FinalAssessment_Backend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
+      "ContentRoot": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
       "BasePath": "_content/FinalAssessment_Backend",
       "RelativePath": "user/images/9858745cd157f2797065e639c5b3bf23244612781.jpg",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\user\\images\\9858745cd157f2797065e639c5b3bf23244612781.jpg"
     },
     {
-      "Identity": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview240535059.jpg",
+      "Identity": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview240535059.jpg",
       "SourceId": "FinalAssessment_Backend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
+      "ContentRoot": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
       "BasePath": "_content/FinalAssessment_Backend",
       "RelativePath": "user/images/anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview240535059.jpg",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview240535059.jpg"
     },
     {
-      "Identity": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview241419007.jpg",
+      "Identity": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview241419007.jpg",
       "SourceId": "FinalAssessment_Backend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
+      "ContentRoot": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
       "BasePath": "_content/FinalAssessment_Backend",
       "RelativePath": "user/images/anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview241419007.jpg",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview241419007.jpg"
     },
     {
-      "Identity": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview241655439.jpg",
+      "Identity": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview241655439.jpg",
       "SourceId": "FinalAssessment_Backend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
+      "ContentRoot": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
       "BasePath": "_content/FinalAssessment_Backend",
       "RelativePath": "user/images/anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview241655439.jpg",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview241655439.jpg"
     },
     {
-      "Identity": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview241938802.jpg",
+      "Identity": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview241938802.jpg",
       "SourceId": "FinalAssessment_Backend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
+      "ContentRoot": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
       "BasePath": "_content/FinalAssessment_Backend",
       "RelativePath": "user/images/anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview241938802.jpg",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview241938802.jpg"
     },
     {
-      "Identity": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview242138546.jpg",
+      "Identity": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview242138546.jpg",
       "SourceId": "FinalAssessment_Backend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
+      "ContentRoot": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
       "BasePath": "_content/FinalAssessment_Backend",
       "RelativePath": "user/images/anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview242138546.jpg",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview242138546.jpg"
     },
     {
-      "Identity": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview243155881.jpg",
+      "Identity": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview243155881.jpg",
       "SourceId": "FinalAssessment_Backend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
+      "ContentRoot": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
       "BasePath": "_content/FinalAssessment_Backend",
       "RelativePath": "user/images/anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview243155881.jpg",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview243155881.jpg"
     },
     {
-      "Identity": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview244058653.jpg",
+      "Identity": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview244058653.jpg",
       "SourceId": "FinalAssessment_Backend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
+      "ContentRoot": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
       "BasePath": "_content/FinalAssessment_Backend",
       "RelativePath": "user/images/anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview244058653.jpg",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview244058653.jpg"
     },
     {
-      "Identity": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview244323457.jpg",
+      "Identity": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview244323457.jpg",
       "SourceId": "FinalAssessment_Backend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
+      "ContentRoot": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
       "BasePath": "_content/FinalAssessment_Backend",
       "RelativePath": "user/images/anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview244323457.jpg",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview244323457.jpg"
     },
     {
-      "Identity": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview244855031.jpg",
+      "Identity": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview244855031.jpg",
       "SourceId": "FinalAssessment_Backend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
+      "ContentRoot": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
       "BasePath": "_content/FinalAssessment_Backend",
       "RelativePath": "user/images/anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview244855031.jpg",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview244855031.jpg"
     },
     {
-      "Identity": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview245503537.jpg",
+      "Identity": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview245503537.jpg",
       "SourceId": "FinalAssessment_Backend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
+      "ContentRoot": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
       "BasePath": "_content/FinalAssessment_Backend",
       "RelativePath": "user/images/anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview245503537.jpg",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview245503537.jpg"
     },
     {
-      "Identity": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview245838084.jpg",
+      "Identity": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview245838084.jpg",
       "SourceId": "FinalAssessment_Backend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
+      "ContentRoot": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
       "BasePath": "_content/FinalAssessment_Backend",
       "RelativePath": "user/images/anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview245838084.jpg",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview245838084.jpg"
     },
     {
-      "Identity": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview245846361.jpg",
+      "Identity": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview245846361.jpg",
       "SourceId": "FinalAssessment_Backend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
+      "ContentRoot": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
       "BasePath": "_content/FinalAssessment_Backend",
       "RelativePath": "user/images/anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview245846361.jpg",
       "AssetKind": "All",
@@ -264,10 +264,29 @@
       "OriginalItemSpec": "wwwroot\\user\\images\\anime-demon-slayer-kimetsu-no-yaiba-giyuu-tomioka-hd-wallpaper-preview245846361.jpg"
     },
     {
-      "Identity": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\Sign245601526.jpg",
+      "Identity": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\fad5e79954583ad50ccb3f16ee64f66d244909956.jpg",
       "SourceId": "FinalAssessment_Backend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
+      "ContentRoot": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
+      "BasePath": "_content/FinalAssessment_Backend",
+      "RelativePath": "user/images/fad5e79954583ad50ccb3f16ee64f66d244909956.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user\\images\\fad5e79954583ad50ccb3f16ee64f66d244909956.jpg"
+    },
+    {
+      "Identity": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\Sign245601526.jpg",
+      "SourceId": "FinalAssessment_Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
       "BasePath": "_content/FinalAssessment_Backend",
       "RelativePath": "user/images/Sign245601526.jpg",
       "AssetKind": "All",
@@ -283,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\user\\images\\Sign245601526.jpg"
     },
     {
-      "Identity": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\wallpaperflare.com_wallpaper241552497.jpg",
+      "Identity": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\wallpaperflare.com_wallpaper241552497.jpg",
       "SourceId": "FinalAssessment_Backend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
+      "ContentRoot": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
       "BasePath": "_content/FinalAssessment_Backend",
       "RelativePath": "user/images/wallpaperflare.com_wallpaper241552497.jpg",
       "AssetKind": "All",
@@ -302,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\user\\images\\wallpaperflare.com_wallpaper241552497.jpg"
     },
     {
-      "Identity": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\wallpaperflare.com_wallpaper242455362.jpg",
+      "Identity": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\user\\images\\wallpaperflare.com_wallpaper242455362.jpg",
       "SourceId": "FinalAssessment_Backend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
+      "ContentRoot": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\wwwroot\\",
       "BasePath": "_content/FinalAssessment_Backend",
       "RelativePath": "user/images/wallpaperflare.com_wallpaper242455362.jpg",
       "AssetKind": "All",

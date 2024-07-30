@@ -14,6 +14,8 @@ namespace FinalAssessment_Backend.RepositoryInterface
 
         public Task<bool> DeleteUser(int id);
 
-        public Task<PagedRecord> GetRecords(int currentPage, int itemsPerPage, string? status);
+        public Task<PagedRecord> GetRecords(UserQueryParams userQuery);
+
+        public Task<List<PrashantDbUser>> GetNonDeletedUsersAsync();
     }
 }

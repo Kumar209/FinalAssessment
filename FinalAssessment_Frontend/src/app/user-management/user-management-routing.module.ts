@@ -7,7 +7,7 @@ import { UpdateUserComponent } from './update-user/update-user.component';
 
 const routes: Routes = [
   {
-    path: 'dashboard' , component : DashboardComponent, canActivate : [authGuard]
+    path: 'dashboard' , component : DashboardComponent
   },
   {
     path : 'add-user' , component : AddUserComponent, canActivate : [authGuard]

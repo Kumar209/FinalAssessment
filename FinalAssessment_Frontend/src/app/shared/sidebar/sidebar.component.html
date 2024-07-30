@@ -7,9 +7,10 @@
     </div>
 
     <ul class="sidebar-nav">
-        <li routerLink="/user-management/dashboard" class="sidebar-item active  mb-4">
+        <li routerLink="/user-management/dashboard" class="sidebar-item mb-4" [ngClass]="isActive == 1 ? 'active' : 'inactive'">
             <span class="sidebar-link">
-                <img class="icon" src="../../../assets/dashboard_icon.png" alt="dashboard_icon">
+                <img *ngIf="isActive == 1" class="icon" src="../../../assets/dashboard_icon.png" alt="dashboard_icon"/>
+                <img *ngIf="isActive != 1" class="icon" src="../../../assets/dashboard_icon_inactive.png" alt="dashboard_icon_inactive" />
                 <span>Dashboard</span>
             </span>
         </li>
@@ -25,7 +26,7 @@
         </li>
 
         <ul id="manageLinks" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-            <li routerLink="/user-management/add-user" class="sidebar-item active mb-2" style="padding-left: 48px;">
+            <li routerLink="/user-management/add-user" class="sidebar-item mb-2" [ngClass]="isActive == 2 ? 'active' : 'inactive'" style="padding-left: 48px;">
                 <span class="sidebar-link">Add User</span>
             </li>
         </ul>

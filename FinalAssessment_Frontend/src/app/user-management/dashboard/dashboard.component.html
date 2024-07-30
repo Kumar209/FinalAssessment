@@ -1,6 +1,6 @@
 <section class="main">
   <div class="sidebar-wrapper">
-    <app-sidebar />
+    <app-sidebar [isActive]="1" />
   </div>
 
   <div class="main-content">
@@ -48,15 +48,41 @@
             <table>
               <thead>
                 <tr>
-                  <th class="shift">First Name</th>
-                  <th>Middle Name</th>
-                  <th>Last Name</th>
-                  <th>DOB</th>
-                  <th>Email</th>
-                  <th>Contact No</th>
-                  <th>City</th>
-                  <th>State</th>
-                  <th>Action</th>
+                  <th class="shift">
+                    First Name 
+                    <img src="../../../assets/sorting-icon.png" alt="sorting-icon"  (click)="onSortColumn('FirstName')">
+                  </th>
+                  <th>
+                    Middle Name
+                    <img src="../../../assets/sorting-icon.png" alt="sorting-icon" (click)="onSortColumn('MiddleName')">
+                  </th>
+                  <th>
+                    Last Name
+                    <img src="../../../assets/sorting-icon.png" alt="sorting-icon" (click)="onSortColumn('LastName')">
+                  </th>
+                  <th>
+                    DOB
+                    <img src="../../../assets/sorting-icon.png" alt="sorting-icon" (click)="onSortColumn('DateOfBirth')">
+                  </th>
+                  <th>
+                    Email
+                    <img src="../../../assets/sorting-icon.png" alt="sorting-icon" (click)="onSortColumn('Email')">
+                  </th>
+                  <th>
+                    Contact No
+                    <img src="../../../assets/sorting-icon.png" alt="sorting-icon" (click)="onSortColumn('Phone')">
+                  </th>
+                  <th>
+                    City
+                    <img src="../../../assets/sorting-icon.png" alt="sorting-icon" (click)="onSortColumn('City')">
+                  </th>
+                  <th>
+                    State
+                    <img src="../../../assets/sorting-icon.png" alt="sorting-icon" (click)="onSortColumn('State')">
+                  </th>
+                  <th>
+                    Action
+                  </th>
                 </tr>
               </thead>
               <tbody>
