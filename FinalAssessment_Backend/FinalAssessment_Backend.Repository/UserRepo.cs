@@ -31,6 +31,7 @@ namespace FinalAssessment_Backend.Repository
             return true;
         }
 
+
         public async Task<bool> DeleteUser(int id)
         {
             var affectedRows = await _dbcontext.Database.ExecuteSqlRawAsync(
@@ -44,10 +45,12 @@ namespace FinalAssessment_Backend.Repository
         }
 
 
+
         public async Task<PagedRecord> GetRecords(UserQueryParams userQuery)
         {
 
             var query = _dbcontext.PrashantDbUsers
+                        .Include(u => u.PrashantDbAddresses)
                         .Where(u => u.IsDeleted == false);
 
             // Giving total counts of users which are present in db means including active + inactive
@@ -89,10 +92,9 @@ namespace FinalAssessment_Backend.Repository
 
 
             var users = await query
-                .Include(u => u.PrashantDbAddresses)
-                .Skip((userQuery.CurrentPage - 1) * userQuery.ItemsPerPage)
-                .Take(userQuery.CurrentPage)
-                .ToListAsync();
+                        .Skip((userQuery.CurrentPage - 1) * userQuery.ItemsPerPage)
+                        .Take(userQuery.ItemsPerPage)
+                        .ToListAsync();
 
 
 
@@ -108,6 +110,7 @@ namespace FinalAssessment_Backend.Repository
 
 
 
+
         //API for excel file
         public async Task<List<PrashantDbUser>> GetNonDeletedUsersAsync()
         {
@@ -115,6 +118,15 @@ namespace FinalAssessment_Backend.Repository
                                  .Where(u => u.IsDeleted == false)
                                  .Include(u => u.PrashantDbAddresses)
                                  .ToListAsync();
+        }
+
+
+
+        public async Task<PrashantDbUser> GetUserById(int id)
+        {
+            return await _dbcontext.PrashantDbUsers
+                                   .Include(u => u.PrashantDbAddresses)
+                                   .FirstOrDefaultAsync(u => u.Id == id);
         }
 
 

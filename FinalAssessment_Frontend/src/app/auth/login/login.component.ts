@@ -13,7 +13,17 @@ export class LoginComponent implements OnInit {
 
   loginForm : any;
 
+  //Variable used to show and hide the password
+  showPassword: boolean = false;
+
   constructor(private router : Router, private service : AuthService, private toastr : ToastrService) {}
+
+ 
+
+  //Function used to toggle the showPassword variable
+  passwordShowHide() {
+    this.showPassword = !this.showPassword;
+  }
 
 
   ngOnInit(): void {

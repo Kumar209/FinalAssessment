@@ -64,6 +64,7 @@
   font-weight: 500;
 }
 
+
 .user-list-wrapper {
   background-color: #fff;
   margin-top: 25px;
@@ -74,11 +75,23 @@
 .user-heading-wrapper {
   width: 100%;
   padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .user-heading-wrapper p {
   font-size: 15px;
   font-weight: 600;
+}
+
+.user-heading-wrapper .download-btn-wrapper{
+  width: 150px;
+  padding-bottom: 15px;
+}
+
+.user-heading-wrapper .download-btn-wrapper button {
+  font-size: 14px;
 }
 
 
@@ -171,6 +184,25 @@ ul .page {
   color: #fff;
 }
 
+
+@media (max-width: 768px){
+  .user-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+
+  .user-heading-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .user-heading-wrapper .download-btn-wrapper{
+    width: 150px;
+  }
+}
 
 
 

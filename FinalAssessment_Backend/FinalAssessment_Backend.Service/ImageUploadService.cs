@@ -49,6 +49,7 @@ namespace FinalAssessment_Backend.Service
                 string serverFolder = Path.Combine(wwwRootPath, folder);
 
 
+                //It is saving the file in the serverFolder path
                 using (var fileStream = new FileStream(serverFolder, FileMode.Create))
                 {
                     await file.CopyToAsync(fileStream);

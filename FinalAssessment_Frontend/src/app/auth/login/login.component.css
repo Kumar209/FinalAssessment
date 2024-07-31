@@ -72,6 +72,22 @@ input {
   padding: 12px 10px;
 }
 
+.password-input {
+    padding-right: 40px; 
+    box-sizing: border-box; 
+    position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 60%;
+  right: 170px; 
+  /* transform: translateY(-50%);  */
+  cursor: pointer;
+  pointer-events: auto; 
+  z-index: 1; 
+}
+
 input:focus {
     outline: none; 
     border: 2px solid #0dc5dd; 

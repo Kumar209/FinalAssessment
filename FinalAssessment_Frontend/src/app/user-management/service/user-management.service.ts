@@ -1,4 +1,4 @@
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
@@ -9,6 +9,8 @@ export class UserManagementService {
   constructor(private http : HttpClient) { }
 
   private apiUrl = 'https://localhost:44320/api/User';
+
+  private token = localStorage.getItem('BearerToken');
 
 
   getRecordPerPage(currentPage: number, itemsPerPage: number, status: string | null, sortBy: string | null, isAscending: boolean) : Observable<any>{
@@ -21,50 +23,50 @@ export class UserManagementService {
     .set('isAscending', isAscending.toString());
 
     // const headers = new HttpHeaders({
-    //   'Authorization': `Bearer kdsjfldsjflkjsdlkfjlksdjflksdjlkfjsdlkfjlksdjflkjsdlfjklsdjfklsdlkfjlkdsjflkdsjflkjsdlkfjsaldkfjlsd` 
+    //   'Authorization': "Bearer "+this.token
     // });
 
-    // return this.http.get<any>(`${this.apiUrl}/GetRecords`, { params, headers });
+    let head_obj = new HttpHeaders().set("Authorization", "Bearer "+this.token);
+
     
-    return this.http.get<any>(`${this.apiUrl}/GetRecords`, { params });
+    return this.http.get<any>(`${this.apiUrl}/GetRecords`, { params , headers : head_obj });
   }
 
 
   addUser(userDetails : any) : Observable<any>{
-    return this.http.post<any>(`${this.apiUrl}/AddUser`, userDetails);
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${this.token}` 
+    });
+
+
+    return this.http.post<any>(`${this.apiUrl}/AddUser`, userDetails, { headers });
   }
 
 
   deleteUser(id : number) : Observable<any>{
-    return this.http.delete<any>(`${this.apiUrl}/RemoveUser/${id}`);
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${this.token}` 
+    });
+
+    
+    return this.http.delete<any>(`${this.apiUrl}/RemoveUser/${id}` , { headers });
   }
 
-  getActiveUserCount() : Observable<any>{
-    return this.http.get<any>(`${this.apiUrl}/ActiveRecords`);
+  downloadExcel() {
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${this.token}` 
+    });
+
+
+    return this.http.get(`${this.apiUrl}/DownloadExcel`, {
+      headers,
+      responseType: 'blob'
+    });
   }
 
 
-  // downloadExcel() {
-  //   const headers = new HttpHeaders({
-  //     'Authorization': `Bearer ${this.getToken()}` // Adjust token retrieval as needed
-  //   });
-
-  //   return this.http.get(`${this.apiUrl}/User/DownloadExcel`, {
-  //     headers,
-  //     responseType: 'blob' // Important to handle binary data
-  //   });
-  // }
-
-
-  // downloadExcel() {
-  //   this.service.downloadExcel().subscribe({
-  //     next: (response) => {
-  //       const blob = new Blob([response], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
-  //       saveAs(blob, 'Users.xlsx');
-  //     },
-  //     error: (err) => {
-  //       this.toastr.error(err.error?.message || 'Something went wrong', 'Error!');
-  //     }
-  //   });
-  // }
+  getUserById(id : number) {
+    
+    return this.http.get(`${this.apiUrl}/GetUserById/${id}`);
+  }
 }

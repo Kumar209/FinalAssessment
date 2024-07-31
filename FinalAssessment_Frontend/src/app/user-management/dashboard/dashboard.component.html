@@ -41,6 +41,11 @@
       <div class="user-list-wrapper">
         <div class="user-heading-wrapper">
           <p>User List</p>
+
+
+          <div class="download-btn-wrapper">
+            <button class="btn btn-success" (click)="downloadExcel()" >Export Excel</button>
+          </div>
         </div>
 
         <div class="user-list-table-wrapper">
@@ -99,8 +104,29 @@
                   <td>
                     {{getAddressType1(user)?.state}}
                   </td>
-                  <td>
-                    <img src="../../../assets/eye-icon.png" alt="eye-icon">
+                  <td class="d-flex text-start gap-4">
+                    <!-- <img 
+                      data-toggle="modal" 
+                      data-target="#exampleModalCenter"
+                      src="../../../assets/eye-icon.png"
+                      alt="eye-icon" 
+                      (click)="updateClick(user.id)" 
+                    /> -->
+
+                    <span class="bg-light">
+                      <i class="fa-solid fa-trash" data-bs-toggle="modal" data-bs-target="#deletePatient" data-toggle="tooltip" data-placement="top"
+                      
+                          title="Delete" style="color: red; font-size: 20px; cursor: pointer;">
+                      </i>
+                    </span>
+
+                    <span>
+                      <i data-bs-toggle="modal" data-bs-target="#addPatientModal"
+                          class="fa-solid fa-pen-to-square" 
+                          data-toggle="tooltip" data-placement="top" title="edit"
+                          style="color: rgb(146, 10, 237); font-size: 20px; cursor: pointer;">
+                      </i>
+                    </span>
                   </td>
                 </tr>
               </tbody>
@@ -123,3 +149,5 @@
     </div>
   </div>
 </section>
+
+

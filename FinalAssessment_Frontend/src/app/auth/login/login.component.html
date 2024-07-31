@@ -24,7 +24,15 @@
 
                 <div class="passwordWrapper InputWrapper">
                     <label for="userPassword">Enter your password</label>
-                    <input type="password" name="password" id="userPassword" formControlName="password" placeholder="Password" autocomplete="off">
+                    <input class="password-input" [type]="showPassword ? 'text' : 'password'" name="password" id="userPassword" formControlName="password" placeholder="Password" autocomplete="off">
+                    <span class="password-toggle" (click)="passwordShowHide()" 
+                        >
+                        <i class="fa-solid fa-eye" [hidden]="!showPassword"></i>
+                        <i class="fa-solid fa-eye-slash" [hidden]="showPassword"></i>
+                    </span>
+
+                    
+
                     <span class="text_Validator" *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.hasError('required')" >* Password is required</span>
                 </div>
 

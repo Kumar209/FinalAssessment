@@ -54,7 +54,7 @@ namespace FinalAssessment_Backend.Service
 
         public async Task<bool> CreateUser(PrashantDbUserDto userDetails)
         {
-            var customPassword = "Pass@123";
+            var customPassword = await GenerateCustomPassword(8);
 
 
             var userDetailsEntity = new PrashantDbUser
@@ -191,6 +191,8 @@ namespace FinalAssessment_Backend.Service
                 worksheet.Cells[1, 13].Value = "Secondary Address State";
                 worksheet.Cells[1, 14].Value = "Secondary Address Country";
 
+             /*   worksheet.Row(1).Font.bold = true;*/
+
 
 
                 int row = 2;
@@ -202,27 +204,102 @@ namespace FinalAssessment_Backend.Service
 
 
                     worksheet.Cells[row, 1].Value = user.FirstName;
+
+
                     worksheet.Cells[row, 2].Value = user.MiddleName;
+
                     worksheet.Cells[row, 3].Value = user.LastName;
+
+
                     worksheet.Cells[row, 4].Value = user.DateOfBirth;
+                    worksheet.Cells[row, 4].Style.Numberformat.Format = "yyyy-mm-dd";
+
+
                     worksheet.Cells[row, 5].Value = user.DateOfJoining;
+                    worksheet.Cells[row, 5].Style.Numberformat.Format = "yyyy-mm-dd";
+
+
                     worksheet.Cells[row, 6].Value = _encryptDecrypt.DecryptCipherText(user.Email);
+
+
                     worksheet.Cells[row, 7].Value = _encryptDecrypt.DecryptCipherText(user.Phone);
-                    worksheet.Cells[row, 8].Value = _encryptDecrypt.DecryptCipherText(user.AlternatePhone);
+
+
+                    worksheet.Cells[row, 8].Value = user.AlternatePhone != null
+                                                    ? _encryptDecrypt.DecryptCipherText(user.AlternatePhone)
+                                                    : null;
+
+
                     worksheet.Cells[row, 9].Value = primaryAddress.City;
+
+
                     worksheet.Cells[row, 10].Value = primaryAddress.State;
+
+
                     worksheet.Cells[row, 11].Value = primaryAddress.Country;
+
+
                     worksheet.Cells[row, 12].Value = secondaryAddress?.City;
+
+
                     worksheet.Cells[row, 13].Value = secondaryAddress?.State;
+
+
                     worksheet.Cells[row, 14].Value = secondaryAddress?.Country;
 
 
                     row++;
                 }
 
+                worksheet.Cells.AutoFitColumns();
+
 
                 return package.GetAsByteArray();
             }
+        }
+
+
+
+
+
+        public async Task<PrashantDbUserDto> GetUserDetailById(int id)
+        {
+            var res = await _userRepo.GetUserById(id);
+
+            var responseDto = new PrashantDbUserDto
+            {
+                Id = res.Id,
+                FirstName = res.FirstName,
+                MiddleName = res.MiddleName,
+                LastName = res.LastName,
+
+                Email = _encryptDecrypt.DecryptCipherText(res.Email),
+
+                Gender = res.Gender,
+                DateOfJoining = res.DateOfJoining,
+                DateOfBirth = res.DateOfBirth,
+
+                Phone = _encryptDecrypt.DecryptCipherText(res.Phone),
+
+                AlternatePhone = (res.AlternatePhone != null && res.AlternatePhone.Length > 0)
+                                 ? _encryptDecrypt.DecryptCipherText(res.AlternatePhone)
+                                 : null,
+
+                ImageUrl = res.ImageUrl,
+                PrashantDbAddresses = res.PrashantDbAddresses.Select(address => new PrashantDbAddressDto
+                {
+                    Id = address.Id,
+                    City = address.City,
+                    State = address.State,
+                    Country = address.Country,
+                    ZipCode = address.ZipCode,
+                    AddressTypeId = address.AddressTypeId,
+                    UserId = address.UserId
+                }).ToList(),
+            };
+
+
+            return responseDto;
         }
 
 

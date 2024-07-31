@@ -7,6 +7,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 20px 25px 9px;
+    position: relative;
 }
 
 .text-wrapper{
@@ -44,30 +45,42 @@ header{
     border-radius: 50%;
 }
 
+
+
 .name {
     cursor: pointer;
 }
 
-.profile-wrapper {
-    position: relative;
-}
 
-.logout {
+
+.dropdown {
+    display: none; 
+    width: 180px;
     position: absolute; 
-    top: 100%; 
-    left: 0;
-    margin-top: 10px;
+    right: 30px;
+    background-color: rgb(10, 124, 177); 
     border-radius: 5px;
-    background-color: rgb(7, 7, 68);
-    color: white;
-    padding: 5px 20px;
-    opacity: 0; 
-    visibility: hidden; 
-    transition: opacity 0.3s ease-in, visibility 0.3s ease-in; 
-    z-index: 10;
+    color: #fff;
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    z-index: 1; 
 }
 
-.profile-wrapper:hover .logout {
-    opacity: 1; 
-    visibility: visible; 
+.dropdown span {
+    font-size: 14px;
+}
+
+.name:hover .dropdown {
+    display: block;
+}
+
+
+@media (max-width : 768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+   
 }

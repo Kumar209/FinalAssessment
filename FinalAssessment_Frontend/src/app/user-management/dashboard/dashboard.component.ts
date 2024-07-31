@@ -3,6 +3,7 @@ import { UserManagementService } from '../service/user-management.service';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -26,7 +27,7 @@ export class DashboardComponent implements OnInit {
   currentPage: number = 1;
 
   //used to set how many organizaton should be shown on a single page of table
-  itemsPerPage: number = 2;
+  itemsPerPage: number = 5;
 
 
   //Total number of pages according to itemsPerPage and records present in db
@@ -155,6 +156,36 @@ export class DashboardComponent implements OnInit {
     }
     this.getRecordsPerPage(this.currentPage, this.itemsPerPage, this.filterStatus, this.sortBy, this.isAscending);
   }
+
+
+
+  downloadExcel() {
+    this.service.downloadExcel().subscribe({
+      next: (response) => {
+        const blob = new Blob([response], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+        // saveAs(blob, 'Users.xlsx');
+
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'UserData.xlsx';
+        a.click();
+        window.URL.revokeObjectURL(url);
+
+      },
+      error: (err) => {
+        this.toastr.error(err.error?.message || 'Something went wrong', 'Error!');
+      }
+    });
+  }
+
+  updateClick(id : number) : void {
+    this.router.navigate(['/user-management/update-user'], { queryParams: { id: id } });
+  }
+
+
+
+
 
 }
 

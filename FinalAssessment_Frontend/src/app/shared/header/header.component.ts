@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from 'src/app/auth/service/auth.service';
 
 
 @Component({
@@ -7,6 +9,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+
+  constructor(private router : Router, private authService : AuthService){}
 
   activeHeaderList : any[] = ['dashboard', 'addUser'];
 
@@ -28,7 +32,14 @@ export class HeaderComponent implements OnInit {
   getImageUrl(relativePath: string): string {
     var url = `http://localhost:44320/${relativePath}`;
     console.log(url);
-    return url
+    return url;
+  }
+
+  
+  logout() : void {
+    this.authService.logout();
+
+    this.router.navigate(['/auth/login']);
   }
 
 }

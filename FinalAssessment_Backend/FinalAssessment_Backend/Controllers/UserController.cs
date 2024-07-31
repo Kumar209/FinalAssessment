@@ -18,26 +18,43 @@ namespace FinalAssessment_Backend.Controllers
 
 
         [HttpPost("AddUser")]
+
         public async Task<IActionResult> AddUser([FromForm] PrashantDbUserDto userDetails)
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest(ModelState);
+                return BadRequest(new { success=false, message = "Validation failed"});
             }
 
-            var res = await _userService.CreateUser(userDetails);
+            try
+            {
+                var res = await _userService.CreateUser(userDetails);
 
-            return Ok(new {success=res, message="Successfully created user and credential send to email"});
+                return Ok(new { success = res, message = "Successfully created user and credential send to email" });
+            }
+            
+
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { success = false, message = "An error occurred while creating the user.", error = ex.Message });
+            }
         }
 
 
         [HttpDelete("RemoveUser/{id}")]
-
+        [Authorize]
         public async Task<IActionResult> RemoveUser(int id)
         {
-            var res = await _userService.RemoveUserById(id);
+            try
+            {
+                var res = await _userService.RemoveUserById(id);
 
-            return Ok(new {success=res, message="User is deleted"});
+                return Ok(new { success = res, message = "User is deleted" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { success = false, message = "An error occurred while deleting the user.", error = ex.Message });
+            }
         }
 
 
@@ -45,21 +62,54 @@ namespace FinalAssessment_Backend.Controllers
 
         public async Task<IActionResult> GetRecords([FromQuery] UserQueryParams userQuery)
         {
-            var res = await _userService.GetPagedRecords(userQuery);
+            try
+            {
+                var res = await _userService.GetPagedRecords(userQuery);
 
-            return Ok(new {success = true, record=res.Records, TotalUsersCount = res.TotalUsersCount , TotalActiveCount = res.TotalActiveCount , TotalInactiveCount = res.TotalInactiveCount });
+                return Ok(new { success = true, record = res.Records, TotalUsersCount = res.TotalUsersCount, TotalActiveCount = res.TotalActiveCount, TotalInactiveCount = res.TotalInactiveCount });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { success = false, message = "An error occurred while getting records.", error = ex.Message });
+            }
+           
         }
 
 
         [HttpGet("DownloadExcel")]
         public async Task<IActionResult> DownloadExcel()
         {
-            var excelData = await _userService.GenerateExcelAsync();
+            try
+            {
+                var excelData = await _userService.GenerateExcelAsync();
 
-            var contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
-            var fileName = "Users.xlsx";
+                var contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+                var fileName = "Users.xlsx";
 
-            return File(excelData, contentType, fileName);
+                return File(excelData, contentType, fileName);
+            }
+
+            catch(Exception ex)
+            {
+                return StatusCode(500, new { success = false, message = "An error occurred while exporting excel.", error = ex.Message });
+            }
+            
+        }
+
+
+        [HttpGet("GetUserById/{id}")]
+        public async Task<IActionResult> GetUserById(int id)
+        {
+            try
+            {
+                var res = await _userService.GetUserDetailById(id);
+
+                return Ok(new { success = true, record = res });
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, new {success=false, message="Error occurred while getting user", error=ex.Message});
+            }
         }
 
 

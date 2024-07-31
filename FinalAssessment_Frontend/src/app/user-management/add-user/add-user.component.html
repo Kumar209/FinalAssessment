@@ -85,12 +85,12 @@
 
                             <div class="form-input col-md-4 col-12">
                                 <label for="phone">Phone</label>
-                                <input type="text" id="phone" name="phone" placeholder="Phone" formControlName="phone">
+                                <input type="text" prefix="+91 " [showMaskTyped]="true" type="text" mask="(000)-000-0000" id="phone" name="phone" placeholder="Phone"  formControlName="phone"  >
                             </div>
 
                             <div class="form-input col-md-4 col-12">
                                 <label for="alternatePhone">Alternate Phone</label>
-                                <input type="text" id="alternatePhone" name="alternatePhone"
+                                <input type="text" prefix="+91 " [showMaskTyped]="true" type="text" mask="(000)-000-0000" id="alternatePhone" name="alternatePhone"
                                     placeholder="Alternate Phone" formControlName="alternatePhone">
                             </div>
                         </div>
@@ -137,10 +137,10 @@
                         </div>
                     </div>
 
-                    <div class="inactive-checkbox-wrapper">
+                    <!-- <div class="inactive-checkbox-wrapper">
                         <input type="checkbox" formControlName="isActive" name="isActive" id="inactive">
                         <label for="inactive">Inactive</label>
-                    </div>
+                    </div> -->
 
 
                     <div class="submit-btn-wrapper">

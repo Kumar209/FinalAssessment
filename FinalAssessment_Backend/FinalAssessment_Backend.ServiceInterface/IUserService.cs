@@ -17,5 +17,7 @@ namespace FinalAssessment_Backend.ServiceInterface
 
         public Task<byte[]> GenerateExcelAsync();
 
+        public Task<PrashantDbUserDto> GetUserDetailById(int id);
+
     }
 }

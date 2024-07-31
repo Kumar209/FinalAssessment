@@ -39,7 +39,6 @@ export class AddUserComponent {
         [
         this.createAddressGroup(1) 
       ]),
-      isActive: new FormControl(false)
     });
 
   }
@@ -111,7 +110,6 @@ export class AddUserComponent {
     formData.append('dateOfJoining', this.addUserForm.get('dateOfJoining').value);
     formData.append('phone', this.addUserForm.get('phone').value);
     formData.append('alternatePhone', this.addUserForm.get('alternatePhone').value);
-    formData.append('isActive', this.addUserForm.get('isActive').value);
 
     this.PrashantDbAddresses.controls.forEach((control, index) => {
       const addressGroup = control as FormGroup;
@@ -137,6 +135,10 @@ export class AddUserComponent {
       next : (response) => {
         if(response.success){
           this.toastr.success(response.message, 'Successfully!');
+
+          this.selectedImg = null;
+          this.imgSrc = '';
+          this.addUserForm.reset();
         }
         else{
           this.toastr.error(response.message, 'Error!');

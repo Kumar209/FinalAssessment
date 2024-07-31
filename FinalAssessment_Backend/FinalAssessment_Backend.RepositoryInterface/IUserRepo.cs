@@ -17,5 +17,7 @@ namespace FinalAssessment_Backend.RepositoryInterface
         public Task<PagedRecord> GetRecords(UserQueryParams userQuery);
 
         public Task<List<PrashantDbUser>> GetNonDeletedUsersAsync();
+
+        public Task<PrashantDbUser> GetUserById(int id);
     }
 }

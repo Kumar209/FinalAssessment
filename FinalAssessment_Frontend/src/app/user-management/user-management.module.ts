@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserModalComponent } from './user-modal/user-modal.component';
 import { UpdateUserComponent } from './update-user/update-user.component';
+import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 
 
 @NgModule({
@@ -24,7 +25,10 @@ import { UpdateUserComponent } from './update-user/update-user.component';
     SharedModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
-  ]
+    FormsModule,
+    NgxMaskDirective,
+    NgxMaskPipe
+  ],
+  providers: [provideNgxMask()]
 })
 export class UserManagementModule { }

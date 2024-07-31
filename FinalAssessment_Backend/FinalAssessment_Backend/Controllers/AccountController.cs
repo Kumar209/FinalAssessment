@@ -25,18 +25,27 @@ namespace FinalAssessment_Backend.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest(ModelState);
+                return BadRequest(new { success = false, message = "Validation failed" });
             }
 
-            var res = await _accountService.loginUser(loginCredentials);
-
-
-            if(res.success)
+            try
             {
-                return Ok(new {success=res.success, message = res.msg, token=res.token, requiredDataForFrontend = res.requiredDataForFrontend });
+                var res = await _accountService.loginUser(loginCredentials);
+
+
+                if (res.success)
+                {
+                    return Ok(new { success = res.success, message = res.msg, token = res.token, requiredDataForFrontend = res.requiredDataForFrontend });
+                }
+
+                return BadRequest(new { success = res.success, message = res.msg });
+            }
+            catch(Exception ex) 
+            {
+                return StatusCode(500, new { success = false, message = "An error occurred while authenticating.", error = ex.Message });
             }
 
-            return BadRequest(new { success = res.success, message = res.msg });
+            
         }
 
 
@@ -58,13 +67,20 @@ namespace FinalAssessment_Backend.Controllers
             var res = await _accountService.ActivateAccount(token);
 
 
-
-            if (res.success)
+            try
             {
-                return Ok(new { success = res.success, message = res.msg });
-            }
+                if (res.success)
+                {
+                    return Ok(new { success = res.success, message = res.msg });
+                }
 
-            return StatusCode(StatusCodes.Status500InternalServerError, new { success = res.success, message = res.msg }); ;
+                return StatusCode(StatusCodes.Status500InternalServerError, new { success = res.success, message = res.msg });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { success = false, message = "An error occurred while activating your account.", error = ex.Message });
+            }
+            
         }
 
 
@@ -74,12 +90,19 @@ namespace FinalAssessment_Backend.Controllers
         {
             var response = await _accountService.forgotPasswordService(email);
 
-            if (response.success == true)
+            try
             {
-                return Ok(new { success = response.success, message = response.msg });
+                if (response.success == true)
+                {
+                    return Ok(new { success = response.success, message = response.msg });
+                }
+
+                return BadRequest(new { success = response.success, message = response.msg });
             }
-            
-            return BadRequest(new { success = response.success, message=response.msg });
+            catch(Exception ex)
+            {
+                return StatusCode(500, new { success = false, message = "Internal Server Error", error = ex.Message });
+            }
         }
 
 
@@ -90,7 +113,7 @@ namespace FinalAssessment_Backend.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest(ModelState);
+                return BadRequest(new { success = false, message = "Validation failed" });
             }
 
             var authHeader = Request.Headers["Authorization"].FirstOrDefault();
@@ -100,16 +123,23 @@ namespace FinalAssessment_Backend.Controllers
                 return Unauthorized(new { success = false, message = "Unauthorized" });
             }
 
-            var token = authHeader.Substring("Bearer ".Length).Trim();
-
-            var res = await _accountService.resetPasswordService(dto, token);
-
-            if (res.success)
+            try
             {
-                return Ok(new {success = res.success, message = res.msg});
-            }
+                var token = authHeader.Substring("Bearer ".Length).Trim();
 
-            return BadRequest(new {success = res.success, message = res.msg });
+                var res = await _accountService.resetPasswordService(dto, token);
+
+                if (res.success)
+                {
+                    return Ok(new { success = res.success, message = res.msg });
+                }
+
+                return BadRequest(new { success = res.success, message = res.msg });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { success = false, message = "An error occurred while reset your password.", error = ex.Message });
+            }
         }
 
 
@@ -133,14 +163,21 @@ namespace FinalAssessment_Backend.Controllers
             var token = authHeader.Substring("Bearer ".Length).Trim();
 
 
-            var res = await _accountService.changePasswordService(dto, token);
-
-            if (res.success)
+            try
             {
-                return Ok(new { success = res.success, message = res.msg });
-            }
+                var res = await _accountService.changePasswordService(dto, token);
 
-            return BadRequest(new { success = res.success, message = res.msg });
+                if (res.success)
+                {
+                    return Ok(new { success = res.success, message = res.msg });
+                }
+
+                return BadRequest(new { success = res.success, message = res.msg });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { success = false, message = "An error occurred while changing your password.", error = ex.Message });
+            }
         }
     }
-}
+ }
