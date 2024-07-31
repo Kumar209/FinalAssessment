@@ -7,7 +7,6 @@ import { SharedModule } from '../shared/shared.module';
 import { AddUserComponent } from './add-user/add-user.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { UserModalComponent } from './user-modal/user-modal.component';
 import { UpdateUserComponent } from './update-user/update-user.component';
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 
@@ -16,8 +15,7 @@ import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
   declarations: [
     DashboardComponent,
     AddUserComponent,
-    UserModalComponent,
-    UpdateUserComponent
+    UpdateUserComponent,
   ],
   imports: [
     CommonModule,

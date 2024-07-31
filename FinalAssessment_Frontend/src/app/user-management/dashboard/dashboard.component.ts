@@ -45,6 +45,9 @@ export class DashboardComponent implements OnInit {
   isAscending: boolean = true;
 
 
+  userIdToDelete! : number;
+
+
 
   constructor(
     private service: UserManagementService,
@@ -186,6 +189,9 @@ export class DashboardComponent implements OnInit {
 
 
 
+  updateUserIdToDelete(userId: number){
+    this.userIdToDelete = userId;
+  }
 
 }
 
