@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
+import { AbstractControl, FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 import { UserManagementService } from '../service/user-management.service';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
+import { Country, State, City, ICountry, IState, ICity} from 'country-state-city';
 
 
 @Component({
@@ -18,6 +19,13 @@ export class AddUserComponent {
   selectedImg : File | null = null; 
 
   addUserForm: any;
+
+  //For the dropdown cascading
+  countries: ICountry[] = [];
+  states: IState[] = [];
+  cities: ICity[] = [];
+
+  selectedCountryCode: string = '';
 
 
   constructor(private service : UserManagementService, private router: Router, private toastr: ToastrService) {
@@ -41,6 +49,13 @@ export class AddUserComponent {
       ]),
     });
 
+    this.loadStaticData();
+
+    // Initialize event listeners for address controls
+    this.PrashantDbAddresses.controls.forEach((control, index) => {
+      this.onCountryChange(index);
+      // this.onStateChange(index);
+    });
   }
 
   createAddressGroup(addressTypeId: number): FormGroup {
@@ -70,6 +85,54 @@ export class AddUserComponent {
     if (this.PrashantDbAddresses.length === 2) {
       this.PrashantDbAddresses.removeAt(1);
     }
+  }
+
+
+  loadStaticData() {
+    this.countries = Country.getAllCountries(); 
+    this.states = []; 
+    this.cities = []; 
+  }
+
+
+
+  onCountryChange(index : number){
+    const addressControl = this.PrashantDbAddresses.at(index) as FormGroup;
+
+    addressControl.get('country')?.valueChanges.subscribe((countryName: string) => {
+
+      const countryDetail = this.countries.find(c => c.name == countryName);
+
+        if (countryName) {
+          this.states = State.getStatesOfCountry(countryDetail?.isoCode);
+          addressControl.get('state')?.setValue('');
+          addressControl.get('state')?.enable();
+          addressControl.get('city')?.setValue('');
+          addressControl.get('city')?.disable();
+        }
+    });
+  }
+    
+
+  onStateChange(index : number) {
+    const addressControl = this.PrashantDbAddresses.at(index) as FormGroup;
+
+    addressControl.get('state')?.valueChanges.subscribe((stateName: string) => {
+      const countryName = addressControl.get('country')?.value;
+      const countryDetail = this.countries.find(c => c.name == countryName);
+
+      console.log(countryDetail);
+
+      const stateDetail = this.states.find(s => s.name == stateName);
+      console.log(stateDetail);
+
+      if (stateName && countryName) {
+        // this.cities = City.getCitiesOfState(countryDetail?.isoCode, stateName);
+        // this.cities = City.getCitiesOfState(countryDetail?.isoCode, stateDetail?.isoCode);
+        addressControl.get('city')?.setValue('');
+        addressControl.get('city')?.enable();
+      }
+    });
   }
 
 
