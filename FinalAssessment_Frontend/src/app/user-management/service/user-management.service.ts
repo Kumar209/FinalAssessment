@@ -69,4 +69,10 @@ export class UserManagementService {
     
     return this.http.get(`${this.apiUrl}/GetUserById/${id}`);
   }
+
+
+  updateUser(userDetails : any) {
+
+    return this.http.put(`${this.apiUrl}/UpdateUser`, userDetails);
+  }
 }

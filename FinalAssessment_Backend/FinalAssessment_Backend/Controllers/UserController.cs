@@ -113,5 +113,32 @@ namespace FinalAssessment_Backend.Controllers
         }
 
 
+
+
+        [HttpPut("UpdateUser")]
+
+        public async Task<IActionResult> UpdateUser([FromForm] PrashantDbUserDto userDetails)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(new { success = false, message = "Validation failed" });
+            }
+
+            try
+            {
+                var res = await _userService.UpdateUserDetails(userDetails);
+
+                return Ok(new { success = res, message = "Successfully updated user" });
+            }
+
+
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { success = false, message = "An error occurred while updating the user.", error = ex.Message });
+            }
+        }
+
+
+
     }
 }

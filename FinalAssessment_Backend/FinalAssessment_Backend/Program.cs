@@ -142,12 +142,17 @@ namespace FinalAssessment_Backend
 
             app.UseHttpsRedirection();
 
+
             app.UseCors("MyAllowSpecificOrigins");
+
+            app.UseStaticFiles();
+
 
 
             app.UseAuthentication();
 
             app.UseAuthorization();
+
 
 
             app.MapControllers();

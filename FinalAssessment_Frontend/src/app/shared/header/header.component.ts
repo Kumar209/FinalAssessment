@@ -30,7 +30,7 @@ export class HeaderComponent implements OnInit {
   }
 
   getImageUrl(relativePath: string): string {
-    var url = `http://localhost:44320/${relativePath}`;
+    var url = `https://localhost:44320/${relativePath}`;
     console.log(url);
     return url;
   }

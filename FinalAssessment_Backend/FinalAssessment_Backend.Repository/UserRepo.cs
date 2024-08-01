@@ -130,5 +130,14 @@ namespace FinalAssessment_Backend.Repository
         }
 
 
+
+        public async Task<bool> UpdateUser(PrashantDbUser user)
+        {
+            _dbcontext.PrashantDbUsers.Update(user);
+            await _dbcontext.SaveChangesAsync();
+            return true;
+        }
+
+
     }
 }

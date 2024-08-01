@@ -94,38 +94,42 @@
                                     placeholder="Alternate Phone" formControlName="alternatePhone">
                             </div>
                         </div>
-
+                    
+  
+                        
                         <div formArrayName="PrashantDbAddresses">
                             <div class="row form-input-row" *ngFor="let address of PrashantDbAddresses.controls; let i=index" [formGroupName]="i">
                                 <div class="form-input col-md-4 col-12">
                                     <label for="country">Country</label>
-                                    <input type="text" id="country" name="country"
-                                    placeholder="Country" formControlName="country">
-                                  
+                                    <select id="country" formControlName="country" >
+                                        <option value="" disabled>Select Country</option>
+                                        <option *ngFor="let country of countries" [value]="country.name">{{ country.name }}</option>
+                                    </select>
                                 </div>
-
+                        
                                 <div class="form-input col-md-4 col-12">
                                     <label for="state">State</label>
-                                  
-                                    <input type="text" id="state" name="state"
-                                    placeholder="state" formControlName="state">
+                                    <select id="state" formControlName="state"  [disabled]="!states.length">
+                                        <option value="" disabled>Select State</option>
+                                        <option *ngFor="let state of states" [value]="state.name">{{ state.name }}</option>
+                                    </select>
                                 </div>
-
+                        
                                 <div class="form-input col-md-4 col-12">
-                                    <label for="middle-name">City</label>
-                                    
-                                    <input type="text" id="city" name="city"
-                                    placeholder="city" formControlName="city">
+                                    <label for="city">City</label>
+                                    <select id="city" formControlName="city" [disabled]="!cities.length">
+                                        <option value="" disabled>Select City</option>
+                                        <option *ngFor="let city of cities" [value]="city.name">{{ city.name }}</option>
+                                    </select>
                                 </div>
-
+                        
                                 <div class="form-input col-md-4 col-12 mt-3">
                                     <label for="zipCode">Zip Code</label>
-                                    <input type="text" id="zipCode" name="zipCode" placeholder="zipCode" formControlName="zipCode">
+                                    <input type="text" id="zipCode" name="zipCode" placeholder="Zip Code" formControlName="zipCode">
                                 </div>
                             </div>
                         </div>
-                    
-                        
+                            
                     </div>
 
 

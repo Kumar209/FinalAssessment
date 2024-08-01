@@ -98,6 +98,12 @@ namespace FinalAssessment_Backend.Service
                 mailRequest.Subject = "User Credentail by Kumar Enterprise";
                 mailRequest.Body = UserEmailTemplate.GetTemplateUserCredential(userDetails, customPassword);
 
+                /*  string template = GetTemplateUserCredential;
+                  template = template.Replace("user.FirstName", userDetails.FirstName);
+                  template = template.Replace("user.LastName", userDetails.LastName);
+
+                  mailRequest.Body = template;*/
+
 
 
                 await _emailService.SendEmailAsync(mailRequest);
@@ -302,6 +308,52 @@ namespace FinalAssessment_Backend.Service
             return responseDto;
         }
 
+
+
+        public async Task<bool> UpdateUserDetails(PrashantDbUserDto userDetails)
+        {
+            var userId = userDetails.Id ?? 0;
+
+            var userFromDb = await _userRepo.GetUserById(userId);
+
+            var userDetailsEntity = new PrashantDbUser
+            {
+                FirstName = userDetails.FirstName,
+                MiddleName = userDetails.MiddleName,
+                LastName = userDetails.LastName,
+
+
+                //We will not update the email due to token
+                Email = userFromDb.Email,
+
+                Gender = userDetails.Gender,
+                DateOfJoining = userDetails.DateOfJoining,
+                DateOfBirth = userDetails.DateOfBirth,
+
+                Phone = _encryptDecrypt.EncryptPlainText(userDetails.Phone),
+                AlternatePhone = !string.IsNullOrEmpty(userDetails.AlternatePhone) ? _encryptDecrypt.EncryptPlainText(userDetails.AlternatePhone) : null,
+
+                ImageUrl = await _imageUploadService.GetImageUrl(userDetails.ImageFile),
+
+                Password = userFromDb.Password,
+
+                CreatedBy = userDetails.FirstName + userDetails.MiddleName,
+                PrashantDbAddresses = userDetails.PrashantDbAddresses.Select(a => new PrashantDbAddress
+                {
+                    City = a.City,
+                    State = a.State,
+                    Country = a.Country,
+                    ZipCode = a.ZipCode,
+                    AddressTypeId = a.AddressTypeId
+                }).ToList()
+            };
+
+            var res = await _userRepo.UpdateUser(userDetailsEntity);
+
+         
+
+            return res;
+        }
 
 
     }

@@ -19,5 +19,7 @@ namespace FinalAssessment_Backend.RepositoryInterface
         public Task<List<PrashantDbUser>> GetNonDeletedUsersAsync();
 
         public Task<PrashantDbUser> GetUserById(int id);
+
+        public Task<bool> UpdateUser(PrashantDbUser user);
     }
 }

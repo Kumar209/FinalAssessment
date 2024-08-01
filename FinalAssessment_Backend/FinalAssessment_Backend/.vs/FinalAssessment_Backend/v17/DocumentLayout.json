@@ -1,16 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\",
+  "WorkspaceRootPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{99909952-1B07-45AC-AA8C-68A5A222F1A5}|FinalAssessment_Backend.csproj|d:\\smartdata\\evaluation\\finalassessment\\finalassessment_backend\\finalassessment_backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99909952-1B07-45AC-AA8C-68A5A222F1A5}|FinalAssessment_Backend.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D33D54C-45AC-49A2-A605-705529B17D77}|..\\FinalAssessment_Backend.Shared\\FinalAssessment_Backend.Shared.csproj|c:\\prashant_office_work\\finalassessment\\finalassessment_backend\\finalassessment_backend.shared\\emailtemplates\\gettemplateusercredential.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\UserService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D33D54C-45AC-49A2-A605-705529B17D77}|..\\FinalAssessment_Backend.Shared\\FinalAssessment_Backend.Shared.csproj|c:\\prashant_office_work\\finalassessment\\finalassessment_backend\\finalassessment_backend.shared\\emailtemplates\\gettemplateresetpasswordaccount.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Repository\\UserRepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D33D54C-45AC-49A2-A605-705529B17D77}|..\\FinalAssessment_Backend.Shared\\FinalAssessment_Backend.Shared.csproj|c:\\prashant_office_work\\finalassessment\\finalassessment_backend\\finalassessment_backend.shared\\emailtemplates\\gettemplateactivateaccount.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90C82CCF-EBF1-4E42-AB25-8CCBCC297EF1}|..\\FinalAssessment_Backend.Service\\FinalAssessment_Backend.Service.csproj|c:\\prashant_office_work\\finalassessment\\finalassessment_backend\\finalassessment_backend.service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,35 +27,54 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwBwAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T08:23:35.752Z",
+              "Title": "GetTemplateUserCredential.html",
+              "DocumentMoniker": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\EmailTemplates\\GetTemplateUserCredential.html",
+              "RelativeDocumentMoniker": "..\\FinalAssessment_Backend.Shared\\EmailTemplates\\GetTemplateUserCredential.html",
+              "ToolTip": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\EmailTemplates\\GetTemplateUserCredential.html",
+              "RelativeToolTip": "..\\FinalAssessment_Backend.Shared\\EmailTemplates\\GetTemplateUserCredential.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-08-01T12:34:57.807Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\UserService.cs",
-              "ToolTip": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\UserService.cs",
-              "ViewState": "AQIAAHYAAAAAAAAAAAAiwIMAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T08:12:33.962Z"
+              "Title": "GetTemplateResetPasswordAccount.html",
+              "DocumentMoniker": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\EmailTemplates\\GetTemplateResetPasswordAccount.html",
+              "RelativeDocumentMoniker": "..\\FinalAssessment_Backend.Shared\\EmailTemplates\\GetTemplateResetPasswordAccount.html",
+              "ToolTip": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\EmailTemplates\\GetTemplateResetPasswordAccount.html",
+              "RelativeToolTip": "..\\FinalAssessment_Backend.Shared\\EmailTemplates\\GetTemplateResetPasswordAccount.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-08-01T12:34:50.933Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UserRepo.cs",
-              "DocumentMoniker": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Repository\\UserRepo.cs",
-              "ToolTip": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Repository\\UserRepo.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAcwFgAAAANAAAA",
+              "Title": "GetTemplateActivateAccount.html",
+              "DocumentMoniker": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\EmailTemplates\\GetTemplateActivateAccount.html",
+              "RelativeDocumentMoniker": "..\\FinalAssessment_Backend.Shared\\EmailTemplates\\GetTemplateActivateAccount.html",
+              "ToolTip": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Shared\\EmailTemplates\\GetTemplateActivateAccount.html",
+              "RelativeToolTip": "..\\FinalAssessment_Backend.Shared\\EmailTemplates\\GetTemplateActivateAccount.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-08-01T12:34:38.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\UserService.cs",
+              "RelativeDocumentMoniker": "..\\FinalAssessment_Backend.Service\\UserService.cs",
+              "ToolTip": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\UserService.cs",
+              "RelativeToolTip": "..\\FinalAssessment_Backend.Service\\UserService.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAADwv2YAAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T07:57:27.773Z"
+              "WhenOpened": "2024-08-01T12:20:55.729Z",
+              "EditorCaption": ""
             }
           ]
         }

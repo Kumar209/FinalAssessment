@@ -54,7 +54,7 @@ export class AddUserComponent {
     // Initialize event listeners for address controls
     this.PrashantDbAddresses.controls.forEach((control, index) => {
       this.onCountryChange(index);
-      // this.onStateChange(index);
+      this.onStateChange(index);
     });
   }
 
@@ -96,41 +96,60 @@ export class AddUserComponent {
 
 
 
-  onCountryChange(index : number){
-    const addressControl = this.PrashantDbAddresses.at(index) as FormGroup;
+  
+
+  onCountryChange(index: number) {
+    const addressControl = this.PrashantDbAddresses.at(index) as FormGroup;  
 
     addressControl.get('country')?.valueChanges.subscribe((countryName: string) => {
 
-      const countryDetail = this.countries.find(c => c.name == countryName);
+      const countryDetail = this.countries.find(c => c.name === countryName);
 
         if (countryName) {
-          this.states = State.getStatesOfCountry(countryDetail?.isoCode);
-          addressControl.get('state')?.setValue('');
-          addressControl.get('state')?.enable();
-          addressControl.get('city')?.setValue('');
-          addressControl.get('city')?.disable();
-        }
+        // Fetch states based on the selected country
+        this.states = State.getStatesOfCountry(countryDetail?.isoCode);
+  
+        // Update the state control for the specific address group
+        const stateControl = addressControl.get('state');
+        stateControl?.setValue('');
+        stateControl?.enable();
+  
+        // Update the city control for the specific address group
+        const cityControl = addressControl.get('city');
+        cityControl?.setValue('');
+        cityControl?.disable();
+      }
     });
   }
     
 
-  onStateChange(index : number) {
-    const addressControl = this.PrashantDbAddresses.at(index) as FormGroup;
 
+
+  onStateChange(index: number) {
+    const addressControl = this.PrashantDbAddresses.at(index) as FormGroup;
+  
     addressControl.get('state')?.valueChanges.subscribe((stateName: string) => {
       const countryName = addressControl.get('country')?.value;
-      const countryDetail = this.countries.find(c => c.name == countryName);
 
-      console.log(countryDetail);
+      //Here getting all detail using country name
+      const countryDetail = this.countries.find(c => c.name === countryName);
 
-      const stateDetail = this.states.find(s => s.name == stateName);
-      console.log(stateDetail);
-
-      if (stateName && countryName) {
-        // this.cities = City.getCitiesOfState(countryDetail?.isoCode, stateName);
-        // this.cities = City.getCitiesOfState(countryDetail?.isoCode, stateDetail?.isoCode);
+  
+      // Finding the state detail based on the selected state name
+      const stateDetail = this.states.find(s => s.name === stateName);
+  
+      if (stateName && countryDetail && stateDetail) {
+        
+        this.cities = City.getCitiesOfState(countryDetail.isoCode, stateDetail.isoCode);
+  
+        // Reset the city control
         addressControl.get('city')?.setValue('');
         addressControl.get('city')?.enable();
+      } 
+      else {
+        // If no valid state or country is selected, disable the city control
+        addressControl.get('city')?.setValue('');
+        addressControl.get('city')?.disable();
       }
     });
   }
@@ -202,6 +221,8 @@ export class AddUserComponent {
           this.selectedImg = null;
           this.imgSrc = '';
           this.addUserForm.reset();
+
+          this.router.navigate(['/user-management/dashboard']);
         }
         else{
           this.toastr.error(response.message, 'Error!');

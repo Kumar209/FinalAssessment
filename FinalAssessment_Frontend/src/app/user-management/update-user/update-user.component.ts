@@ -3,6 +3,7 @@ import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 import { UserManagementService } from '../service/user-management.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
+import { Country, State, City, ICountry, IState, ICity } from 'country-state-city';
 
 @Component({
   selector: 'app-update-user',
@@ -12,13 +13,21 @@ import { ToastrService } from 'ngx-toastr';
 export class UpdateUserComponent implements OnInit {
 
   imgSrc : string = '';
-  selectedImg : File | null = null; 
+  selectedImg! : File; 
+
+  prevImageFile! : File;
 
   updateUserForm: any;
 
   userId! : number;
 
   userDetails : any;
+
+
+  countries: ICountry[] = [];
+  states: IState[] = [];
+  cities: ICity[] = [];
+
 
   constructor(private service : UserManagementService, private activatedRoute: ActivatedRoute,  private router: Router, private toastr: ToastrService) {
 
@@ -37,12 +46,11 @@ export class UpdateUserComponent implements OnInit {
       phone: new FormControl('', Validators.required),
       alternatePhone: new FormControl(''),
       PrashantDbAddresses: new FormArray(
-        [
-        this.createAddressGroup(1) 
-      ]),
-      isActive: new FormControl(false)
+        []),
     });
 
+
+    this.countries = Country.getAllCountries();
 
     //Getting the user id from query params
     this.userId = this.activatedRoute.snapshot.queryParams['id'];
@@ -78,8 +86,12 @@ export class UpdateUserComponent implements OnInit {
   }
 
   removeSecondaryAddress() {
-    if (this.PrashantDbAddresses.length === 2) {
-      this.PrashantDbAddresses.removeAt(1);
+    // if (this.PrashantDbAddresses.length === 2) {
+    //   this.PrashantDbAddresses.removeAt(1);
+    // }
+
+    if (this.PrashantDbAddresses.length > 1) { 
+      this.PrashantDbAddresses.removeAt(this.PrashantDbAddresses.length - 1); 
     }
   }
 
@@ -116,6 +128,7 @@ export class UpdateUserComponent implements OnInit {
   }
 
 
+
   patchValueUserDetails() {
     this.updateUserForm.patchValue({
       firstName : this.userDetails.firstName,
@@ -129,11 +142,33 @@ export class UpdateUserComponent implements OnInit {
       alternatePhone : this.userDetails.alternatePhone
     });
 
+    this.imgSrc = `https://localhost:44320/${this.userDetails.imageUrl}`;
 
+    
+
+
+
+    //Calling the function to clear the controls
     this.PrashantDbAddresses.clear();
+      
+    if (this.userDetails.prashantDbAddresses && this.userDetails.prashantDbAddresses.length > 0) {
 
-    // Patch addresses
-    this.userDetails.addresses.forEach((address: any, index: number) => {
+      this.userDetails.prashantDbAddresses.forEach((address : any, index : number) => {
+
+
+        const countryDetail = this.countries.find(c => c.name === address.country);
+        if(countryDetail){
+          this.states = State.getStatesOfCountry(countryDetail.isoCode)
+        }
+
+        const stateDetail = this.states.find(s => s.name === address.state);
+
+        if(countryDetail && stateDetail){
+          this.cities = City.getCitiesOfState(countryDetail.isoCode, stateDetail.isoCode);
+        }
+
+        
+
         const addressGroup = this.createAddressGroup(address.addressTypeId);
 
         addressGroup.patchValue({
@@ -144,12 +179,54 @@ export class UpdateUserComponent implements OnInit {
         });
 
         this.PrashantDbAddresses.push(addressGroup);
-    });
-
+      });
+  
+    }
   }
+
+
+
+
 
   onUpdateUserFormSubmit(){
+    const formData = new FormData();
 
+    Object.keys(this.updateUserForm.value).forEach(key => {
+      if (key !== 'PrashantDbAddresses') {
+        formData.append(key, this.updateUserForm.get(key).value);
+      }
+    });
+
+    // Append addresses
+    this.PrashantDbAddresses.controls.forEach((control, index) => {
+      const addressGroup = control as FormGroup;
+      const addressPrefix = `PrashantDbAddresses[${index}]`;
+
+      formData.append(`${addressPrefix}.addressTypeId`, addressGroup.get('addressTypeId')?.value);
+      formData.append(`${addressPrefix}.country`, addressGroup.get('country')?.value);
+      formData.append(`${addressPrefix}.state`, addressGroup.get('state')?.value);
+      formData.append(`${addressPrefix}.city`, addressGroup.get('city')?.value);
+      formData.append(`${addressPrefix}.zipCode`, addressGroup.get('zipCode')?.value);
+    });
+
+    
+    if (this.selectedImg) {
+      formData.append('ImageFile', this.selectedImg, this.selectedImg.name);
+    }
+    else{
+
+
+
+      // formData.append('ImageFile', )
+    }
+
+    console.log('Final Form Data:', formData);
+    formData.forEach((value, key) => {
+      console.log(key, value);
+    });
+
+
+
+    //Here we have to call api of update
   }
-
 }

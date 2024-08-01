@@ -19,5 +19,7 @@ namespace FinalAssessment_Backend.ServiceInterface
 
         public Task<PrashantDbUserDto> GetUserDetailById(int id);
 
+        public Task<bool> UpdateUserDetails(PrashantDbUserDto userDetails);
+
     }
 }

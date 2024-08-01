@@ -33,13 +33,13 @@ public partial class ApplicationDbContext : DbContext
             entity.ToTable("PrashantDbAddress");
 
             entity.Property(e => e.City)
-                .HasMaxLength(60)
+                .HasMaxLength(20)
                 .IsUnicode(false);
             entity.Property(e => e.Country)
-                .HasMaxLength(50)
+                .HasMaxLength(20)
                 .IsUnicode(false);
             entity.Property(e => e.State)
-                .HasMaxLength(50)
+                .HasMaxLength(20)
                 .IsUnicode(false);
             entity.Property(e => e.ZipCode)
                 .HasMaxLength(6)
