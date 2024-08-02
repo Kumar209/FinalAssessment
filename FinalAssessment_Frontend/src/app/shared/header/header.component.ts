@@ -21,6 +21,8 @@ export class HeaderComponent implements OnInit {
   userName : string = '';
   imageUrl : string = '';
 
+  
+
 
   ngOnInit(): void {
     this.activeHeader = this.activeHeaderList[this.active]
@@ -31,7 +33,6 @@ export class HeaderComponent implements OnInit {
 
   getImageUrl(relativePath: string): string {
     var url = `https://localhost:44320/${relativePath}`;
-    console.log(url);
     return url;
   }
 

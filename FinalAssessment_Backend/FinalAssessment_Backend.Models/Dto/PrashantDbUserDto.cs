@@ -58,7 +58,6 @@ namespace FinalAssessment_Backend.Models.Dto
         public string Phone { get; set; }
 
 
-        [Phone]
         [StringLength(10, ErrorMessage = "Alternate phone number cannot be longer than 10 characters.")]
         public string? AlternatePhone { get; set; }
 

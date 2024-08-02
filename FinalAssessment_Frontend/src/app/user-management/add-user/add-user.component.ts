@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , ChangeDetectorRef} from '@angular/core';
 import { AbstractControl, FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 import { UserManagementService } from '../service/user-management.service';
 import { Router } from '@angular/router';
@@ -21,22 +21,28 @@ export class AddUserComponent {
   addUserForm: any;
 
   //For the dropdown cascading
-  countries: ICountry[] = [];
+  countries : ICountry[] = []; 
   states: IState[] = [];
   cities: ICity[] = [];
+
+
+
+
 
   selectedCountryCode: string = '';
 
 
-  constructor(private service : UserManagementService, private router: Router, private toastr: ToastrService) {
+  constructor(private service : UserManagementService,  private cd: ChangeDetectorRef, private router: Router, private toastr: ToastrService) {
 
   }
 
   ngOnInit() {
+    this.countries = Country.getAllCountries();
+
     this.addUserForm = new FormGroup({
-      firstName: new FormControl('', Validators.required),
-      middleName: new FormControl('', Validators.required),
-      lastName: new FormControl(''),
+      firstName: new FormControl('', [Validators.required,  Validators.pattern('^[a-zA-Z]*$')]),
+      middleName: new FormControl('', [Validators.required,  Validators.pattern('^[a-zA-Z]*$')]),
+      lastName: new FormControl('', [Validators.pattern('^[a-zA-Z]*$')]),
       gender: new FormControl('', Validators.required),
       dateOfBirth: new FormControl('', Validators.required),
       email: new FormControl('', [Validators.required, Validators.email]),
@@ -56,6 +62,7 @@ export class AddUserComponent {
       this.onCountryChange(index);
       this.onStateChange(index);
     });
+
   }
 
   createAddressGroup(addressTypeId: number): FormGroup {
@@ -64,7 +71,7 @@ export class AddUserComponent {
       country: new FormControl('', Validators.required),
       state: new FormControl('', Validators.required),
       city: new FormControl('', Validators.required),
-      zipCode: new FormControl('', Validators.required)
+      zipCode: new FormControl('', [Validators.required, Validators.maxLength(6), Validators.minLength(6), Validators.pattern('^[0-9]*$')])
     });
   }
 
@@ -84,6 +91,7 @@ export class AddUserComponent {
   removeSecondaryAddress() {
     if (this.PrashantDbAddresses.length === 2) {
       this.PrashantDbAddresses.removeAt(1);
+
     }
   }
 
@@ -156,6 +164,9 @@ export class AddUserComponent {
 
 
 
+  
+  
+
 
   onFileChange(event: any) {
     if (event.target.files && event.target.files[0]) {
@@ -166,19 +177,22 @@ export class AddUserComponent {
     }
   }
 
-
-
-
-
-
-
-
+  validateImage(): boolean {
+    return this.selectedImg !== null;
+  }
 
 
 
 
 
   onAddUserFormSubmit(){
+    if (!this.validateImage()) {
+      this.toastr.error('Image file is required', 'Error!');
+      return;
+    }
+
+
+
     const formData = new FormData();
 
     console.log(this.addUserForm.value);
@@ -210,6 +224,17 @@ export class AddUserComponent {
       formData.append('ImageFile', this.selectedImg, this.selectedImg.name);
     }
 
+
+    // resetForm(){
+    //   this.selectedImg = null;
+    //   this.imgSrc = '';
+    //   this.addUserForm.reset();
+    //   this.PrashantDbAddresses.clear();
+    //   this.PrashantDbAddresses.push(this.createAddressGroup(1));
+    //   this.addressStates = [];
+    //   this.addressCities = [];
+    //   this.router.navigate(['/user-management/dashboard']);
+    // }
   
 
 
@@ -217,11 +242,13 @@ export class AddUserComponent {
       next : (response) => {
         if(response.success){
           this.toastr.success(response.message, 'Successfully!');
-
           this.selectedImg = null;
           this.imgSrc = '';
           this.addUserForm.reset();
-
+          this.PrashantDbAddresses.clear();
+          this.PrashantDbAddresses.push(this.createAddressGroup(1));
+          this.states = [];
+          this.cities = [];
           this.router.navigate(['/user-management/dashboard']);
         }
         else{
@@ -238,6 +265,9 @@ export class AddUserComponent {
         }
       }
     })
+
+
+  
     
   }
 }

@@ -2,7 +2,7 @@
 <aside class="sidebar">
     <div class="wrapperLogo">
         <div class="sidebar-logo">
-            <a routerLink="">Integrity Solution</a>
+            <a routerLink="" class="hide">Integrity Solution</a>
         </div>
     </div>
 
@@ -11,7 +11,7 @@
             <span class="sidebar-link">
                 <img *ngIf="isActive == 1" class="icon" src="../../../assets/dashboard_icon.png" alt="dashboard_icon"/>
                 <img *ngIf="isActive != 1" class="icon" src="../../../assets/dashboard_icon_inactive.png" alt="dashboard_icon_inactive" />
-                <span>Dashboard</span>
+                <span class="hide" >Dashboard</span>
             </span>
         </li>
 
@@ -20,8 +20,8 @@
             <span class="sidebar-link " 
                 aria-expanded="false" >
                 <img class="icon" src="../../../assets/manageUser_icon.png" alt="manageUser_icon">
-                <span>Manage Users</span>
-                <img class="arrow" src="../../../assets//dropdown_arrow.png" alt="dropdown_arrow" style="margin-left: 40px;">
+                <span class="hide">Manage Users</span>
+                <img class="arrow hide" src="../../../assets//dropdown_arrow.png" alt="dropdown_arrow" style="margin-left: 40px;">
             </span>
         </li>
 

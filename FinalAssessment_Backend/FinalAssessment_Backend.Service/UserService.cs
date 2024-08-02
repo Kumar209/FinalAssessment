@@ -312,19 +312,18 @@ namespace FinalAssessment_Backend.Service
 
         public async Task<bool> UpdateUserDetails(PrashantDbUserDto userDetails)
         {
-            var userId = userDetails.Id ?? 0;
 
-            var userFromDb = await _userRepo.GetUserById(userId);
 
             var userDetailsEntity = new PrashantDbUser
             {
+                Id = userDetails.Id ?? 0,
                 FirstName = userDetails.FirstName,
                 MiddleName = userDetails.MiddleName,
                 LastName = userDetails.LastName,
 
 
                 //We will not update the email due to token
-                Email = userFromDb.Email,
+              /*  Email = userDetails.Email,*/
 
                 Gender = userDetails.Gender,
                 DateOfJoining = userDetails.DateOfJoining,
@@ -335,8 +334,6 @@ namespace FinalAssessment_Backend.Service
 
                 ImageUrl = await _imageUploadService.GetImageUrl(userDetails.ImageFile),
 
-                Password = userFromDb.Password,
-
                 CreatedBy = userDetails.FirstName + userDetails.MiddleName,
                 PrashantDbAddresses = userDetails.PrashantDbAddresses.Select(a => new PrashantDbAddress
                 {
@@ -344,9 +341,12 @@ namespace FinalAssessment_Backend.Service
                     State = a.State,
                     Country = a.Country,
                     ZipCode = a.ZipCode,
-                    AddressTypeId = a.AddressTypeId
+                    AddressTypeId = a.AddressTypeId,
                 }).ToList()
             };
+
+
+
 
             var res = await _userRepo.UpdateUser(userDetailsEntity);
 

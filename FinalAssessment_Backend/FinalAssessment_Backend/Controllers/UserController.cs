@@ -18,7 +18,7 @@ namespace FinalAssessment_Backend.Controllers
 
 
         [HttpPost("AddUser")]
-
+        [Authorize]
         public async Task<IActionResult> AddUser([FromForm] PrashantDbUserDto userDetails)
         {
             if (!ModelState.IsValid)
@@ -59,7 +59,7 @@ namespace FinalAssessment_Backend.Controllers
 
 
         [HttpGet("GetRecords")]
-
+        [Authorize]
         public async Task<IActionResult> GetRecords([FromQuery] UserQueryParams userQuery)
         {
             try
@@ -77,6 +77,7 @@ namespace FinalAssessment_Backend.Controllers
 
 
         [HttpGet("DownloadExcel")]
+        [Authorize]
         public async Task<IActionResult> DownloadExcel()
         {
             try
@@ -98,6 +99,7 @@ namespace FinalAssessment_Backend.Controllers
 
 
         [HttpGet("GetUserById/{id}")]
+        [Authorize]
         public async Task<IActionResult> GetUserById(int id)
         {
             try
@@ -116,6 +118,7 @@ namespace FinalAssessment_Backend.Controllers
 
 
         [HttpPut("UpdateUser")]
+        [Authorize]
 
         public async Task<IActionResult> UpdateUser([FromForm] PrashantDbUserDto userDetails)
         {

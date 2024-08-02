@@ -33,6 +33,10 @@
                             <label for="file-input" class="file-label">Choose a file</label>
                             <input type="file" id="file-input" class="file-input" (change)="onFileChange($event)" />
                         </div>
+
+                        <span class="text-validator" *ngIf="!validateImage() && addUserForm.touched">
+                            * Image file is required
+                          </span>
                     </div>
 
 
@@ -41,16 +45,44 @@
                             <div class="form-input col-md-4 col-12">
                                 <label for="first-name">First Name</label>
                                 <input type="text" id="first-name" name="firstname" placeholder="First Name" formControlName="firstName">
+                                <span class="text-validator" *ngIf="
+                                    addUserForm.get('firstName')?.touched &&
+                                    addUserForm.get('firstName')?.hasError('required')">
+                                    * First name Field is required
+                                </span>
+
+                                <span class="text-validator" *ngIf="
+                                    addUserForm.get('firstName')?.touched &&
+                                    addUserForm.get('firstName')?.hasError('pattern')">
+                                    * First name should only contains alphabets excluding spaces
+                                </span>
                             </div>
 
                             <div class="form-input col-md-4 col-12">
                                 <label for="middle-name">Middle Name</label>
                                 <input type="text" id="middle-name" name="middlename" placeholder="Middle Name" formControlName="middleName">
+                                <span class="text-validator" *ngIf="
+                                    addUserForm.get('middleName')?.touched &&
+                                    addUserForm.get('middleName')?.hasError('required')">
+                                    * Middle name Field is required
+                                </span>
+
+                                <span class="text-validator" *ngIf="
+                                    addUserForm.get('middleName')?.touched &&
+                                    addUserForm.get('middleName')?.hasError('pattern')">
+                                    * Middle name should only contains alphabets excluding spaces
+                                </span>
                             </div>
 
                             <div class="form-input col-md-4 col-12">
                                 <label for="last-name">Last Name</label>
                                 <input type="text" id="last-name" name="lastname" placeholder="Last Name" formControlName="lastName">
+
+                                <span class="text-validator" *ngIf="
+                                    addUserForm.get('lastName')?.touched &&
+                                    addUserForm.get('lastName')?.hasError('pattern')">
+                                    * Last name should only contains alphabets excluding spaces
+                                </span>
                             </div>
                         </div>
 
@@ -63,29 +95,65 @@
                                     <option value=2>Female</option>
                                     <option value=3>Other</option>
                                 </select>
+
+                                <span class="text-validator" *ngIf="
+                                    addUserForm.get('gender')?.touched &&
+                                    addUserForm.get('gender')?.hasError('required')">
+                                    * Gender field is required
+                                </span>
                             </div>
 
                             <div class="form-input col-md-4 col-12">
                                 <label for="dob">Date of Birth</label>
                                 <input type="date" id="dob" name="DateOfBirth" placeholder="MM/DD/YY" formControlName="dateOfBirth">
+                                <span class="text-validator" *ngIf="
+                                    addUserForm.get('dateOfBirth')?.touched &&
+                                    addUserForm.get('dateOfBirth')?.hasError('required')">
+                                    * Date of birth is required
+                                </span>
                             </div>
 
                             <div class="form-input col-md-4 col-12">
                                 <label for="email">Email</label>
                                 <input type="text" id="email" name="email" placeholder="Email" formControlName="email">
+                                <span class="text-validator" *ngIf="
+                                    addUserForm.get('email')?.touched &&
+                                    addUserForm.get('email')?.hasError('required')">
+                                    * Email is required
+                                </span>
+
+                                <span class="text-validator" *ngIf="
+                                    addUserForm.get('email')?.touched &&
+                                    addUserForm.get('email')?.hasError('email') &&
+                                    addUserForm.get('email')?.hasError('pattern')">
+                                    * Must have a valid email
+                                </span>
                             </div>
                         </div>
 
                         <div class="row form-input-row">
                             <div class="form-input col-md-4 col-12">
                                 <label for="dateOfJoining">Date of Joining</label>
+
                                 <input type="date" id="dateOfJoining" name="dateOfJoining"
                                     placeholder="Date of Joining" formControlName="dateOfJoining">
+
+                                <span class="text-validator" *ngIf="
+                                    addUserForm.get('dateOfJoining')?.touched &&
+                                    addUserForm.get('dateOfJoining')?.hasError('required')">
+                                    * Date of joining field is required
+                                </span>
                             </div>
 
                             <div class="form-input col-md-4 col-12">
                                 <label for="phone">Phone</label>
                                 <input type="text" prefix="+91 " [showMaskTyped]="true" type="text" mask="(000)-000-0000" id="phone" name="phone" placeholder="Phone"  formControlName="phone"  >
+
+                                <span class="text-validator" *ngIf="
+                                    addUserForm.get('phone')?.touched &&
+                                    addUserForm.get('phone')?.hasError('required')">
+                                    * Phone number field is required
+                                </span>
                             </div>
 
                             <div class="form-input col-md-4 col-12">
@@ -98,43 +166,65 @@
                         <div formArrayName="PrashantDbAddresses">
                             <div class="row form-input-row" *ngFor="let address of PrashantDbAddresses.controls; let i=index" [formGroupName]="i">
                                 <div class="form-input col-md-4 col-12">
-                                    <!-- <label for="country">Country</label>
-                                    <input type="text" id="country" name="country"
-                                    placeholder="Country" formControlName="country"> -->
                                     <label for="country-{{i}}">Country</label>
-                                    <select id="country-{{i}}" formControlName="country" (change)="onCountryChange(i)">
+                                    <select id="country-{{i}}" formControlName="country" (change)="onCountryChange(i)" >
                                         <option value="" disabled>Select Country</option>
                                         <option *ngFor="let country of countries" [value]="country.name">{{ country.name }}</option>
-                                      </select>
+                                    </select>
+
+                                    <span class="text-validator"
+                                        *ngIf="address.get('country')?.invalid && 
+                                        address.get('country')?.touched">
+                                        Country is required.
+                                    </span>
                                 </div>
 
                                 <div class="form-input col-md-4 col-12">
-                                    <!-- <label for="state">State</label>
-                                    
-                                    <input type="text" id="state" name="state"
-                                    placeholder="state" formControlName="state"> -->
-
                                     <label for="state-{{i}}">State</label>
                                     <select id="state-{{i}}" formControlName="state" [disabled]="!states.length" (change)="onStateChange(i)">
                                         <option value="" disabled>Select State</option>
                                         <option *ngFor="let state of states" [value]="state.name">{{ state.name }}</option>
                                     </select>
+
+                                    <span class="text-validator"
+                                        *ngIf="address.get('state')?.invalid && 
+                                        address.get('state')?.touched">
+                                        State is required.
+                                    </span>
                                 </div>
 
                                 <div class="form-input col-md-4 col-12">
-                                    <!-- <label for="middle-name">City</label>
-                                    <input type="text" id="city" name="city"
-                                    placeholder="city" formControlName="city"> -->
                                     <label for="city-{{i}}">City</label>
                                     <select id="city-{{i}}" formControlName="city" [disabled]="!cities.length">
                                         <option value="" disabled>Select City</option>
                                         <option *ngFor="let city of cities" [value]="city.name">{{ city.name }}</option>
                                     </select>
+
+                                    <span class="text-validator"
+                                        *ngIf="address.get('city')?.invalid && 
+                                        address.get('city')?.touched">
+                                        City is required.
+                                    </span>
                                 </div>
 
                                 <div class="form-input col-md-4 col-12 mt-3">
                                     <label for="zipCode">Zip Code</label>
                                     <input type="text" id="zipCode" name="zipCode" placeholder="zipCode" formControlName="zipCode">
+
+                                    <span class="text-validator"
+                                        *ngIf="address.get('zipCode')?.errors?.['required'] && address.get('zipCode')?.touched">
+                                        Zipcode is required.
+                                    </span>
+
+                                    <span class="text-validator"
+                                        *ngIf="address.get('zipCode')?.errors?.['maxlength'] || address.get('zipCode')?.errors?.['minlength']">
+                                        Zipcode must of 6 digit.
+                                    </span>
+
+                                    <span class="text-validator"
+                                        *ngIf="address.get('zipCode')?.errors?.['pattern']">
+                                        Zipcode must contain numbers only.
+                                    </span>
                                 </div>
                             </div>
 
@@ -152,7 +242,7 @@
 
 
                     <div class="submit-btn-wrapper">
-                        <button>Save</button>
+                        <button type="submit" [disabled]="addUserForm.invalid" >Save</button>
                     </div>
 
                 </form>

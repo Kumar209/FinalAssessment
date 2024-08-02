@@ -193,5 +193,29 @@ export class DashboardComponent implements OnInit {
     this.userIdToDelete = userId;
   }
 
+
+  deleteUser() : void {
+    console.log(this.userIdToDelete);
+    this.service.deleteUser(this.userIdToDelete).subscribe({
+      next : (res) => {
+        if(res.success){
+          this.toastr.success(res.success, 'Success!');
+        }
+        else {
+          this.toastr.error(res.error, 'Error!');
+        }
+      },
+
+      error : (err) => {
+        if(err.error && err.error.message){
+          this.toastr.error(err.error.message, 'Error!');
+        }
+        else {
+          this.toastr.error('Something went wrong', 'Error!');
+        }
+      }
+    })
+  }
+
 }
 

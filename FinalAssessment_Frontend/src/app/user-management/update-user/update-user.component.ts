@@ -13,7 +13,7 @@ import { Country, State, City, ICountry, IState, ICity } from 'country-state-cit
 export class UpdateUserComponent implements OnInit {
 
   imgSrc : string = '';
-  selectedImg! : File; 
+  selectedImg : File | null = null; 
 
   prevImageFile! : File;
 
@@ -33,12 +33,15 @@ export class UpdateUserComponent implements OnInit {
 
   }
 
+  validateImage(): boolean {
+    return this.selectedImg !== null;
+  }
   
   ngOnInit(){
     this.updateUserForm = new FormGroup({
-      firstName: new FormControl('', Validators.required),
-      middleName: new FormControl('', Validators.required),
-      lastName: new FormControl(''),
+      firstName: new FormControl('', [Validators.required,  Validators.pattern('^[a-zA-Z]*$')]),
+      middleName: new FormControl('', [Validators.required,  Validators.pattern('^[a-zA-Z]*$')]),
+      lastName: new FormControl('', [Validators.pattern('^[a-zA-Z]*$')]),
       gender: new FormControl('', Validators.required),
       dateOfBirth: new FormControl('', Validators.required),
       email: new FormControl('', [Validators.required, Validators.email]),
@@ -46,7 +49,7 @@ export class UpdateUserComponent implements OnInit {
       phone: new FormControl('', Validators.required),
       alternatePhone: new FormControl(''),
       PrashantDbAddresses: new FormArray(
-        []),
+        [ ]),
     });
 
 
@@ -68,7 +71,7 @@ export class UpdateUserComponent implements OnInit {
       country: new FormControl('', Validators.required),
       state: new FormControl('', Validators.required),
       city: new FormControl('', Validators.required),
-      zipCode: new FormControl('', Validators.required)
+      zipCode: new FormControl('', [Validators.required, Validators.maxLength(6), Validators.minLength(6), Validators.pattern('^[0-9]*$')])
     });
   }
 
@@ -189,13 +192,31 @@ export class UpdateUserComponent implements OnInit {
 
 
   onUpdateUserFormSubmit(){
+    if (!this.validateImage()) {
+      this.toastr.error('Image file is required', 'Error!');
+      return;
+    }
+
+    
     const formData = new FormData();
 
-    Object.keys(this.updateUserForm.value).forEach(key => {
-      if (key !== 'PrashantDbAddresses') {
-        formData.append(key, this.updateUserForm.get(key).value);
-      }
-    });
+    formData.append('Id', this.userId.toString());
+
+    // Object.keys(this.updateUserForm.value).forEach(key => {
+    //   if (key !== 'PrashantDbAddresses') {
+    //     formData.append(key, this.updateUserForm.get(key).value);
+    //   }
+    // });
+
+    formData.append('firstName', this.updateUserForm.get('firstName').value);
+    formData.append('middleName', this.updateUserForm.get('middleName').value);
+    formData.append('lastName', this.updateUserForm.get('lastName').value);
+    formData.append('gender', this.updateUserForm.get('gender').value);
+    formData.append('dateOfBirth', this.updateUserForm.get('dateOfBirth').value);
+    formData.append('email', this.updateUserForm.get('email').value);
+    formData.append('dateOfJoining', this.updateUserForm.get('dateOfJoining').value);
+    formData.append('phone', this.updateUserForm.get('phone').value);
+    formData.append('alternatePhone', this.updateUserForm.get('alternatePhone').value ?? '');
 
     // Append addresses
     this.PrashantDbAddresses.controls.forEach((control, index) => {
@@ -228,5 +249,25 @@ export class UpdateUserComponent implements OnInit {
 
 
     //Here we have to call api of update
+
+    this.service.updateUser(formData).subscribe({
+      next : (res : any) => {
+        if(res.success){
+          this.toastr.success(res.message, 'Succesfully!');
+        }
+        else {
+          this.toastr.error(res.message, 'Error!')
+        }
+      },
+
+      error : (err) => {
+        if(err.error && err.error.message){
+          this.toastr.error(err.error.message)
+        }
+        else{
+          this.toastr.error('Something went wrong', 'Error!');
+        }
+      }
+    })
   }
 }

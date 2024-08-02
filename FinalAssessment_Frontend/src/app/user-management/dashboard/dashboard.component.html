@@ -1,5 +1,5 @@
 <section class="main">
-  <div class="sidebar-wrapper">
+  <div class="sidebar-wrapper" >
     <app-sidebar [isActive]="1" />
   </div>
 
@@ -107,7 +107,7 @@
                   <td class="d-flex text-start gap-4">
                     <span class="bg-light">
                       <i class="fa-solid fa-trash" data-bs-toggle="modal" data-bs-target="#deleteUser" data-toggle="tooltip" data-placement="top"
-                      
+                          (click)="updateUserIdToDelete(user.id)"
                           title="Delete" style="color: red; font-size: 20px; cursor: pointer;">
                       </i>
                     </span>
@@ -164,7 +164,7 @@
             data-bs-dismiss="modal"
             value="Cancel"
           />
-          <button class="btn btn-danger"  data-bs-dismiss="modal" >Delete User</button>
+          <button class="btn btn-danger" (click)="deleteUser()"  data-bs-dismiss="modal" >Delete User</button>
         </div>
       </form>
     </div>

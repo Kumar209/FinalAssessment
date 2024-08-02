@@ -22,10 +22,6 @@ export class UserManagementService {
     .set('sortBy', sortBy || '')
     .set('isAscending', isAscending.toString());
 
-    // const headers = new HttpHeaders({
-    //   'Authorization': "Bearer "+this.token
-    // });
-
     let head_obj = new HttpHeaders().set("Authorization", "Bearer "+this.token);
 
     
@@ -34,45 +30,44 @@ export class UserManagementService {
 
 
   addUser(userDetails : any) : Observable<any>{
-    const headers = new HttpHeaders({
-      'Authorization': `Bearer ${this.token}` 
-    });
 
+    let head_obj = new HttpHeaders().set("Authorization", "Bearer "+this.token);
 
-    return this.http.post<any>(`${this.apiUrl}/AddUser`, userDetails, { headers });
+    return this.http.post<any>(`${this.apiUrl}/AddUser`, userDetails, { headers : head_obj });
   }
 
 
   deleteUser(id : number) : Observable<any>{
-    const headers = new HttpHeaders({
-      'Authorization': `Bearer ${this.token}` 
-    });
+
+    let head_obj = new HttpHeaders().set("Authorization", "Bearer "+this.token);
 
     
-    return this.http.delete<any>(`${this.apiUrl}/RemoveUser/${id}` , { headers });
+    return this.http.delete<any>(`${this.apiUrl}/RemoveUser/${id}` , { headers : head_obj });
   }
 
   downloadExcel() {
-    const headers = new HttpHeaders({
-      'Authorization': `Bearer ${this.token}` 
-    });
+
+    let head_obj = new HttpHeaders().set("Authorization", "Bearer "+this.token);
 
 
     return this.http.get(`${this.apiUrl}/DownloadExcel`, {
-      headers,
+      headers  : head_obj,
       responseType: 'blob'
     });
   }
 
 
   getUserById(id : number) {
-    
-    return this.http.get(`${this.apiUrl}/GetUserById/${id}`);
+    let head_obj = new HttpHeaders().set("Authorization", "Bearer "+this.token);
+    console.log(id);
+
+    return this.http.get(`${this.apiUrl}/GetUserById/${id}`, {headers : head_obj});
   }
 
 
   updateUser(userDetails : any) {
+    let head_obj = new HttpHeaders().set("Authorization", "Bearer "+this.token);
 
-    return this.http.put(`${this.apiUrl}/UpdateUser`, userDetails);
+    return this.http.put(`${this.apiUrl}/UpdateUser`, userDetails, {headers : head_obj});
   }
 }

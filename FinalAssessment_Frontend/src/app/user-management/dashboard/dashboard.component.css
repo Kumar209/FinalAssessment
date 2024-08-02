@@ -15,6 +15,18 @@
   font-family: "Poppins", sans-serif;
 }
 
+.main-content {
+  width: 80%;
+  transition: width 0.25s ease;
+  height: 100vh;
+  background-color: aliceblue;
+  font-family: "Poppins", sans-serif;
+}
+
+.sidebar-wrapper-collapsed + .main-content {
+  width: 100%;
+}
+
 .main-wrapper {
   width: 100%;
   padding: 20px 30px 50px;
@@ -202,6 +214,5 @@ ul .page {
     width: 150px;
   }
 }
-
 
 
