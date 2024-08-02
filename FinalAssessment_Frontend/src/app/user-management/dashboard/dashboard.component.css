@@ -195,6 +195,12 @@ ul .page {
   color: #fff;
 }
 
+.sortIcon{
+  cursor: pointer;
+}
+
+
+
 
 @media (max-width: 768px){
   .user-wrapper {

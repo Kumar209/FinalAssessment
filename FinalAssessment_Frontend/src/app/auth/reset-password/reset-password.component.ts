@@ -18,12 +18,22 @@ import { IResetCredential } from '../Interface/IResetCredential';
 export class ResetPasswordComponent {
   resetForm: any;
 
+  showPassword: boolean = false;
+  showConfirmPassword : boolean = false;
+
   constructor(
     private router: Router,
     private service: AuthService,
     private toastr: ToastrService
   ) {}
 
+  passwordShowHide() {
+    this.showPassword = !this.showPassword;
+  }
+
+  confirmPasswordShowHide() {
+    this.showConfirmPassword = !this.showConfirmPassword;
+  }
 
 
   ngOnInit(): void {

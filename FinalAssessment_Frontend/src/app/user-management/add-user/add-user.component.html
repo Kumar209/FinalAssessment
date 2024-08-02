@@ -123,11 +123,10 @@
                                 </span>
 
                                 <span class="text-validator" *ngIf="
-                                    addUserForm.get('email')?.touched &&
-                                    addUserForm.get('email')?.hasError('email') &&
-                                    addUserForm.get('email')?.hasError('pattern')">
-                                    * Must have a valid email
-                                </span>
+                                addUserForm.get('email')?.touched &&
+                                addUserForm.get('email')?.hasError('pattern')">
+                                * Must have a valid email
+                            </span>
                             </div>
                         </div>
 

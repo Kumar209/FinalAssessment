@@ -53,37 +53,37 @@
             <table>
               <thead>
                 <tr>
-                  <th class="shift">
+                  <th class="shift" style="width: 120px;">
                     First Name 
-                    <img src="../../../assets/sorting-icon.png" alt="sorting-icon"  (click)="onSortColumn('FirstName')">
+                    <img class="sortIcon" src="../../../assets/sorting-icon.png" alt="sorting-icon"  (click)="onSortColumn('FirstName')">
                   </th>
-                  <th>
+                  <th style="width: 120px;">
                     Middle Name
-                    <img src="../../../assets/sorting-icon.png" alt="sorting-icon" (click)="onSortColumn('MiddleName')">
+                    <img class="sortIcon" src="../../../assets/sorting-icon.png" alt="sorting-icon" (click)="onSortColumn('MiddleName')">
                   </th>
-                  <th>
+                  <th style="width: 120px;">
                     Last Name
-                    <img src="../../../assets/sorting-icon.png" alt="sorting-icon" (click)="onSortColumn('LastName')">
+                    <img class="sortIcon" src="../../../assets/sorting-icon.png" alt="sorting-icon" (click)="onSortColumn('LastName')">
                   </th>
-                  <th>
+                  <th style="width: 100px;">
                     DOB
-                    <img src="../../../assets/sorting-icon.png" alt="sorting-icon" (click)="onSortColumn('DateOfBirth')">
+                    <img  class="sortIcon" src="../../../assets/sorting-icon.png" alt="sorting-icon" (click)="onSortColumn('DateOfBirth')">
                   </th>
                   <th>
                     Email
-                    <img src="../../../assets/sorting-icon.png" alt="sorting-icon" (click)="onSortColumn('Email')">
+                    <img class="sortIcon" src="../../../assets/sorting-icon.png" alt="sorting-icon" (click)="onSortColumn('Email')">
                   </th>
-                  <th>
+                  <th style="width: 120px;">
                     Contact No
-                    <img src="../../../assets/sorting-icon.png" alt="sorting-icon" (click)="onSortColumn('Phone')">
+                    <img class="sortIcon" src="../../../assets/sorting-icon.png" alt="sorting-icon" (click)="onSortColumn('Phone')">
                   </th>
                   <th>
                     City
-                    <img src="../../../assets/sorting-icon.png" alt="sorting-icon" (click)="onSortColumn('City')">
+                    <img class="sortIcon" src="../../../assets/sorting-icon.png" alt="sorting-icon" (click)="onSortColumn('City')">
                   </th>
                   <th>
                     State
-                    <img src="../../../assets/sorting-icon.png" alt="sorting-icon" (click)="onSortColumn('State')">
+                    <img class="sortIcon" src="../../../assets/sorting-icon.png" alt="sorting-icon" (click)="onSortColumn('State')">
                   </th>
                   <th>
                     Action
@@ -97,7 +97,7 @@
                   <td>{{user.lastName}}</td>
                   <td>{{user.dateOfBirth}}</td>
                   <td>{{user.email}}</td>
-                  <td>{{user.phone}}</td>
+                  <td>{{user.phone | phoneFormat}}</td>
                   <td>
                     {{getAddressType1(user)?.city}}
                   </td>

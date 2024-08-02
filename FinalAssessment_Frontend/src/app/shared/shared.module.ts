@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { SharedRoutingModule } from './shared-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { PhoneFormatPipe } from './pipes/phone-format.pipe';
 
 
 
@@ -11,6 +12,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
   declarations: [
     HeaderComponent,
     SidebarComponent,
+    PhoneFormatPipe,
   ],
   imports: [
     CommonModule,
@@ -18,7 +20,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
   ],
   exports : [
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    PhoneFormatPipe
   ]
 })
 export class SharedModule { }

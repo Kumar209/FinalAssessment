@@ -44,7 +44,7 @@ export class UpdateUserComponent implements OnInit {
       lastName: new FormControl('', [Validators.pattern('^[a-zA-Z]*$')]),
       gender: new FormControl('', Validators.required),
       dateOfBirth: new FormControl('', Validators.required),
-      email: new FormControl('', [Validators.required, Validators.email]),
+      email: new FormControl('', [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]),
       dateOfJoining: new FormControl('', Validators.required),
       phone: new FormControl('', Validators.required),
       alternatePhone: new FormControl(''),
@@ -60,6 +60,29 @@ export class UpdateUserComponent implements OnInit {
 
 
     this.getUserById();
+
+    this.PrashantDbAddresses.controls.forEach(control => {
+      debugger;
+      control.get('country')?.valueChanges.subscribe(country => {
+
+        const countryDetail = this.countries.find(c => c.name === country);
+
+        if (countryDetail) {
+          this.states = State.getStatesOfCountry(countryDetail.isoCode);
+
+          control.get('state')?.setValue(''); 
+          control.get('city')?.setValue('');
+        }
+      });
+  
+      control.get('state')?.valueChanges.subscribe(state => {
+        const countryDetail = this.countries.find(c => c.name === control.get('country')?.value);
+        if (countryDetail) {
+          this.cities = City.getCitiesOfState(countryDetail.isoCode, state);
+          control.get('city')?.setValue(''); 
+        }
+      });
+    });
 
 
 
@@ -89,9 +112,6 @@ export class UpdateUserComponent implements OnInit {
   }
 
   removeSecondaryAddress() {
-    // if (this.PrashantDbAddresses.length === 2) {
-    //   this.PrashantDbAddresses.removeAt(1);
-    // }
 
     if (this.PrashantDbAddresses.length > 1) { 
       this.PrashantDbAddresses.removeAt(this.PrashantDbAddresses.length - 1); 

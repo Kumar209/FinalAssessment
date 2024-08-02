@@ -12,7 +12,23 @@ import { ToastrService } from 'ngx-toastr';
 export class ChangePasswordComponent {
   changePasswordForm : any;
 
+  oldPassword : boolean = false;
+  showPassword: boolean = false;
+  showConfirmPassword : boolean = false;
+  
   constructor(private router : Router, private service : AuthService, private toastr : ToastrService) {}
+
+  oldPasswordShowHide() {
+    this.oldPassword = !this.oldPassword;
+  }
+
+  passwordShowHide() {
+    this.showPassword = !this.showPassword;
+  }
+
+  confirmPasswordShowHide() {
+    this.showConfirmPassword = !this.showConfirmPassword;
+  }
 
 
   ngOnInit(): void {

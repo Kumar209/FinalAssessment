@@ -35,7 +35,7 @@ export class AddUserComponent {
   constructor(private service : UserManagementService,  private cd: ChangeDetectorRef, private router: Router, private toastr: ToastrService) {
 
   }
-
+  
   ngOnInit() {
     this.countries = Country.getAllCountries();
 
@@ -45,7 +45,9 @@ export class AddUserComponent {
       lastName: new FormControl('', [Validators.pattern('^[a-zA-Z]*$')]),
       gender: new FormControl('', Validators.required),
       dateOfBirth: new FormControl('', Validators.required),
-      email: new FormControl('', [Validators.required, Validators.email]),
+      email: new FormControl('', [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]),
+
+
       dateOfJoining: new FormControl('', Validators.required),
       phone: new FormControl('', Validators.required),
       alternatePhone: new FormControl(''),

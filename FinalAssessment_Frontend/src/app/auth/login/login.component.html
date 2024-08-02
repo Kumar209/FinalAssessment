@@ -18,7 +18,7 @@
                     <label for="userEmail">Enter your email address</label>
                     <input type="email" name="email" id="userEmail" formControlName="email" placeholder="Enter Email" autocomplete="off">
                     <span class="text_Validator" *ngIf="loginForm.get('email')?.touched && loginForm.get('email')?.hasError('required')" >* Email is required</span>
-                    <span class="text_Validator" *ngIf="loginForm.get('email')?.touched && loginForm.get('email')?.hasError('email')" >* Must have a valid email</span>
+                    <span class="text_Validator" *ngIf="loginForm.get('email')?.touched && loginForm.get('email')?.hasError('pattern')" >* Must have a valid email</span>
                     <!-- <span class="text_Validator" *ngIf="loginForm.get('email')?.touched && loginForm.get('email')?.hasError('pattern')" >* Must have a valid email</span> -->
                 </div>
 

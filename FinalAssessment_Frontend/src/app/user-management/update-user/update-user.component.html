@@ -34,9 +34,9 @@
                             <input type="file" id="file-input" class="file-input" (change)="onFileChange($event)" />
                         </div>
 
-                        <span class="text-validator" *ngIf="!validateImage() && updateUserForm.touched">
+                        <!-- <span class="text-validator" *ngIf="!validateImage() && updateUserForm.touched">
                             * Image file is required
-                          </span>
+                          </span> -->
                     </div>
 
 
@@ -128,7 +128,6 @@
 
                                 <span class="text-validator" *ngIf="
                                 updateUserForm.get('email')?.touched &&
-                                updateUserForm.get('email')?.hasError('email') &&
                                 updateUserForm.get('email')?.hasError('pattern')">
                                     * Must have a valid email
                                 </span>
@@ -231,6 +230,11 @@
                                         Zipcode must contain numbers only.
                                     </span>
                                 </div>
+                            </div>
+
+                            <div class="address-buttons-wrapper">
+                                <button type="button" class="btn1" (click)="addSecondaryAddress()" *ngIf="PrashantDbAddresses.length < 2">Add Secondary Address</button>
+                                <button type="button" class="btn2" (click)="removeSecondaryAddress()" *ngIf="PrashantDbAddresses.length === 2">Remove Secondary Address</button>
                             </div>
                         </div>
                             

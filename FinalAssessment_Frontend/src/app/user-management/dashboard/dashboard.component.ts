@@ -199,7 +199,9 @@ export class DashboardComponent implements OnInit {
     this.service.deleteUser(this.userIdToDelete).subscribe({
       next : (res) => {
         if(res.success){
-          this.toastr.success(res.success, 'Success!');
+          this.toastr.success("User Deleted", 'Successfully!');
+
+          window.location.reload();
         }
         else {
           this.toastr.error(res.error, 'Error!');

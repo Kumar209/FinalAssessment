@@ -17,7 +17,7 @@ import { NgxUiLoaderHttpModule, NgxUiLoaderModule } from 'ngx-ui-loader';
     BrowserModule,
     AppRoutingModule,
     AuthModule,
-    BrowserAnimationsModule, // required animations module
+    BrowserAnimationsModule, 
     ToastrModule.forRoot(),
     SharedModule,
     NgxUiLoaderModule,
