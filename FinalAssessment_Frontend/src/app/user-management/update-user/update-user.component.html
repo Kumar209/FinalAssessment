@@ -185,9 +185,9 @@
                         
                                 <div class="form-input col-md-4 col-12">
                                     <label for="state">State</label>
-                                    <select id="state" formControlName="state"  [disabled]="!states.length">
+                                    <select id="state" formControlName="state"  [disabled]="!states[i].length">
                                         <option value="" disabled>Select State</option>
-                                        <option *ngFor="let state of states" [value]="state.name">{{ state.name }}</option>
+                                        <option *ngFor="let state of states[i]" [value]="state.name">{{ state.name }}</option>
                                     </select>
 
                                     <span class="text-validator"
@@ -199,9 +199,9 @@
                         
                                 <div class="form-input col-md-4 col-12">
                                     <label for="city">City</label>
-                                    <select id="city" formControlName="city" [disabled]="!cities.length">
+                                    <select id="city" formControlName="city" [disabled]="!cities[i].length">
                                         <option value="" disabled>Select City</option>
-                                        <option *ngFor="let city of cities" [value]="city.name">{{ city.name }}</option>
+                                        <option *ngFor="let city of cities[i]" [value]="city.name">{{ city.name }}</option>
                                     </select>
 
                                     <span class="text-validator"

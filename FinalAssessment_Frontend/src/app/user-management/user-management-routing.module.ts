@@ -10,10 +10,10 @@ const routes: Routes = [
     path: 'dashboard' , component : DashboardComponent, canActivate: [authGuard]
   },
   {
-    path : 'add-user' , component : AddUserComponent, canActivate: [authGuard]
+    path : 'add-user' , component : AddUserComponent
   },
   {
-    path : 'update-user' , component : UpdateUserComponent, canActivate: [authGuard]
+    path : 'update-user' , component : UpdateUserComponent
   }
 ];
 

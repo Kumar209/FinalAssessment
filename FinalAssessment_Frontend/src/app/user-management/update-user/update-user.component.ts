@@ -25,16 +25,47 @@ export class UpdateUserComponent implements OnInit {
 
 
   countries: ICountry[] = [];
-  states: IState[] = [];
-  cities: ICity[] = [];
+  states: IState[][] = [];
+  cities: ICity[][] = [];
 
 
   constructor(private service : UserManagementService, private activatedRoute: ActivatedRoute,  private router: Router, private toastr: ToastrService) {
 
   }
 
+
+  //Converting url to file and returning file
+  async urlToFile(url: string): Promise<File> {
+    try {
+      // Create a URL object to parse the URL
+      const urlObj = new URL(url);
+
+      // Extract the path from the URL and get the filename
+      const path = urlObj.pathname;
+      const filename = path.substring(path.lastIndexOf('/') + 1);
+
+      // Fetch image data from the URL
+      const response = await fetch(url);
+      if (!response.ok) throw new Error('Network response was not ok.');
+      const blob = await response.blob();
+
+      // Create a File object with the extracted filename
+      return new File([blob], filename, { type: blob.type });
+    } 
+    
+    catch (error) {
+      console.error('Error fetching file:', error);
+      this.toastr.error('Error when converting url to file', 'Error!');
+      throw error;
+    }
+  }
+
+
+
   validateImage(): boolean {
-    return this.selectedImg !== null;
+    var updatedImage = this.selectedImg !== null;
+    var oldImage = this.imgSrc !== null;
+    return (oldImage || updatedImage);
   }
   
   ngOnInit(){
@@ -60,32 +91,6 @@ export class UpdateUserComponent implements OnInit {
 
 
     this.getUserById();
-
-    this.PrashantDbAddresses.controls.forEach(control => {
-      debugger;
-      control.get('country')?.valueChanges.subscribe(country => {
-
-        const countryDetail = this.countries.find(c => c.name === country);
-
-        if (countryDetail) {
-          this.states = State.getStatesOfCountry(countryDetail.isoCode);
-
-          control.get('state')?.setValue(''); 
-          control.get('city')?.setValue('');
-        }
-      });
-  
-      control.get('state')?.valueChanges.subscribe(state => {
-        const countryDetail = this.countries.find(c => c.name === control.get('country')?.value);
-        if (countryDetail) {
-          this.cities = City.getCitiesOfState(countryDetail.isoCode, state);
-          control.get('city')?.setValue(''); 
-        }
-      });
-    });
-
-
-
   }
 
   createAddressGroup(addressTypeId: number): FormGroup {
@@ -108,6 +113,9 @@ export class UpdateUserComponent implements OnInit {
   addSecondaryAddress() {
     if (this.PrashantDbAddresses.length < 2) {
       this.PrashantDbAddresses.push(this.createAddressGroup(2));
+      this.states.push([]);
+      this.cities.push([]);
+      this.subscribeToAddressChanges(this.PrashantDbAddresses.length - 1);
     }
   }
 
@@ -115,6 +123,8 @@ export class UpdateUserComponent implements OnInit {
 
     if (this.PrashantDbAddresses.length > 1) { 
       this.PrashantDbAddresses.removeAt(this.PrashantDbAddresses.length - 1); 
+      this.states.pop();
+      this.cities.pop();
     }
   }
 
@@ -152,6 +162,9 @@ export class UpdateUserComponent implements OnInit {
 
 
 
+
+
+
   patchValueUserDetails() {
     this.updateUserForm.patchValue({
       firstName : this.userDetails.firstName,
@@ -169,31 +182,14 @@ export class UpdateUserComponent implements OnInit {
 
     
 
-
-
-    //Calling the function to clear the controls
     this.PrashantDbAddresses.clear();
+    this.states = [];
+    this.cities = [];
       
+
     if (this.userDetails.prashantDbAddresses && this.userDetails.prashantDbAddresses.length > 0) {
-
-      this.userDetails.prashantDbAddresses.forEach((address : any, index : number) => {
-
-
-        const countryDetail = this.countries.find(c => c.name === address.country);
-        if(countryDetail){
-          this.states = State.getStatesOfCountry(countryDetail.isoCode)
-        }
-
-        const stateDetail = this.states.find(s => s.name === address.state);
-
-        if(countryDetail && stateDetail){
-          this.cities = City.getCitiesOfState(countryDetail.isoCode, stateDetail.isoCode);
-        }
-
-        
-
+      this.userDetails.prashantDbAddresses.forEach((address: any, index: number) => {
         const addressGroup = this.createAddressGroup(address.addressTypeId);
-
         addressGroup.patchValue({
           country: address.country,
           state: address.state,
@@ -202,16 +198,68 @@ export class UpdateUserComponent implements OnInit {
         });
 
         this.PrashantDbAddresses.push(addressGroup);
+        this.states.push([]);
+        this.cities.push([]);
+
+
+        this.subscribeToAddressChanges(index);
+
+        const countryDetail = this.countries.find(c => c.name === address.country);
+        if (countryDetail) {
+          this.states[index] = State.getStatesOfCountry(countryDetail.isoCode);
+        }
+
+        const stateDetail = this.states[index].find(s => s.name === address.state);
+        if (stateDetail && countryDetail) {
+          this.cities[index] = City.getCitiesOfState(countryDetail.isoCode, stateDetail.isoCode);
+        }
+
       });
-  
+    }
+  }
+
+
+  subscribeToAddressChanges(index: number) {
+    const addressGroup = this.PrashantDbAddresses.at(index) as FormGroup;
+    const countryControl = addressGroup.get('country');
+    const stateControl = addressGroup.get('state');
+    const cityControl = addressGroup.get('city');
+
+    if (countryControl && stateControl && cityControl) {
+      countryControl.valueChanges.subscribe(countryName => {
+        const countryDetail = this.countries.find(c => c.name === countryName);
+        if (countryDetail) {
+          this.states[index] = State.getStatesOfCountry(countryDetail.isoCode);
+          stateControl.setValue(''); 
+          cityControl.setValue('');
+        } else {
+          this.states[index] = [];
+          this.cities[index] = [];
+        }
+      });
+
+      stateControl.valueChanges.subscribe(stateName => {
+        const countryName = countryControl.value;
+        const countryDetail = this.countries.find(c => c.name === countryName);
+        if (countryDetail) {
+          const stateDetail = this.states[index].find(s => s.name === stateName);
+          if (stateDetail) {
+            this.cities[index] = City.getCitiesOfState(countryDetail.isoCode, stateDetail.isoCode);
+            cityControl.setValue(''); 
+          } else {
+            this.cities[index] = [];
+          }
+        } else {
+          this.cities[index] = [];
+        }
+      });
     }
   }
 
 
 
 
-
-  onUpdateUserFormSubmit(){
+  async onUpdateUserFormSubmit(){
     if (!this.validateImage()) {
       this.toastr.error('Image file is required', 'Error!');
       return;
@@ -254,11 +302,10 @@ export class UpdateUserComponent implements OnInit {
     if (this.selectedImg) {
       formData.append('ImageFile', this.selectedImg, this.selectedImg.name);
     }
+
     else{
-
-
-
-      // formData.append('ImageFile', )
+      const file = await this.urlToFile(this.imgSrc);
+      formData.append('ImageFile', file, file.name);
     }
 
     console.log('Final Form Data:', formData);

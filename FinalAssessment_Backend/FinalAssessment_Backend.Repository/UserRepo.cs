@@ -195,6 +195,7 @@ namespace FinalAssessment_Backend.Repository
             userFromDb.DateOfJoining = user.DateOfJoining;
             userFromDb.DateOfBirth = user.DateOfBirth;
             userFromDb.Gender = user.Gender;
+            userFromDb.ImageUrl = user.ImageUrl;
            /* userFromDb.Email = EncriptionAndDecription.EncryptData(userDetailsAnkitDto.Email);*/
           /*  userFromDb.IsActive = user.IsActive;*/
 

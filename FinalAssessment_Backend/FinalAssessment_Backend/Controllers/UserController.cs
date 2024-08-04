@@ -59,7 +59,7 @@ namespace FinalAssessment_Backend.Controllers
 
 
         [HttpGet("GetRecords")]
-        [Authorize]
+     /*   [Authorize]*/
         public async Task<IActionResult> GetRecords([FromQuery] UserQueryParams userQuery)
         {
             try

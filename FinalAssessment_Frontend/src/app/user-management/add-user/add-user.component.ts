@@ -22,8 +22,9 @@ export class AddUserComponent {
 
   //For the dropdown cascading
   countries : ICountry[] = []; 
-  states: IState[] = [];
-  cities: ICity[] = [];
+
+  states: IState[][] = []; 
+  cities: ICity[][] = [];
 
 
 
@@ -59,12 +60,6 @@ export class AddUserComponent {
 
     this.loadStaticData();
 
-    // Initialize event listeners for address controls
-    this.PrashantDbAddresses.controls.forEach((control, index) => {
-      this.onCountryChange(index);
-      this.onStateChange(index);
-    });
-
   }
 
   createAddressGroup(addressTypeId: number): FormGroup {
@@ -87,6 +82,9 @@ export class AddUserComponent {
   addSecondaryAddress() {
     if (this.PrashantDbAddresses.length < 2) {
       this.PrashantDbAddresses.push(this.createAddressGroup(2));
+
+      this.states.push([]); 
+      this.cities.push([]); 
     }
   }
 
@@ -94,74 +92,60 @@ export class AddUserComponent {
     if (this.PrashantDbAddresses.length === 2) {
       this.PrashantDbAddresses.removeAt(1);
 
+      this.states.pop(); 
+      this.cities.pop(); 
+
     }
   }
 
 
   loadStaticData() {
     this.countries = Country.getAllCountries(); 
-    this.states = []; 
-    this.cities = []; 
   }
 
 
-
-  
 
   onCountryChange(index: number) {
-    const addressControl = this.PrashantDbAddresses.at(index) as FormGroup;  
+    const addressControl = this.PrashantDbAddresses.at(index) as FormGroup;
+    const countryName = addressControl.get('country')?.value;
+    const countryDetail = this.countries.find(c => c.name === countryName);
 
-    addressControl.get('country')?.valueChanges.subscribe((countryName: string) => {
+    if (countryName) {
+      this.states[index] = State.getStatesOfCountry(countryDetail?.isoCode); // Update states for specific address
+      this.cities[index] = []; // Clear cities when country changes
 
-      const countryDetail = this.countries.find(c => c.name === countryName);
+      addressControl.get('state')?.setValue('');
+      addressControl.get('state')?.enable();
 
-        if (countryName) {
-        // Fetch states based on the selected country
-        this.states = State.getStatesOfCountry(countryDetail?.isoCode);
-  
-        // Update the state control for the specific address group
-        const stateControl = addressControl.get('state');
-        stateControl?.setValue('');
-        stateControl?.enable();
-  
-        // Update the city control for the specific address group
-        const cityControl = addressControl.get('city');
-        cityControl?.setValue('');
-        cityControl?.disable();
-      }
-    });
+      addressControl.get('city')?.setValue('');
+      addressControl.get('city')?.disable();
+    }
   }
-    
-
-
 
   onStateChange(index: number) {
     const addressControl = this.PrashantDbAddresses.at(index) as FormGroup;
-  
-    addressControl.get('state')?.valueChanges.subscribe((stateName: string) => {
-      const countryName = addressControl.get('country')?.value;
+    const stateName = addressControl.get('state')?.value;
+    const countryName = addressControl.get('country')?.value;
+    const countryDetail = this.countries.find(c => c.name === countryName);
+    const stateDetail = this.states[index].find(s => s.name === stateName);
 
-      //Here getting all detail using country name
-      const countryDetail = this.countries.find(c => c.name === countryName);
+    if (stateName && countryDetail && stateDetail) {
+      this.cities[index] = City.getCitiesOfState(countryDetail.isoCode, stateDetail.isoCode); // Update cities for specific address
 
-  
-      // Finding the state detail based on the selected state name
-      const stateDetail = this.states.find(s => s.name === stateName);
-  
-      if (stateName && countryDetail && stateDetail) {
-        
-        this.cities = City.getCitiesOfState(countryDetail.isoCode, stateDetail.isoCode);
-  
-        // Reset the city control
-        addressControl.get('city')?.setValue('');
-        addressControl.get('city')?.enable();
-      } 
-      else {
-        // If no valid state or country is selected, disable the city control
-        addressControl.get('city')?.setValue('');
-        addressControl.get('city')?.disable();
-      }
-    });
+      addressControl.get('city')?.setValue('');
+      addressControl.get('city')?.enable();
+    } else {
+      addressControl.get('city')?.setValue('');
+      addressControl.get('city')?.disable();
+    }
+  }
+
+  getStates(index: number): IState[] {
+    return this.states[index] || [];
+  }
+
+  getCities(index: number): ICity[] {
+    return this.cities[index] || [];
   }
 
 
