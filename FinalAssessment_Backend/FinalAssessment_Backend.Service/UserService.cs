@@ -93,6 +93,7 @@ namespace FinalAssessment_Backend.Service
             //Email sending for credential
             if(res == true)
             {
+
                 MailRequest mailRequest = new MailRequest();
                 mailRequest.ToEmail = _encryptDecrypt.DecryptCipherText(userDetailsEntity.Email);
                 mailRequest.Subject = "User Credentail by Kumar Enterprise";

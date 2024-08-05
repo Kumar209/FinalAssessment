@@ -6,6 +6,7 @@
 /out-tsc
 /bazel-out
 
+
 # Node
 /FinalAssessment_Frontend/node_modules
 /node_modules

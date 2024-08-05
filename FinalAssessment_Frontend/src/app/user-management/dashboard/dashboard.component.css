@@ -100,6 +100,7 @@
 .user-heading-wrapper .download-btn-wrapper{
   width: 150px;
   padding-bottom: 15px;
+  padding-left: 20px;
 }
 
 .user-heading-wrapper .download-btn-wrapper button {
@@ -140,6 +141,10 @@ th {
   background: rgba(67, 135, 244, 0.102);
   font-weight: bold;
 }
+
+/* .user-list-table-wrapper{
+  padding-bottom: 50px;
+} */
 
 
 

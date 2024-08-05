@@ -188,8 +188,11 @@ export class UpdateUserComponent implements OnInit {
       
 
     if (this.userDetails.prashantDbAddresses && this.userDetails.prashantDbAddresses.length > 0) {
+
       this.userDetails.prashantDbAddresses.forEach((address: any, index: number) => {
+
         const addressGroup = this.createAddressGroup(address.addressTypeId);
+        
         addressGroup.patchValue({
           country: address.country,
           state: address.state,
