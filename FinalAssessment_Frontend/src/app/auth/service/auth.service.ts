@@ -10,12 +10,10 @@ import { IChangeCredential } from '../Interface/IChangeCredential';
   providedIn: 'root'
 })
 export class AuthService {
-  routeToken : string;
 
   private isAuthenticated = false;
   public authSecretKey = 'BearerToken';
-
-  public token;
+  public authUserCookieKey = 'UserDetails';
 
   baseUrl : string = "https://localhost:44320/api/Account";
 
@@ -23,11 +21,6 @@ export class AuthService {
   constructor(private http : HttpClient, private activatedRoute: ActivatedRoute) { 
     //Setting this value to true and false if token key is present or not in local storage
     this.isAuthenticated = !!localStorage.getItem(this.authSecretKey);
-
-    this.token = localStorage.getItem(this.authSecretKey);
-
-    //Getting the token from query params
-    this.routeToken = this.activatedRoute.snapshot.queryParams['token']
   }
 
 
@@ -37,15 +30,19 @@ export class AuthService {
 
 
 
+  // login(userCredential : IUserCrendentail) : Observable<any>{
+  //   return this.http.post<any>(`${this.baseUrl}/LoginUser` , userCredential)
+  //   .pipe(
+  //     map(response => {
+  //       localStorage.setItem(this.authSecretKey, response.token);
+  //       localStorage.setItem(this.authUserCookieKey, JSON.stringify(response.requiredDataForFrontend));
+  //       return response;
+  //     })
+  //   );
+  // }
+
   login(userCredential : IUserCrendentail) : Observable<any>{
     return this.http.post<any>(`${this.baseUrl}/LoginUser` , userCredential)
-    .pipe(
-      map(response => {
-        localStorage.setItem(this.authSecretKey, response.token);
-        localStorage.setItem("UserDetails", JSON.stringify(response.requiredDataForFrontend));
-        return response;
-      })
-    );
   }
 
   
@@ -62,22 +59,16 @@ export class AuthService {
 
 
   resetPassword(resetCredential : IResetCredential) : Observable<any> {
-    let head_obj = new HttpHeaders().set("Authorization", "Bearer "+this.routeToken);
-    
-    return this.http.post<any>(`${this.baseUrl}/ResetPassword`, resetCredential, {headers : head_obj});
+    return this.http.post<any>(`${this.baseUrl}/ResetPassword`, resetCredential);
   }
 
 
-  changePassword(changePasswordCredential : IChangeCredential) : Observable<any> {
-    let head_obj = new HttpHeaders().set("Authorization", "Bearer "+this.token);
-    
-    return this.http.post<any>(`${this.baseUrl}/ChangePassword`, changePasswordCredential, {headers : head_obj});
+  changePassword(changePasswordCredential : IChangeCredential) : Observable<any> {    
+    return this.http.post<any>(`${this.baseUrl}/ChangePassword`, changePasswordCredential);
   }
 
 
   activateAccount() : Observable<any>{
-    let head_obj = new HttpHeaders().set("Authorization", "Bearer "+this.routeToken);
-
-    return this.http.patch<any>(`${this.baseUrl}/ActivateUser`, {}, {headers : head_obj});
+    return this.http.patch<any>(`${this.baseUrl}/ActivateUser`, {});
   }
 }

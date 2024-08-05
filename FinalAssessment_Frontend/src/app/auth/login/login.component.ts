@@ -41,12 +41,14 @@ export class LoginComponent implements OnInit {
       this.service.login(this.loginForm.value).subscribe({
         next : (res) => {
           if(res.success){
-            this.router.navigate(['/user-management/dashboard']);
+            localStorage.setItem(this.service.authSecretKey, res.token);
+            localStorage.setItem(this.service.authUserCookieKey, JSON.stringify(res.requiredDataForFrontend));
+            this.router.navigate(['user-management/dashboard']);
             this.toastr.success(res.message, 'Successfull!');
           }
 
-          else if(res.success == false && res.message == "InActive"){
-            this.router.navigate(['/auth/email-send']);  
+          if(res.success == false && res.message == "InActive"){
+            this.router.navigate(['auth/email-send']);  
             this.toastr.error("Account is not active", 'Error!');
           }
           
