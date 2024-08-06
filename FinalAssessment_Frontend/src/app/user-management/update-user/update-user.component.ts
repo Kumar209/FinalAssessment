@@ -32,32 +32,14 @@ export class UpdateUserComponent implements OnInit {
   constructor(private service : UserManagementService, private activatedRoute: ActivatedRoute,  private router: Router, private toastr: ToastrService) {
 
   }
-
-
-  //Converting url to file and returning file
-  async urlToFile(url: string): Promise<File> {
-    try {
-      // Create a URL object to parse the URL
-      const urlObj = new URL(url);
-
-      // Extract the path from the URL and get the filename
-      const path = urlObj.pathname;
-      const filename = path.substring(path.lastIndexOf('/') + 1);
-
-      // Fetch image data from the URL
-      const response = await fetch(url);
-      if (!response.ok) throw new Error('Network response was not ok.');
-      const blob = await response.blob();
-
-      // Create a File object with the extracted filename
-      return new File([blob], filename, { type: blob.type });
-    } 
-    
-    catch (error) {
-      console.error('Error fetching file:', error);
-      this.toastr.error('Error when converting url to file', 'Error!');
-      throw error;
-    }
+  
+  convertImageToFile(dataUrl : string) :Promise<File> {
+    return fetch(dataUrl)
+    .then(res => res.blob())
+    .then(blob => {
+      const fileName = `image_${new Date().getTime()}.png`;
+      return new File([blob], fileName, { type: blob.type });
+    });
   }
 
 
@@ -302,19 +284,16 @@ export class UpdateUserComponent implements OnInit {
     });
 
     
+    //If user upload img again
     if (this.selectedImg) {
       formData.append('ImageFile', this.selectedImg, this.selectedImg.name);
     }
 
+    //If user doesn't want to change the uploaded img
     else{
-      const file = await this.urlToFile(this.imgSrc);
+      const file = await this.convertImageToFile(this.imgSrc);
       formData.append('ImageFile', file, file.name);
     }
-
-    console.log('Final Form Data:', formData);
-    formData.forEach((value, key) => {
-      console.log(key, value);
-    });
 
 
 

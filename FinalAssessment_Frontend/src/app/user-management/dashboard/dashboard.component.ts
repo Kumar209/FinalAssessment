@@ -212,9 +212,9 @@ export class DashboardComponent implements OnInit {
         if(err.error && err.error.message){
           this.toastr.error(err.error.message, 'Error!');
         }
-        else {
-          this.toastr.error('Something went wrong', 'Error!');
-        }
+        // else {
+        //   this.toastr.error('Something went wrong', 'Error!');
+        // }
       }
     })
   }

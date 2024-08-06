@@ -24,11 +24,11 @@ namespace FinalAssessment_Backend.Repository
 
 
 
-        public async Task<bool> InsertUser(PrashantDbUser user)
+        public async Task<(bool success, PrashantDbUser user)> InsertUser(PrashantDbUser user)
         {
             _dbcontext.PrashantDbUsers.Add(user);
             await _dbcontext.SaveChangesAsync();
-            return true;
+            return (true, user);
         }
 
 

@@ -29,6 +29,7 @@ export class ForgotPasswordComponent {
         next : (res) => {
           if(res.success){
             this.toastr.success(res.message, 'Successfull!');
+            this.router.navigate(['auth/email-send']);
           }
           else {
             this.toastr.error(res.message, 'Error!');

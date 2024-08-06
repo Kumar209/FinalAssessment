@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FinalAssessment_Backend.ServiceInterface")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26169fb732280db792e592a5f946e95e54d80727")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07f08e768d9fe6cde0c8212ebb649917bf844567")]
 [assembly: System.Reflection.AssemblyProductAttribute("FinalAssessment_Backend.ServiceInterface")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FinalAssessment_Backend.ServiceInterface")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

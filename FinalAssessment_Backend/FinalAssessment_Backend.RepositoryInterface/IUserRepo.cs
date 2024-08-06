@@ -10,7 +10,7 @@ namespace FinalAssessment_Backend.RepositoryInterface
 {
     public interface IUserRepo
     {
-        public Task<bool> InsertUser(PrashantDbUser user);
+        public Task<(bool success, PrashantDbUser user)> InsertUser(PrashantDbUser user);
 
         public Task<bool> DeleteUser(int id);
 

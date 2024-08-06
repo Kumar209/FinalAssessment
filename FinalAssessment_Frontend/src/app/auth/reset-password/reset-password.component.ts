@@ -75,6 +75,7 @@ export class ResetPasswordComponent {
         next: (res) => {
           if (res.success) {
             this.toastr.success(res.message, 'Successfull!');
+            this.router.navigateByUrl("/auth/login");
           } else {
             this.toastr.error(res.message, 'Error!');
           }

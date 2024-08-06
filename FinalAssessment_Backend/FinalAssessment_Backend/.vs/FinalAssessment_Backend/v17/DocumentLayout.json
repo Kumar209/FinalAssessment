@@ -1,18 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\",
+  "WorkspaceRootPath": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{99909952-1B07-45AC-AA8C-68A5A222F1A5}|FinalAssessment_Backend.csproj|d:\\smartdata\\evaluation\\finalassessment\\finalassessment_backend\\finalassessment_backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{99909952-1B07-45AC-AA8C-68A5A222F1A5}|FinalAssessment_Backend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{90C82CCF-EBF1-4E42-AB25-8CCBCC297EF1}|..\\FinalAssessment_Backend.Service\\FinalAssessment_Backend.Service.csproj|c:\\prashant_office_work\\finalassessment\\finalassessment_backend\\finalassessment_backend.service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99909952-1B07-45AC-AA8C-68A5A222F1A5}|FinalAssessment_Backend.csproj|d:\\smartdata\\evaluation\\finalassessment\\finalassessment_backend\\finalassessment_backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99909952-1B07-45AC-AA8C-68A5A222F1A5}|FinalAssessment_Backend.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99909952-1B07-45AC-AA8C-68A5A222F1A5}|FinalAssessment_Backend.csproj|d:\\smartdata\\evaluation\\finalassessment\\finalassessment_backend\\finalassessment_backend\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99909952-1B07-45AC-AA8C-68A5A222F1A5}|FinalAssessment_Backend.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{99909952-1B07-45AC-AA8C-68A5A222F1A5}|FinalAssessment_Backend.csproj|c:\\prashant_office_work\\finalassessment\\finalassessment_backend\\finalassessment_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99909952-1B07-45AC-AA8C-68A5A222F1A5}|FinalAssessment_Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,39 +22,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-05T15:10:03.586Z",
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\UserService.cs",
+              "RelativeDocumentMoniker": "..\\FinalAssessment_Backend.Service\\UserService.cs",
+              "ToolTip": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend.Service\\UserService.cs",
+              "RelativeToolTip": "..\\FinalAssessment_Backend.Service\\UserService.cs",
+              "ViewState": "AQIAAFgBAAAAAAAAAAAAwGQBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T08:53:43.219Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAywD0AAAATAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Prashant_Office_work\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJkAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T07:57:14.45Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "D:\\smartdata\\Evaluation\\FinalAssessment\\FinalAssessment_Backend\\FinalAssessment_Backend\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAgwCAAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T07:55:45.136Z"
+              "WhenOpened": "2024-08-06T08:23:21.779Z",
+              "EditorCaption": ""
             }
           ]
         }

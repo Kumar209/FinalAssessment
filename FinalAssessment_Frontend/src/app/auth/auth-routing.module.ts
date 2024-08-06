@@ -19,7 +19,7 @@ const routes: Routes = [
     path : 'forgot-password', component : ForgotPasswordComponent
   },
   {
-    path : 'email-send' , component: EmailSendPageComponent , canActivate : [authGuard]
+    path : 'email-send' , component: EmailSendPageComponent 
   },
   {
     path: 'reset-password', component : ResetPasswordComponent 

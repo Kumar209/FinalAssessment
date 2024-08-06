@@ -24,14 +24,16 @@ namespace FinalAssessment_Backend.Service
         private readonly IHashing _hashing;
         private readonly EncryptDecrypt _encryptDecrypt;
         private readonly IEmailService _emailService;
+        private readonly IJwtService _jwtService;
 
-        public UserService(IUserRepo userRepo , IImageUploadService imageUploadService, IEmailService emailService , IHashing hashing, EncryptDecrypt encryptDecrypt)
+        public UserService(IUserRepo userRepo , IImageUploadService imageUploadService, IEmailService emailService , IHashing hashing, EncryptDecrypt encryptDecrypt, IJwtService jwtService)
         {
             _userRepo = userRepo;
             _imageUploadService = imageUploadService;
             _hashing = hashing;
             _encryptDecrypt = encryptDecrypt;
             _emailService = emailService;
+            _jwtService = jwtService;
         }
 
 
@@ -90,14 +92,19 @@ namespace FinalAssessment_Backend.Service
             var res = await _userRepo.InsertUser(userDetailsEntity);
 
 
+            var tokenValue = await _jwtService.GenerateToken(res.user);
+
+            var activationLink = $"http://localhost:4200/auth/activate-account/?token={tokenValue}";
+
+
             //Email sending for credential
-            if(res == true)
+            if (res.success == true)
             {
 
                 MailRequest mailRequest = new MailRequest();
                 mailRequest.ToEmail = _encryptDecrypt.DecryptCipherText(userDetailsEntity.Email);
                 mailRequest.Subject = "User Credentail by Kumar Enterprise";
-                mailRequest.Body = UserEmailTemplate.GetTemplateUserCredential(userDetails, customPassword);
+                mailRequest.Body = UserEmailTemplate.GetTemplateUserCredential(userDetails, customPassword, activationLink);
 
                 /*  string template = GetTemplateUserCredential;
                   template = template.Replace("user.FirstName", userDetails.FirstName);
@@ -111,7 +118,7 @@ namespace FinalAssessment_Backend.Service
 
             }
 
-            return res;
+            return res.success;
         }
 
 
