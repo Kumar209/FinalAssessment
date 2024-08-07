@@ -142,9 +142,9 @@ export class DashboardComponent implements OnInit {
             this.toastr.error('Error fetching records');
           }
         },
-        error: (err) => {
-            this.toastr.error(err.error?.message || 'Something went wrong', 'Error!');
-        },
+        // error: (err) => {
+        //     this.toastr.error(err.error?.message || 'Something went wrong', 'Error!');
+        // },
     });
   }  
 
@@ -195,7 +195,6 @@ export class DashboardComponent implements OnInit {
 
 
   deleteUser() : void {
-    console.log(this.userIdToDelete);
     this.service.deleteUser(this.userIdToDelete).subscribe({
       next : (res) => {
         if(res.success){
@@ -212,9 +211,6 @@ export class DashboardComponent implements OnInit {
         if(err.error && err.error.message){
           this.toastr.error(err.error.message, 'Error!');
         }
-        // else {
-        //   this.toastr.error('Something went wrong', 'Error!');
-        // }
       }
     })
   }

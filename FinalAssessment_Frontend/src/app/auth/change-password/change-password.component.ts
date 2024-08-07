@@ -34,7 +34,10 @@ export class ChangePasswordComponent {
   ngOnInit(): void {
     this.changePasswordForm = new FormGroup({
       oldPassword : new FormControl('', [Validators.required]),
-      newPassword : new FormControl('', [Validators.required]),
+      newPassword : new FormControl('', [
+        Validators.required,
+        this.noSpacesValidator
+      ]),
       confirmNewPassword : new FormControl('', [Validators.required])
     },
     {
@@ -42,6 +45,17 @@ export class ChangePasswordComponent {
     }
   );
   }
+
+
+    // Custom validator to disallow spaces
+    noSpacesValidator(control: AbstractControl): { [key: string]: boolean } | null {
+      if (control.value && control.value.includes(' ')) {
+        return { noSpaces: true };
+      }
+      return null;
+    }
+  
+  
 
 
   passwordMatchValidator(control: AbstractControl) {
@@ -61,7 +75,9 @@ export class ChangePasswordComponent {
       
 
       this.service.changePassword(this.changePasswordForm.value).subscribe({
+
         next : (res) => {
+          debugger;
           if(res.success){
             this.toastr.success(res.message, 'Successfull!');
           }
@@ -75,10 +91,10 @@ export class ChangePasswordComponent {
             this.toastr.error(err.error.message, 'Error!');
           }
           else {
-            this.toastr.error('Something went wrong!', 'Error!');
+            this.toastr.error('Wrong password!', 'Error!');
           }
         }
-      })
+     } )
     }
     else {
       this.toastr.error('Validation Failed', 'Error!')

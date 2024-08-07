@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../service/auth.service';
 import { ToastrService } from 'ngx-toastr';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { AbstractControl, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -29,8 +29,20 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     this.loginForm = new FormGroup({
       email : new FormControl('', [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]),
-      password : new FormControl('', [Validators.required])
+      password : new FormControl('', [Validators.required, this.noSpacesValidator])
     });
+
+    localStorage.removeItem(this.service.authSecretKey);
+    localStorage.removeItem(this.service.authUserCookieKey);
+  }
+
+
+   // Custom validator to disallow spaces
+   noSpacesValidator(control: AbstractControl): { [key: string]: boolean } | null {
+    if (control.value && control.value.includes(' ')) {
+      return { noSpaces: true };
+    }
+    return null;
   }
 
 
@@ -61,9 +73,6 @@ export class LoginComponent implements OnInit {
           if(err.error && err.error.message){
             this.toastr.error(err.error.message, 'Error!');
           }
-          // else {
-          //   this.toastr.error('Something went wrong!', 'Error!');
-          // }
         }
       })
     }

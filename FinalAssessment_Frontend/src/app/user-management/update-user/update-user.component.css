@@ -39,7 +39,6 @@
     margin-left: 10px;
     font-weight: 500;
     color: #161c24;
-    cursor: pointer;
   }
   
   .add-user-form-wrapper {
@@ -48,9 +47,7 @@
     border-radius: 10px;
     padding: 25px 20px 10px;
   }
-  
-  .add-user-form {
-  }
+
   
   .form-heading-wrapper {
     border-bottom: 1px solid rgb(209, 209, 209);

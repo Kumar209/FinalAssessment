@@ -45,10 +45,6 @@ namespace FinalAssessment_Backend.Repository
 
         public async Task<PrashantDbUser> GetUserByEmail(string email)
         {
-            /*
-                        var user = await _dbContext.PrashantDbUsers
-                                   .Include(o => o.PrashantDbAddresses)
-                                   .FirstOrDefaultAsync(o => _encryptDecrypt.DecryptCipherText(o.Email) == email && o.IsDeleted == false);*/
 
 
             var allUsers = await _dbContext.PrashantDbUsers

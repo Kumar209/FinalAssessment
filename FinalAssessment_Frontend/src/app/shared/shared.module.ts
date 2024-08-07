@@ -21,7 +21,7 @@ import { PhoneFormatPipe } from './pipes/phone-format.pipe';
   exports : [
     HeaderComponent,
     SidebarComponent,
-    PhoneFormatPipe
+    PhoneFormatPipe,
   ]
 })
 export class SharedModule { }

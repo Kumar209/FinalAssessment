@@ -1,6 +1,7 @@
 ﻿
 using FinalAssessment_Backend.Models.Dto;
 using FinalAssessment_Backend.ServiceInterface;
+using FinalAssessment_Backend.Shared.Response;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,9 +11,12 @@ namespace FinalAssessment_Backend.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
+        private readonly ILogger<UserController> _logger;
         private readonly IUserService _userService;
-        public UserController(IUserService userService) 
+        public UserController(IUserService userService , ILogger<UserController> logger) 
         { 
+            _logger = logger;
+            _logger.LogDebug("Nlog is integrated to user controller");
             _userService = userService;
         }
 
@@ -23,20 +27,21 @@ namespace FinalAssessment_Backend.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest(new { success=false, message = "Validation failed"});
+                return BadRequest(new { success=false, message = ResponseMessage.validationFailed});
             }
 
             try
             {
                 var res = await _userService.CreateUser(userDetails);
 
-                return Ok(new { success = res, message = "Successfully created user and credential send to email" });
+                return Ok(new { success = res, message = ResponseMessage.addedUserSuccess });
             }
             
 
             catch (Exception ex)
             {
-                return StatusCode(500, new { success = false, message = "An error occurred while creating the user.", error = ex.Message });
+                _logger.LogError(ex.Message);
+                return StatusCode(500, new { success = false, message = ResponseMessage.internalServerError, error = ex.Message });
             }
         }
 
@@ -49,11 +54,12 @@ namespace FinalAssessment_Backend.Controllers
             {
                 var res = await _userService.RemoveUserById(id);
 
-                return Ok(new { success = res, message = "User is deleted" });
+                return Ok(new { success = res, message = ResponseMessage.deleteUserSuccess });
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { success = false, message = "An error occurred while deleting the user.", error = ex.Message });
+                _logger.LogError(ex.Message);
+                return StatusCode(500, new { success = false, message = ResponseMessage.internalServerError, error = ex.Message });
             }
         }
 
@@ -70,7 +76,8 @@ namespace FinalAssessment_Backend.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { success = false, message = "An error occurred while getting records.", error = ex.Message });
+                _logger.LogError(ex.Message);
+                return StatusCode(500, new { success = false, message = ResponseMessage.internalServerError, error = ex.Message });
             }
            
         }
@@ -92,7 +99,8 @@ namespace FinalAssessment_Backend.Controllers
 
             catch(Exception ex)
             {
-                return StatusCode(500, new { success = false, message = "An error occurred while exporting excel.", error = ex.Message });
+                _logger.LogError(ex.Message);
+                return StatusCode(500, new { success = false, message = ResponseMessage.internalServerError, error = ex.Message });
             }
             
         }
@@ -110,7 +118,8 @@ namespace FinalAssessment_Backend.Controllers
             }
             catch(Exception ex)
             {
-                return StatusCode(500, new {success=false, message="Error occurred while getting user", error=ex.Message});
+                _logger.LogError(ex.Message);
+                return StatusCode(500, new {success=false, message=ResponseMessage.internalServerError, error=ex.Message});
             }
         }
 
@@ -124,20 +133,21 @@ namespace FinalAssessment_Backend.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest(new { success = false, message = "Validation failed" });
+                return BadRequest(new { success = false, message = ResponseMessage.validationFailed });
             }
 
             try
             {
                 var res = await _userService.UpdateUserDetails(userDetails);
 
-                return Ok(new { success = res, message = "Successfully updated user" });
+                return Ok(new { success = res, message = ResponseMessage.updateUserSuccess });
             }
 
 
             catch (Exception ex)
             {
-                return StatusCode(500, new { success = false, message = "An error occurred while updating the user.", error = ex.Message });
+                _logger.LogError(ex.Message);
+                return StatusCode(500, new { success = false, message = ResponseMessage.internalServerError, error = ex.Message });
             }
         }
 

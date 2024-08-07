@@ -51,8 +51,6 @@ export class ResetPasswordComponent {
 
 
   passwordMatchValidator(control: AbstractControl) {
-    // return control.get('password')?.value === control.get('confirmPassword') ? null : { mismatch : true }
-
     const password = control.get('password');
     const confirmPassword = control.get('confirmPassword');
 

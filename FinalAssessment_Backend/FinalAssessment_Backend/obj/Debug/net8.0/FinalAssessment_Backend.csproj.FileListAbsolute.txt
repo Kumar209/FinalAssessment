@@ -640,3 +640,7 @@ C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_
 C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
 C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
 C:\Prashant_Office_work\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\NLog.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\NLog.Extensions.Logging.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\NLog.Web.AspNetCore.dll
+D:\smartdata\Evaluation\FinalAssessment\FinalAssessment_Backend\FinalAssessment_Backend\bin\Debug\net8.0\nlog.config

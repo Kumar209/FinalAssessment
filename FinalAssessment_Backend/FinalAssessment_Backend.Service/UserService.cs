@@ -94,24 +94,17 @@ namespace FinalAssessment_Backend.Service
 
             var tokenValue = await _jwtService.GenerateToken(res.user);
 
-            var activationLink = $"http://localhost:4200/auth/activate-account/?token={tokenValue}";
 
 
             //Email sending for credential
             if (res.success == true)
             {
+                var activationLink = $"http://localhost:4200/auth/activate-account/?token={tokenValue}";
 
                 MailRequest mailRequest = new MailRequest();
                 mailRequest.ToEmail = _encryptDecrypt.DecryptCipherText(userDetailsEntity.Email);
                 mailRequest.Subject = "User Credentail by Kumar Enterprise";
                 mailRequest.Body = UserEmailTemplate.GetTemplateUserCredential(userDetails, customPassword, activationLink);
-
-                /*  string template = GetTemplateUserCredential;
-                  template = template.Replace("user.FirstName", userDetails.FirstName);
-                  template = template.Replace("user.LastName", userDetails.LastName);
-
-                  mailRequest.Body = template;*/
-
 
 
                 await _emailService.SendEmailAsync(mailRequest);
@@ -328,10 +321,6 @@ namespace FinalAssessment_Backend.Service
                 FirstName = userDetails.FirstName,
                 MiddleName = userDetails.MiddleName,
                 LastName = userDetails.LastName,
-
-
-                //We will not update the email due to token
-              /*  Email = userDetails.Email,*/
 
                 Gender = userDetails.Gender,
                 DateOfJoining = userDetails.DateOfJoining,

@@ -14,6 +14,9 @@ const routes: Routes = [
   },
   {
     path : 'update-user' , component : UpdateUserComponent, canActivate: [authGuard]
+  },
+  {
+    path : '**', component : DashboardComponent
   }
 ];
 

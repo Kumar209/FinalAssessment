@@ -32,6 +32,7 @@
                     </span>
 
                     
+                    <span style="color: red;" class="text_Validator" *ngIf="loginForm.get('password')?.hasError('noSpaces')">* No spaces allowed</span>
 
                     <span class="text_Validator" *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.hasError('required')" >* Password is required</span>
                 </div>
@@ -42,7 +43,7 @@
             </form>
 
             <div class="goBackWrapper">
-                Forgot Password ? <a routerLink="/auth/forgot-password">forgot password</a>
+                Forgot Password ? <a routerLink="/auth/forgot-password">click here</a>
             </div>
         </div>
     </div>

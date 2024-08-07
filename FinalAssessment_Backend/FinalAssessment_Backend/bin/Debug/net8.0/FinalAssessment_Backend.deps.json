@@ -12,6 +12,8 @@
           "FinalAssessment_Backend.Service": "1.0.0",
           "FinalAssessment_Backend.Shared": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "8.0.7",
+          "NLog": "5.3.2",
+          "NLog.Web.AspNetCore": "5.3.11",
           "Swashbuckle.AspNetCore": "6.4.0",
           "Swashbuckle.AspNetCore.Filters": "8.0.2"
         },
@@ -789,6 +791,38 @@
           }
         }
       },
+      "NLog/5.3.2": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.3.2.2526"
+          }
+        }
+      },
+      "NLog.Extensions.Logging/5.3.11": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Logging": "8.0.0",
+          "NLog": "5.3.2"
+        },
+        "runtime": {
+          "lib/net8.0/NLog.Extensions.Logging.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.3.11.526"
+          }
+        }
+      },
+      "NLog.Web.AspNetCore/5.3.11": {
+        "dependencies": {
+          "NLog.Extensions.Logging": "5.3.11"
+        },
+        "runtime": {
+          "lib/net8.0/NLog.Web.AspNetCore.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.3.11.1082"
+          }
+        }
+      },
       "Scrutor/3.3.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.1",
@@ -1116,7 +1150,9 @@
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "Microsoft.EntityFrameworkCore": "8.0.7",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.7"
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.7",
+          "NLog": "5.3.2",
+          "NLog.Web.AspNetCore": "5.3.11"
         },
         "runtime": {
           "FinalAssessment_Backend.Models.dll": {}
@@ -1129,7 +1165,9 @@
           "FinalAssessment_Backend.Shared": "1.0.0",
           "Microsoft.AspNetCore.Authorization": "8.0.7",
           "Microsoft.EntityFrameworkCore": "8.0.7",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.7"
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.7",
+          "NLog": "5.3.2",
+          "NLog.Web.AspNetCore": "5.3.11"
         },
         "runtime": {
           "FinalAssessment_Backend.Repository.dll": {}
@@ -1137,7 +1175,9 @@
       },
       "FinalAssessment_Backend.RepositoryInterface/1.0.0": {
         "dependencies": {
-          "FinalAssessment_Backend.Models": "1.0.0"
+          "FinalAssessment_Backend.Models": "1.0.0",
+          "NLog": "5.3.2",
+          "NLog.Web.AspNetCore": "5.3.11"
         },
         "runtime": {
           "FinalAssessment_Backend.RepositoryInterface.dll": {}
@@ -1153,6 +1193,8 @@
           "MailKit": "4.7.1.1",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.7",
           "MimeKit": "4.7.1",
+          "NLog": "5.3.2",
+          "NLog.Web.AspNetCore": "5.3.11",
           "System.IdentityModel.Tokens.Jwt": "8.0.1"
         },
         "runtime": {
@@ -1162,7 +1204,9 @@
       "FinalAssessment_Backend.ServiceInterface/1.0.0": {
         "dependencies": {
           "FinalAssessment_Backend.Models": "1.0.0",
-          "FinalAssessment_Backend.Repository": "1.0.0"
+          "FinalAssessment_Backend.Repository": "1.0.0",
+          "NLog": "5.3.2",
+          "NLog.Web.AspNetCore": "5.3.11"
         },
         "runtime": {
           "FinalAssessment_Backend.ServiceInterface.dll": {}
@@ -1172,7 +1216,9 @@
         "dependencies": {
           "BCrypt.Net-Next": "4.0.3",
           "FinalAssessment_Backend.Models": "1.0.0",
-          "Microsoft.AspNetCore.DataProtection.Abstractions": "8.0.7"
+          "Microsoft.AspNetCore.DataProtection.Abstractions": "8.0.7",
+          "NLog": "5.3.2",
+          "NLog.Web.AspNetCore": "5.3.11"
         },
         "runtime": {
           "FinalAssessment_Backend.Shared.dll": {}
@@ -1598,6 +1644,27 @@
       "sha512": "sha512-KZYeKBET/2Z0gY1WlTAK7+RHTl7GSbtvTLDXEZZojUdAPqpQNDL6tHv7VUpqfX5VEOh+uRGKaZXkuD253nEOBQ==",
       "path": "mono.texttemplating/2.2.1",
       "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
+    },
+    "NLog/5.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cQRQZuDMjSyMe9EQBnI9v55YAMMz8GAfFd6fFJ6tc/kXnG7Hze8p1I8MgvWSBG6E36wA8vSxRrlm8uSIG+SENg==",
+      "path": "nlog/5.3.2",
+      "hashPath": "nlog.5.3.2.nupkg.sha512"
+    },
+    "NLog.Extensions.Logging/5.3.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-C3Rg6jmOkM7fNBX9jAoVlYzOwsrxdQzl9sYDK1EpRc7RCdjgs8FC9ivJCSsCu/m4l0w83xiTNz7Y1CzmD3BwZg==",
+      "path": "nlog.extensions.logging/5.3.11",
+      "hashPath": "nlog.extensions.logging.5.3.11.nupkg.sha512"
+    },
+    "NLog.Web.AspNetCore/5.3.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yGVMYeeMh1v/DZELN8XMEZYg27/w7O0ypcwaD1+cHLf4yI8zZOM0xS57a8gCBV4QCXegN15Upld+9YzS5M1VvA==",
+      "path": "nlog.web.aspnetcore/5.3.11",
+      "hashPath": "nlog.web.aspnetcore.5.3.11.nupkg.sha512"
     },
     "Scrutor/3.3.0": {
       "type": "package",

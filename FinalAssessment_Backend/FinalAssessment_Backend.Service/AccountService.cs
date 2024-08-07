@@ -4,6 +4,7 @@ using FinalAssessment_Backend.ServiceInterface;
 using FinalAssessment_Backend.Shared.EmailTemplates;
 using FinalAssessment_Backend.Shared.EncryptDecrypt;
 using FinalAssessment_Backend.Shared.Hashing;
+using FinalAssessment_Backend.Shared.Response;
 using Org.BouncyCastle.Asn1.Cms;
 
 
@@ -37,7 +38,7 @@ namespace FinalAssessment_Backend.Service
 
             if (user == null)
             {
-                return ("Wrong email", false, null, null);
+                return (ResponseMessage.wrongEmail, false, null, null);
             }
 
             //Verifying the password due to it is hashed in db
@@ -47,7 +48,7 @@ namespace FinalAssessment_Backend.Service
 
             if (validatePassword == false)
             {
-                return ("Wrong password", false, null, null);
+                return (ResponseMessage.wrongPassword, false, null, null);
             }
 
             //For localStorage in frontend
@@ -59,11 +60,11 @@ namespace FinalAssessment_Backend.Service
 
             var tokenValue = await _jwtService.GenerateToken(user);
 
-            var activationLink = $"http://localhost:4200/auth/activate-account/?token={tokenValue}";
-
 
             if (user.IsActive == false)
             {
+                var activationLink = $"http://localhost:4200/auth/activate-account/?token={tokenValue}";
+
                 MailRequest mailRequest = new MailRequest();
                 mailRequest.ToEmail = _encyptDecrypt.DecryptCipherText(user.Email);
                 mailRequest.Subject = "Activate your account";
@@ -71,12 +72,12 @@ namespace FinalAssessment_Backend.Service
 
 
                 await _emailService.SendEmailAsync(mailRequest);
-                return ("InActive", false, null, null); 
+                return (ResponseMessage.inactiveaccountmsg, false, null, null); 
             }
 
             
 
-            return ("User Logged In", true , tokenValue, requiredDataForFrontend);
+            return (ResponseMessage.loginSuccess, true , tokenValue, requiredDataForFrontend);
 
         }
 
@@ -88,7 +89,7 @@ namespace FinalAssessment_Backend.Service
 
             if (userId == -1)
             {
-                return ("Token expired", false);
+                return (ResponseMessage.tokenError, false);
             }
 
             var userToActivate = await _accountRepo.GetUserById(userId);
@@ -99,10 +100,10 @@ namespace FinalAssessment_Backend.Service
 
             if (response)
             {
-                return ("Activated Account", true);
+                return (ResponseMessage.activatedAccountMsg, true);
             }
 
-            return ("Error Activating Account", false);
+            return (ResponseMessage.activationAccountError, false);
 
             
         }
@@ -115,7 +116,7 @@ namespace FinalAssessment_Backend.Service
 
             if(user == null)
             {
-                return ("Wrong Credentials", false);
+                return (ResponseMessage.wrongCredential, false);
             }
 
             var tokenValue = await _jwtService.GenerateToken(user);
@@ -132,7 +133,7 @@ namespace FinalAssessment_Backend.Service
 
             await _emailService.SendEmailAsync(mailRequest);
 
-            return ("Email send to you for reset password", true);
+            return (ResponseMessage.emailSentReset, true);
         } 
 
 
@@ -143,12 +144,12 @@ namespace FinalAssessment_Backend.Service
 
             if(userId == -1)
             {
-                return ("Token expired", false);
+                return (ResponseMessage.tokenError, false);
             }
 
             var res = await _accountRepo.UpdatePassword(userId, resetPasswordValue.Password);
 
-            return ("Password reset completed", true);
+            return (ResponseMessage.passwordResetSuccess, true);
 
         }
 
@@ -159,7 +160,7 @@ namespace FinalAssessment_Backend.Service
 
             if(userId == -1)
             {
-                return ("Token expired", false);
+                return (ResponseMessage.tokenError, false);
             }
 
             var user = await _accountRepo.GetUserById(userId);
@@ -168,12 +169,12 @@ namespace FinalAssessment_Backend.Service
 
             if(validateOldPassword == false)
             {
-                return ("Wrong old password", false);
+                return (ResponseMessage.oldPasswordIncorrect, false);
             }
 
             var res = await _accountRepo.UpdatePassword(userId, changePasswordValue.NewPassword);
 
-            return ("Password changed", true);
+            return (ResponseMessage.passwordChangeSuccess, true);
         }
 
        

@@ -45,7 +45,7 @@ export class AddUserComponent {
       middleName: new FormControl('', [Validators.required,  Validators.pattern('^[a-zA-Z]*$')]),
       lastName: new FormControl('', [Validators.pattern('^[a-zA-Z]*$')]),
       gender: new FormControl('', Validators.required),
-      dateOfBirth: new FormControl('', Validators.required),
+      dateOfBirth: new FormControl('', [Validators.required, this.dateValidator]),
       email: new FormControl('', [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]),
 
 
@@ -68,7 +68,7 @@ export class AddUserComponent {
       country: new FormControl('', Validators.required),
       state: new FormControl('', Validators.required),
       city: new FormControl('', Validators.required),
-      zipCode: new FormControl('', [Validators.required, Validators.maxLength(6), Validators.minLength(6), Validators.pattern('^[0-9]*$')])
+      zipCode: new FormControl('', [Validators.required, Validators.pattern('^[0-9]{6}$')])
     });
   }
 
@@ -150,6 +150,30 @@ export class AddUserComponent {
 
 
 
+  //Method to restrict the user selecting the date after the current date
+  getMaxDate(): string {
+    const currentDate = new Date();
+
+    // Format the current date as YYYY-MM-DD (required format for the max attribute)
+    const formattedDate = currentDate.toISOString().split('T')[0];
+
+    return formattedDate;
+  }
+
+
+     // Custom date validator to check for future dates
+     dateValidator(control: AbstractControl): { [key: string]: any } | null {
+      const inputDate = new Date(control.value);
+      const today = new Date();
+      today.setHours(0, 0, 0, 0); // Set to midnight
+  
+      if (inputDate > today) {
+        return { 'max': true };
+      }
+      return null;
+    }
+    
+  
   
   
 
@@ -181,8 +205,6 @@ export class AddUserComponent {
 
     const formData = new FormData();
 
-    console.log(this.addUserForm.value);
-
     formData.append('firstName', this.addUserForm.get('firstName').value);
     formData.append('middleName', this.addUserForm.get('middleName').value);
     formData.append('lastName', this.addUserForm.get('lastName').value);
@@ -210,17 +232,6 @@ export class AddUserComponent {
       formData.append('ImageFile', this.selectedImg, this.selectedImg.name);
     }
 
-
-    // resetForm(){
-    //   this.selectedImg = null;
-    //   this.imgSrc = '';
-    //   this.addUserForm.reset();
-    //   this.PrashantDbAddresses.clear();
-    //   this.PrashantDbAddresses.push(this.createAddressGroup(1));
-    //   this.addressStates = [];
-    //   this.addressCities = [];
-    //   this.router.navigate(['/user-management/dashboard']);
-    // }
   
 
 

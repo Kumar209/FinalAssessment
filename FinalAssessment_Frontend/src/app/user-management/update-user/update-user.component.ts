@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
+import { AbstractControl, FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 import { UserManagementService } from '../service/user-management.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
@@ -56,7 +56,7 @@ export class UpdateUserComponent implements OnInit {
       middleName: new FormControl('', [Validators.required,  Validators.pattern('^[a-zA-Z]*$')]),
       lastName: new FormControl('', [Validators.pattern('^[a-zA-Z]*$')]),
       gender: new FormControl('', Validators.required),
-      dateOfBirth: new FormControl('', Validators.required),
+      dateOfBirth: new FormControl('', [Validators.required, this.dateValidator]),
       email: new FormControl('', [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]),
       dateOfJoining: new FormControl('', Validators.required),
       phone: new FormControl('', Validators.required),
@@ -81,7 +81,7 @@ export class UpdateUserComponent implements OnInit {
       country: new FormControl('', Validators.required),
       state: new FormControl('', Validators.required),
       city: new FormControl('', Validators.required),
-      zipCode: new FormControl('', [Validators.required, Validators.maxLength(6), Validators.minLength(6), Validators.pattern('^[0-9]*$')])
+      zipCode: new FormControl('', [Validators.required, Validators.pattern('^[0-9]{6}$')])
     });
   }
 
@@ -109,6 +109,30 @@ export class UpdateUserComponent implements OnInit {
       this.cities.pop();
     }
   }
+
+
+   //Method to restrict the user selecting the date after the current date
+   getMaxDate(): string {
+    const currentDate = new Date();
+
+    // Format the current date as YYYY-MM-DD (required format for the max attribute)
+    const formattedDate = currentDate.toISOString().split('T')[0];
+
+    return formattedDate;
+  }
+
+   // Custom date validator to check for future dates
+   dateValidator(control: AbstractControl): { [key: string]: any } | null {
+    const inputDate = new Date(control.value);
+    const today = new Date();
+    today.setHours(0, 0, 0, 0); // Set to midnight
+
+    if (inputDate > today) {
+      return { 'max': true };
+    }
+    return null;
+  }
+  
 
 
   onFileChange(event: any) {
@@ -255,12 +279,6 @@ export class UpdateUserComponent implements OnInit {
 
     formData.append('Id', this.userId.toString());
 
-    // Object.keys(this.updateUserForm.value).forEach(key => {
-    //   if (key !== 'PrashantDbAddresses') {
-    //     formData.append(key, this.updateUserForm.get(key).value);
-    //   }
-    // });
-
     formData.append('firstName', this.updateUserForm.get('firstName').value);
     formData.append('middleName', this.updateUserForm.get('middleName').value);
     formData.append('lastName', this.updateUserForm.get('lastName').value);
@@ -297,11 +315,12 @@ export class UpdateUserComponent implements OnInit {
 
 
 
-    //Here we have to call api of update
 
+    //Here we have to call api of update
     this.service.updateUser(formData).subscribe({
       next : (res : any) => {
         if(res.success){
+          this.router.navigate(['/user-management/dashboard']);
           this.toastr.success(res.message, 'Succesfully!');
         }
         else {

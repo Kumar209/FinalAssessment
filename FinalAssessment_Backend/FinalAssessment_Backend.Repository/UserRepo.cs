@@ -80,18 +80,6 @@ namespace FinalAssessment_Backend.Repository
             }
 
 
-            //Here SortBy is a column name 
-            //Not working for city and state cant able to navigate
-            /*  if (!string.IsNullOrEmpty(userQuery.SortBy))
-              {
-                  //Handles the dynamic column name on that basis to be sort used :EF.Property<object> other wise we have to use switch case
-                  query = userQuery.IsAscending ? query.OrderBy(e => EF.Property<object>(e, userQuery.SortBy)) : query.OrderByDescending(e => EF.Property<object>(e, userQuery.SortBy));
-              }
-              else
-              {
-                  query = query.OrderBy(u => u.Id);
-              }*/
-
 
 
             //Sorting using switch case
@@ -123,15 +111,15 @@ namespace FinalAssessment_Backend.Repository
                     case "state":
                         query = userQuery.IsAscending ? query.OrderBy(u => u.PrashantDbAddresses.FirstOrDefault().State) : query.OrderByDescending(u => u.PrashantDbAddresses.FirstOrDefault().State);
                         break;
-                    // Add more cases for other properties as needed
+
                     default:
-                        query = query.OrderBy(u => u.Id); // Default sort by Id
+                        query = query.OrderBy(u => u.Id); 
                         break;
                 }
             }
             else
             {
-                query = query.OrderBy(u => u.Id); // Default sort by Id
+                query = query.OrderBy(u => u.Id); 
             }
 
 
@@ -196,46 +184,50 @@ namespace FinalAssessment_Backend.Repository
             userFromDb.DateOfBirth = user.DateOfBirth;
             userFromDb.Gender = user.Gender;
             userFromDb.ImageUrl = user.ImageUrl;
-           /* userFromDb.Email = EncriptionAndDecription.EncryptData(userDetailsAnkitDto.Email);*/
-          /*  userFromDb.IsActive = user.IsActive;*/
 
-            // Update or add user addresses
-            foreach (var addressDto in user.PrashantDbAddresses)
+            // List of address IDs that are to be kept
+            var addressesToKeep = new HashSet<int>(user.PrashantDbAddresses.Select(a => a.AddressTypeId));
+
+            // Iterate through existing addresses to update or remove
+            foreach (var address in userFromDb.PrashantDbAddresses.ToList())
             {
-                var address = userFromDb.PrashantDbAddresses.FirstOrDefault(a => a.AddressTypeId == addressDto.AddressTypeId);
-
-                if (address != null)
+                if (addressesToKeep.Contains(address.AddressTypeId))
                 {
                     // Update existing address
-                    address.City = addressDto.City;
-                    address.State = addressDto.State;
-                    address.Country = addressDto.Country;
-                    address.ZipCode = addressDto.ZipCode;
+                    var updatedAddress = user.PrashantDbAddresses.First(a => a.AddressTypeId == address.AddressTypeId);
+                    address.City = updatedAddress.City;
+                    address.State = updatedAddress.State;
+                    address.Country = updatedAddress.Country;
+                    address.ZipCode = updatedAddress.ZipCode;
                 }
                 else
                 {
+                    // Remove address that is not in the updated list
+                    _dbcontext.PrashantDbAddresses.Remove(address);
+                }
+            }
+
+            // Add new addresses that are in the update but not in the existing list
+            foreach (var addressDto in user.PrashantDbAddresses)
+            {
+                var existingAddress = userFromDb.PrashantDbAddresses.FirstOrDefault(a => a.AddressTypeId == addressDto.AddressTypeId);
+
+                if (existingAddress == null)
+                {
                     // Add new address
-                    user.PrashantDbAddresses.Add(new PrashantDbAddress
+                    userFromDb.PrashantDbAddresses.Add(new PrashantDbAddress
                     {
+                        AddressTypeId = addressDto.AddressTypeId,
                         City = addressDto.City,
                         State = addressDto.State,
                         Country = addressDto.Country,
                         ZipCode = addressDto.ZipCode,
-                        UserId = user.Id
                     });
                 }
             }
 
             await _dbcontext.SaveChangesAsync();
             return true;
-
-            /*_dbcontext.PrashantDbUsers.Update(user);
-            await _dbcontext.SaveChangesAsync();
-            return true;*/
-
-            /* _dbcontext.Entry(user).State = EntityState.Modified;
-             await _dbcontext.SaveChangesAsync();
-             return true;*/
         }
 
 

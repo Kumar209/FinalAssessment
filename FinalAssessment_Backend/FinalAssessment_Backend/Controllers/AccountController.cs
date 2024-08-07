@@ -1,5 +1,6 @@
 ﻿using FinalAssessment_Backend.Models.Dto;
 using FinalAssessment_Backend.ServiceInterface;
+using FinalAssessment_Backend.Shared.Response;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -11,10 +12,13 @@ namespace FinalAssessment_Backend.Controllers
     [ApiController]
     public class AccountController : ControllerBase
     {
+        private readonly ILogger<AccountController> _logger;
         private readonly IAccountService _accountService;
 
-        public AccountController(IAccountService accountService) 
+        public AccountController(IAccountService accountService, ILogger<AccountController> logger) 
         { 
+            _logger = logger;
+            _logger.LogDebug("Nlog is integrated to account controller");
             _accountService = accountService;
 
         }
@@ -25,7 +29,8 @@ namespace FinalAssessment_Backend.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest(new { success = false, message = "Validation failed" });
+                _logger.LogError("Validation failed");
+                return BadRequest(new { success = false, message = ResponseMessage.validationFailed });
             }
 
             try
@@ -42,7 +47,8 @@ namespace FinalAssessment_Backend.Controllers
             }
             catch(Exception ex) 
             {
-                return StatusCode(500, new { success = false, message = "An error occurred while authenticating.", error = ex.Message });
+                _logger.LogError(ex.Message);
+                return StatusCode(500, new { success = false, message = ResponseMessage.internalServerError, error = ex.Message });
             }
 
             
@@ -59,7 +65,7 @@ namespace FinalAssessment_Backend.Controllers
 
             if (authHeader == null || !authHeader.StartsWith("Bearer "))
             {
-                return Unauthorized(new { success = false, message = "Unauthorized" });
+                return Unauthorized(new { success = false, message = ResponseMessage.unauthorizeUser });
             }
 
             var token = authHeader.Substring("Bearer ".Length).Trim();
@@ -78,7 +84,8 @@ namespace FinalAssessment_Backend.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { success = false, message = "An error occurred while activating your account.", error = ex.Message });
+                _logger.LogError(ex.Message);
+                return StatusCode(500, new { success = false, message = ResponseMessage.internalServerError, error = ex.Message });
             }
             
         }
@@ -101,7 +108,8 @@ namespace FinalAssessment_Backend.Controllers
             }
             catch(Exception ex)
             {
-                return StatusCode(500, new { success = false, message = "Internal Server Error", error = ex.Message });
+                _logger.LogError(ex.Message);
+                return StatusCode(500, new { success = false, message = ResponseMessage.internalServerError, error = ex.Message });
             }
         }
 
@@ -120,7 +128,7 @@ namespace FinalAssessment_Backend.Controllers
 
             if (authHeader == null || !authHeader.StartsWith("Bearer "))
             {
-                return Unauthorized(new { success = false, message = "Unauthorized" });
+                return Unauthorized(new { success = false, message = ResponseMessage.unauthorizeUser });
             }
 
             try
@@ -138,7 +146,8 @@ namespace FinalAssessment_Backend.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { success = false, message = "An error occurred while reset your password.", error = ex.Message });
+                _logger.LogError(ex.Message);
+                return StatusCode(500, new { success = false, message = ResponseMessage.internalServerError, error = ex.Message });
             }
         }
 
@@ -157,7 +166,7 @@ namespace FinalAssessment_Backend.Controllers
 
             if (authHeader == null || !authHeader.StartsWith("Bearer "))
             {
-                return Unauthorized(new { success = false, message = "Unauthorized" });
+                return Unauthorized(new { success = false, message = ResponseMessage.unauthorizeUser });
             }
 
             var token = authHeader.Substring("Bearer ".Length).Trim();
@@ -176,7 +185,8 @@ namespace FinalAssessment_Backend.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { success = false, message = "An error occurred while changing your password.", error = ex.Message });
+                _logger.LogError(ex.Message);
+                return StatusCode(500, new { success = false, message = ResponseMessage.internalServerError, error = ex.Message });
             }
         }
     }

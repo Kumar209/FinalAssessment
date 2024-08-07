@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NLog" Version="5.3.2" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="5.3.11" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\FinalAssessment_Backend.Models\FinalAssessment_Backend.Models.csproj" />
     <ProjectReference Include="..\FinalAssessment_Backend.Repository\FinalAssessment_Backend.Repository.csproj" />
   </ItemGroup>
